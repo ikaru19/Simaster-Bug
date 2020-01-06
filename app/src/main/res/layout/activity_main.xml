@@ -3,13 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="8dp"
         tools:context=".MainActivity">
+
+
 
         <ImageView
             android:id="@+id/imageView3"
@@ -19,18 +22,19 @@
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="8dp"
-            android:src="@drawable/logobalittas"
+            android:src="@drawable/balittas"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/menu_tanya"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/logobalittas" />
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/balittas" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_height="50dp"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="8dp"
@@ -38,14 +42,16 @@
             android:src="@drawable/agro_inovasi"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.254"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/menu_tanya"
+            app:layout_constraintVertical_bias="0.733"
             app:srcCompat="@drawable/agro_inovasi" />
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
+            android:layout_width="224dp"
+            android:layout_height="67dp"
             android:src="@drawable/logo"
             app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
@@ -108,9 +114,9 @@
                     android:paddingRight="10dp">
 
                     <ImageView
-                        android:layout_width="80dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="80dp"
-                        android:src="@drawable/tebu">
+                        android:src="@drawable/tebu2">
 
                     </ImageView>
                 </LinearLayout>
@@ -149,9 +155,9 @@
                     android:paddingRight="10dp">
 
                     <ImageView
-                        android:layout_width="80dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="80dp"
-                        android:src="@drawable/tembakau">
+                        android:src="@drawable/tembakau2">
 
                     </ImageView>
                 </LinearLayout>
@@ -225,9 +231,9 @@
                     android:paddingRight="10dp">
 
                     <ImageView
-                        android:layout_width="80dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="80dp"
-                        android:src="@drawable/sesame">
+                        android:src="@drawable/wijen1">
 
                     </ImageView>
                 </LinearLayout>
@@ -420,6 +426,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/menu_tanya"
+            app:srcCompat="@drawable/kemtan" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -22,10 +22,10 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:layout_height="wrap_content">
 
             <TextView
+                android:layout_margin="8dp"
                 android:id="@+id/tv_hama_judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -34,15 +34,6 @@
                 android:textColor="@color/colorPrimary"
                 android:textStyle="normal" />
 
-            <TextView
-                android:id="@+id/tv_hama_preview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="Baca Disini ......"
-                android:textColor="#000000"
-                android:textSize="16sp" />
         </LinearLayout>
 
     </LinearLayout>

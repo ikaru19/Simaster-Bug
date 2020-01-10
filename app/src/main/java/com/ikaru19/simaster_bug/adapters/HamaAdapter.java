@@ -27,8 +27,7 @@ public class HamaAdapter extends BaseQuickAdapter<Hama, BaseViewHolder> {
 
     @Override
     protected void convert(@NonNull BaseViewHolder helper, Hama item) {
-        helper.setText(R.id.tv_hama_judul,item.getNamaHama())
-                .setText(R.id.tv_hama_preview,"Baca Disini");
+        helper.setText(R.id.tv_hama_judul,item.getNamaHama());
         ImageView imageView = helper.getView(R.id.iv_hama);
         Picasso.get().load(BASE_URL_IMG+item.getImg()).resize(1280, 720)
                 .onlyScaleDown().into(imageView);

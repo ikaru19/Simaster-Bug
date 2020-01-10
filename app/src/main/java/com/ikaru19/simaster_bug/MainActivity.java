@@ -11,7 +11,7 @@ import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView menu_tanya,menu_artikel;
+    CardView menu_tanya,menu_artikel,menu_wijen,menu_tembakau,menu_tebu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         menu_tanya = findViewById(R.id.menu_tanya);
         menu_artikel = findViewById(R.id.menu_artikel);
+        menu_wijen = findViewById(R.id.menu_wijen);
+        menu_tembakau = findViewById(R.id.menu_tembakau);
+        menu_tebu = findViewById(R.id.menu_tebu);
 
         menu_tanya.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,5 +38,37 @@ public class MainActivity extends AppCompatActivity {
                 Animatoo.animateSlideLeft(MainActivity.this);
             }
         });
+        menu_wijen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,HamaActivity.class);
+                intent.putExtra("JenisHama","wijen");
+                startActivity(intent);
+                Animatoo.animateSlideLeft(MainActivity.this);
+
+            }
+        });
+
+        menu_tembakau.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,HamaActivity.class);
+                intent.putExtra("JenisHama","tembakau");
+                startActivity(intent);
+                Animatoo.animateSlideLeft(MainActivity.this);
+
+            }
+        });
+
+        menu_tebu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,HamaActivity.class);
+                intent.putExtra("JenisHama","tebu");
+                startActivity(intent);
+                Animatoo.animateSlideLeft(MainActivity.this);
+            }
+        });
+
     }
 }

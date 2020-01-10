@@ -14,7 +14,7 @@
         >
 
         <ImageView
-            android:id="@+id/iv_artikel"
+            android:id="@+id/iv_hama"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:scaleType="centerCrop"/>
@@ -26,7 +26,7 @@
             android:padding="8dp">
 
             <TextView
-                android:id="@+id/tv_artikel_judul"
+                android:id="@+id/tv_hama_judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Test Name"
@@ -35,7 +35,7 @@
                 android:textStyle="normal" />
 
             <TextView
-                android:id="@+id/tv_artikel_preview"
+                android:id="@+id/tv_hama_preview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"

@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/iv_logo_splash"
-        android:layout_width="232dp"
-        android:layout_height="63dp"
+        android:layout_width="332dp"
+        android:layout_height="125dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/simaster_logo" />
 
 
     <ProgressBar

@@ -27,11 +27,19 @@ public class ArtikelAdapter extends BaseQuickAdapter<Artikel, BaseViewHolder> {
 
     @Override
     protected void convert(@NonNull BaseViewHolder helper, Artikel item) {
+        String preview = null;
+        try {
+          preview = item.getIsi().substring(0,30) + ".....";
+        }catch (Exception e){
+            preview = "Baca Selengkapnya";
+        }
 
 
-        helper.setText(R.id.tv_artikel_judul,item.getJudul());
+        helper.setText(R.id.tv_artikel_judul,item.getJudul())
+              .setText(R.id.tv_artikel_preview,preview);
         ImageView imageView = helper.getView(R.id.iv_artikel);
-        Picasso.get().load(BASE_URL_IMG+item.getImg()).into(imageView);
+        Picasso.get().load(BASE_URL_IMG+item.getImg()).resize(1280, 720)
+                .onlyScaleDown().into(imageView);
 
     }
 }

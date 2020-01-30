@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.ikaru19.simaster_bug.models.Artikel;
 import com.ikaru19.simaster_bug.models.Hama;
 import com.squareup.picasso.Picasso;
 
@@ -26,8 +25,8 @@ public class HamaDetailActivity extends AppCompatActivity {
         tv_isi_detail = findViewById(R.id.tv_isi_hama_detail);
         tv_judul_detail = findViewById(R.id.tv_judul_hama_detail);
         iv_hama_detail = findViewById(R.id.iv_hama_detail);
-        tv_penyelesaian_hama = findViewById(R.id.tv_isi_penyelasaian_hama);
-        tv_rekom_pesti = findViewById(R.id.tv_isi_rekom_pesti);
+        tv_penyelesaian_hama = findViewById(R.id.tv_isi_pengenalan_simaster);
+        tv_rekom_pesti = findViewById(R.id.tv_isi_fitur);
         tv_gejala = findViewById(R.id.tv_isi_gejala);
 
         Picasso.get().load(BASE_URL_IMG+hama.getImg()).resize(1280, 720)

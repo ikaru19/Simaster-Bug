@@ -1,6 +1,7 @@
 package com.ikaru19.simaster_bug.apihelper;
 
 import com.ikaru19.simaster_bug.models.Artikel;
+import com.ikaru19.simaster_bug.models.Contact;
 import com.ikaru19.simaster_bug.models.Hama;
 
 import java.util.List;
@@ -21,5 +22,8 @@ public interface ApiService {
 
     @GET("api/Hama?kategori=tembakau")
     Call<List<Hama>> getHamaTembakau();
+
+    @GET("api/contact")
+    Call<List<Contact>> getContact();
 
 }

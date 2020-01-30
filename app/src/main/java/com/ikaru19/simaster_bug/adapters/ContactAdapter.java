@@ -32,4 +32,8 @@ public class ContactAdapter extends BaseQuickAdapter<Contact, BaseViewHolder> {
         ImageView imageView = helper.getView(R.id.iv_contact);
         Picasso.get().load(item.getGambar()).into(imageView);
     }
+
+    public void refill(List<Contact> data){
+        this.mData = data;
+    }
 }

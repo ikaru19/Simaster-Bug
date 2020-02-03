@@ -80,7 +80,7 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
             public void onResponse(Call<List<Artikel>> call, Response<List<Artikel>> response) {
                 artikels = response.body();
 
-                if (artikels.isEmpty() || artikels == null){
+                if (artikels == null || artikels.isEmpty() ){
                     Toast.makeText(ArtikelActivity.this,"Data Kosong",Toast.LENGTH_SHORT).show();
                 }else{
                     adapter.refill(artikels);

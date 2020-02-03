@@ -88,6 +88,8 @@ public class HamaActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                     if (response.code() == 200){
                         hamas = response.body();
+
+
                         adapter.refill(hamas);
                         adapter.notifyDataSetChanged();
                     }else{

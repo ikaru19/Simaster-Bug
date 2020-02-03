@@ -29,8 +29,10 @@ public class ContactAdapter extends BaseQuickAdapter<Contact, BaseViewHolder> {
     protected void convert(@NonNull BaseViewHolder helper, Contact item) {
         helper.setText(R.id.tv_contact_name, item.getNama())
               .setText(R.id.tv_contact_jab, item.getJabatan());
+
+
         ImageView imageView = helper.getView(R.id.iv_contact);
-        Picasso.get().load(item.getGambar()).into(imageView);
+        Picasso.get().load("https://simasterbugs2.com/upload/kontak/"+item.getImg()).into(imageView);
     }
 
     public void refill(List<Contact> data){

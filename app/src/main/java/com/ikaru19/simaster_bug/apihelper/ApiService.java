@@ -23,7 +23,7 @@ public interface ApiService {
     @GET("api/Hama?kategori=tembakau")
     Call<List<Hama>> getHamaTembakau();
 
-    @GET("api/contact")
+    @GET("api/kontak")
     Call<List<Contact>> getContact();
 
 }

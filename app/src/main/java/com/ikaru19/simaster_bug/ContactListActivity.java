@@ -38,13 +38,13 @@ public class ContactListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_contact_list);
         recyclerView = findViewById(R.id.rv_contacts);
         apiService = ServiceGenerator.createService(ApiService.class);
-        addContact();
+//        addContact();
         getData();
         adapter = new ContactAdapter(contacts, this);
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                String url = "https://wa.me/"+contacts.get(position).getNo_telp();
+                String url = "https://wa.me/"+contacts.get(position).getNoTelp()+"?text=Saya%20dari%20aplikasi%20Simaster%20ingin%20bertanya%20kepada%20anda";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -56,11 +56,11 @@ public class ContactListActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
-    private void addContact(){
-        contacts.add(new Contact("Heri Prabowo, MSc","Peneliti Hama","+6281328273472","https://www.simasterbugs.com/image/Heri_Prabowo.jpg"));
-        contacts.add( new Contact("Nur Asbani, PhD","Peneliti Hama","+15619833703","https://www.simasterbugs.com/image/asbani.jpg"));
-        contacts.add( new Contact("Sri Adi Kadarsih , MSc","Peneliti Pemulia Tanaman","+628156863311","https://www.simasterbugs.com/image/123.jpg"));
-    }
+//    private void addContact(){
+//        contacts.add(new Contact("Heri Prabowo, MSc","Peneliti Hama","+6281328273472","https://www.simasterbugs.com/image/Heri_Prabowo.jpg"));
+//        contacts.add( new Contact("Nur Asbani, PhD","Peneliti Hama","+15619833703","https://www.simasterbugs.com/image/asbani.jpg"));
+//        contacts.add( new Contact("Sri Adi Kadarsih , MSc","Peneliti Pemulia Tanaman","+628156863311","https://www.simasterbugs.com/image/123.jpg"));
+//    }
 
     private void getData(){
         Call<List<Contact>> contactCall = apiService.getContact();
@@ -68,8 +68,13 @@ public class ContactListActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Contact>> call, Response<List<Contact>> response) {
                 contacts = response.body();
-                adapter.refill(contacts);
-                adapter.notifyDataSetChanged();
+                if (contacts.isEmpty() || contacts == null){
+                    Toast.makeText(ContactListActivity.this , "Data Kosong",Toast.LENGTH_SHORT).show();
+                }else{
+                    adapter.refill(contacts);
+                    adapter.notifyDataSetChanged();
+                }
+
             }
 
             @Override

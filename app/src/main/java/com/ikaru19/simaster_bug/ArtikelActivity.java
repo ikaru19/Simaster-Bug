@@ -78,12 +78,14 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
         artikelCall.enqueue(new Callback<List<Artikel>>() {
             @Override
             public void onResponse(Call<List<Artikel>> call, Response<List<Artikel>> response) {
+                artikels = response.body();
 
-                    artikels = response.body();
-
+                if (artikels.isEmpty() || artikels == null){
+                    Toast.makeText(ArtikelActivity.this,"Data Kosong",Toast.LENGTH_SHORT).show();
+                }else{
                     adapter.refill(artikels);
                     adapter.notifyDataSetChanged();
-
+                }
                 progress.dismiss();
 
             }

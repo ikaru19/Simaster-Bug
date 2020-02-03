@@ -1,11 +1,70 @@
 package com.ikaru19.simaster_bug.models;
 
-public class Contact {
-    String nama;
-    String jabatan;
-    String no_telp;
-    String gambar;
+import android.os.Parcel;
+import android.os.Parcelable;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Contact implements Parcelable {
+
+    @SerializedName("id")
+    @Expose
+    private String id;
+    @SerializedName("nama")
+    @Expose
+    private String nama;
+    @SerializedName("jabatan")
+    @Expose
+    private String jabatan;
+    @SerializedName("no_telp")
+    @Expose
+    private String noTelp;
+    @SerializedName("img")
+    @Expose
+    private String img;
+
+    protected Contact(Parcel in) {
+        id = in.readString();
+        nama = in.readString();
+        jabatan = in.readString();
+        noTelp = in.readString();
+        img = in.readString();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(id);
+        dest.writeString(nama);
+        dest.writeString(jabatan);
+        dest.writeString(noTelp);
+        dest.writeString(img);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<Contact> CREATOR = new Creator<Contact>() {
+        @Override
+        public Contact createFromParcel(Parcel in) {
+            return new Contact(in);
+        }
+
+        @Override
+        public Contact[] newArray(int size) {
+            return new Contact[size];
+        }
+    };
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getNama() {
         return nama;
@@ -23,26 +82,19 @@ public class Contact {
         this.jabatan = jabatan;
     }
 
-    public String getNo_telp() {
-        return no_telp;
+    public String getNoTelp() {
+        return noTelp;
     }
 
-    public void setNo_telp(String no_telp) {
-        this.no_telp = no_telp;
+    public void setNoTelp(String noTelp) {
+        this.noTelp = noTelp;
     }
 
-    public Contact(String nama, String jabatan, String no_telp, String gambar) {
-        this.nama = nama;
-        this.jabatan = jabatan;
-        this.no_telp = no_telp;
-        this.gambar = gambar;
+    public String getImg() {
+        return img;
     }
 
-    public String getGambar() {
-        return gambar;
-    }
-
-    public void setGambar(String gambar) {
-        this.gambar = gambar;
+    public void setImg(String img) {
+        this.img = img;
     }
 }

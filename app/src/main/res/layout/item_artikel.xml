@@ -29,9 +29,10 @@
                 android:id="@+id/tv_artikel_judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/monserrat"
                 android:text="Test Name"
-                android:textSize="24sp"
                 android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
                 android:textStyle="normal" />
 
 

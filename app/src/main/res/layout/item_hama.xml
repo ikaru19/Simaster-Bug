@@ -25,13 +25,14 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:layout_margin="8dp"
                 android:id="@+id/tv_hama_judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/monserrat"
                 android:text="Test Name"
-                android:textSize="24sp"
                 android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
                 android:textStyle="normal" />
 
         </LinearLayout>

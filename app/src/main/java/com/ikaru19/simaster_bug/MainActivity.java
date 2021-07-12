@@ -100,5 +100,13 @@ public class MainActivity extends AppCompatActivity {
                 Animatoo.animateSlideLeft(MainActivity.this);
             }
         });
+        menu_bts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,WeatherActivity.class);
+                startActivity(intent);
+                Animatoo.animateSlideLeft(MainActivity.this);
+            }
+        });
     }
 }

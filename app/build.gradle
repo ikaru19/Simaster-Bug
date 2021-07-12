@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.ikaru19.simaster_bug"
-        minSdkVersion 16
+        minSdkVersion 24
         targetSdkVersion 29
         versionCode 3
         versionName "1.1"
@@ -30,6 +30,8 @@ dependencies {
     implementation 'com.github.mohammadatif:Animatoo:master'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.49-androidx'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'

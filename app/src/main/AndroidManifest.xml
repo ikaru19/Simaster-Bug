@@ -3,6 +3,9 @@
     package="com.ikaru19.simaster_bug">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
 
     <application
         android:allowBackup="true"
@@ -15,6 +18,7 @@
         <activity android:name=".BTS.BtsDetailActivity"></activity>
         <activity android:name=".BTS.BtsVarietasActivity" />
         <activity android:name=".BtsActivity" />
+        <activity android:name=".WeatherActivity"></activity>
         <activity android:name=".HubungiActivity" />
         <activity android:name=".TentangActivity" />
         <activity android:name=".HamaDetailActivity" />

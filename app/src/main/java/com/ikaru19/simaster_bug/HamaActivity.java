@@ -1,26 +1,22 @@
 package com.ikaru19.simaster_bug;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.ikaru19.simaster_bug.adapters.ArtikelAdapter;
 import com.ikaru19.simaster_bug.adapters.HamaAdapter;
 import com.ikaru19.simaster_bug.apihelper.ApiService;
+import com.ikaru19.simaster_bug.component.LottieLoading;
 import com.ikaru19.simaster_bug.generator.ServiceGenerator;
-import com.ikaru19.simaster_bug.models.Artikel;
 import com.ikaru19.simaster_bug.models.Hama;
 
 import java.util.ArrayList;
@@ -38,8 +34,7 @@ public class HamaActivity extends AppCompatActivity implements SwipeRefreshLayou
     private RecyclerView recyclerView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private String jenisHama;
-
-
+    private View noInternetView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +44,7 @@ public class HamaActivity extends AppCompatActivity implements SwipeRefreshLayou
         apiService = ServiceGenerator.createService(ApiService.class);
         recyclerView = findViewById(R.id.rv_hama);
         swipeRefreshLayout = findViewById(R.id.swipeRefreshHama);
+        noInternetView = findViewById(R.id.hamaNoInternet);
         getData();
         swipeRefreshLayout.setOnRefreshListener(this);
 
@@ -67,11 +63,13 @@ public class HamaActivity extends AppCompatActivity implements SwipeRefreshLayou
     }
 
     private void getData(){
-        final ProgressDialog progress = new ProgressDialog(this);
-        progress.setTitle("Loading");
-        progress.setMessage("Mengambil Data Dari Internet");
-        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
-        progress.show();
+//        final ProgressDialog progress = new ProgressDialog(this);
+//        progress.setTitle("Loading");
+//        progress.setMessage("Mengambil Data Dari Internet");
+//        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
+//        progress.show();
+        final LottieLoading lottieLoading = new LottieLoading(this);
+        lottieLoading.show();
         try{
             Call<List<Hama>> hamaCall = null;
             if (jenisHama.equalsIgnoreCase("wijen")){
@@ -87,26 +85,27 @@ public class HamaActivity extends AppCompatActivity implements SwipeRefreshLayou
                 public void onResponse(Call<List<Hama>> call, Response<List<Hama>> response) {
 
                     if (response.code() == 200){
+                        noInternetView.setVisibility(View.INVISIBLE);
+                        recyclerView.setVisibility(View.VISIBLE);
                         hamas = response.body();
-
-
                         adapter.refill(hamas);
                         adapter.notifyDataSetChanged();
                     }else{
-
+                        noInternetView.setVisibility(View.VISIBLE);
+                        recyclerView.setVisibility(View.INVISIBLE);
                         Toast.makeText(HamaActivity.this, "Terjadi gangguan pada server", Toast.LENGTH_LONG).show();
-
                     }
 
 
-                    progress.dismiss();
+                    lottieLoading.dismiss();
 
                 }
 
                 @Override
                 public void onFailure(Call<List<Hama>> call, Throwable t) {
-                    Toast.makeText(HamaActivity.this, "Mohon Hubungkan Ponsel Anda Ke Internet", Toast.LENGTH_LONG).show();
-                    progress.dismiss();
+                    noInternetView.setVisibility(View.VISIBLE);
+                    recyclerView.setVisibility(View.INVISIBLE);
+                    lottieLoading.dismiss();
                     Log.d("SIMASTER_DEBUG",t.getMessage());
                 }
             });

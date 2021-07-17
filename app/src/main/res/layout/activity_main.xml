@@ -47,7 +47,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:gravity="center"
-                        android:text="Tanya Pakar"
+                        android:text="Sobat Tani Siaga"
                         android:textColor="#FFFFFF"
                         android:textSize="24sp" />
                 </LinearLayout>

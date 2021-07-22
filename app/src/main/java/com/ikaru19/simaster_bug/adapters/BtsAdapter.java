@@ -23,7 +23,7 @@ public class BtsAdapter extends BaseQuickAdapter<Bts, BaseViewHolder> {
     @Override
     protected void convert(@NonNull BaseViewHolder helper, Bts item) {
         helper.setText(R.id.tv_bts_judul,item.getJudul());
-        String detail = "Oleh : " + item.getPenulis() + ", Tanggal : " + item.getDateCreated();
+        String detail = "Oleh: " + item.getPenulis() + ", Tanggal: " + item.getDateCreated();
         helper.setText(R.id.tv_bts_detail,detail);
     }
 }

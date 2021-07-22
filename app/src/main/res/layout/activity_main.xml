@@ -47,9 +47,10 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:gravity="center"
+                        android:maxLines="3"
                         android:text="Sobat Tani Siaga"
                         android:textColor="#FFFFFF"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
                 <LinearLayout

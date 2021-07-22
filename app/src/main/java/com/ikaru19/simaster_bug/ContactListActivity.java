@@ -1,20 +1,22 @@
 package com.ikaru19.simaster_bug;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.ikaru19.simaster_bug.adapters.ContactAdapter;
 import com.ikaru19.simaster_bug.apihelper.ApiService;
+import com.ikaru19.simaster_bug.component.LottieLoading;
 import com.ikaru19.simaster_bug.generator.ServiceGenerator;
-import com.ikaru19.simaster_bug.models.Artikel;
 import com.ikaru19.simaster_bug.models.Contact;
 
 import java.util.ArrayList;
@@ -24,21 +26,23 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ContactListActivity extends AppCompatActivity {
+public class ContactListActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private ApiService apiService;
     RecyclerView recyclerView;
     ContactAdapter adapter;
     List<Contact> contacts = new ArrayList<>();
-
+    private SwipeRefreshLayout swipeRefreshLayout;
+    private View noInternetView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_list);
         recyclerView = findViewById(R.id.rv_contacts);
+        swipeRefreshLayout = findViewById(R.id.swipeRefreshContact);
+        noInternetView = findViewById(R.id.contactNoInternet);
         apiService = ServiceGenerator.createService(ApiService.class);
-//        addContact();
         getData();
         adapter = new ContactAdapter(contacts, this);
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
@@ -51,22 +55,21 @@ public class ContactListActivity extends AppCompatActivity {
             }
         });
 
-
+        swipeRefreshLayout.setOnRefreshListener(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
     }
 
-//    private void addContact(){
-//        contacts.add(new Contact("Heri Prabowo, MSc","Peneliti Hama","+6281328273472","https://www.simasterbugs.com/image/Heri_Prabowo.jpg"));
-//        contacts.add( new Contact("Nur Asbani, PhD","Peneliti Hama","+15619833703","https://www.simasterbugs.com/image/asbani.jpg"));
-//        contacts.add( new Contact("Sri Adi Kadarsih , MSc","Peneliti Pemulia Tanaman","+628156863311","https://www.simasterbugs.com/image/123.jpg"));
-//    }
-
     private void getData(){
+        final LottieLoading lottieLoading = new LottieLoading(this);
+        lottieLoading.show();
         Call<List<Contact>> contactCall = apiService.getContact();
         contactCall.enqueue(new Callback<List<Contact>>() {
             @Override
             public void onResponse(Call<List<Contact>> call, Response<List<Contact>> response) {
+                noInternetView.setVisibility(View.INVISIBLE);
+                recyclerView.setVisibility(View.VISIBLE);
+                lottieLoading.dismiss();
                 contacts = response.body();
                 if (contacts.isEmpty() || contacts == null){
                     Toast.makeText(ContactListActivity.this , "Data Kosong",Toast.LENGTH_SHORT).show();
@@ -79,11 +82,23 @@ public class ContactListActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<Contact>> call, Throwable t) {
-                Toast.makeText(ContactListActivity.this, "Tolong koneksikan perangkat anda ke internet", Toast.LENGTH_SHORT).show();
+                noInternetView.setVisibility(View.VISIBLE);
+                recyclerView.setVisibility(View.INVISIBLE);
+                lottieLoading.dismiss();
             }
         });
     }
 
 
-
+    @Override
+    public void onRefresh() {
+        Toast.makeText(this, "Memuat Ulang...", Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                getData();
+                swipeRefreshLayout.setRefreshing(false);
+            }
+        }, 2000);
+    }
 }

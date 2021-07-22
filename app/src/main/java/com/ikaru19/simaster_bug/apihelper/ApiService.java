@@ -1,6 +1,7 @@
 package com.ikaru19.simaster_bug.apihelper;
 
 import com.ikaru19.simaster_bug.models.Artikel;
+import com.ikaru19.simaster_bug.models.Bts;
 import com.ikaru19.simaster_bug.models.Contact;
 import com.ikaru19.simaster_bug.models.Hama;
 
@@ -25,5 +26,8 @@ public interface ApiService {
 
     @GET("api/kontak")
     Call<List<Contact>> getContact();
+
+    @GET("api/bts")
+    Call<List<Bts>> getBts();
 
 }

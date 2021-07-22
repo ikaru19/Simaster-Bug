@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BtsActivity"></activity>
+        <activity android:name=".BTS.BtsVarietasActivity"></activity>
+        <activity android:name=".BtsActivity" />
         <activity android:name=".HubungiActivity" />
         <activity android:name=".TentangActivity" />
         <activity android:name=".HamaDetailActivity" />

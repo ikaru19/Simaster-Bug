@@ -56,7 +56,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:minHeight="1000dp"
             android:layout_marginTop="8dp"
             app:cardCornerRadius="@dimen/dp_10"
@@ -70,8 +70,10 @@
             tools:ignore="WebViewLayout">
             <WebView
                 android:id="@+id/webview_bts"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="500dp"
+                android:minWidth="500dp"
                 android:layout_margin="8dp"/>
         </androidx.cardview.widget.CardView>
     </LinearLayout>

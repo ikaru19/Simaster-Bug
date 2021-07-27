@@ -1,5 +1,7 @@
 package com.ikaru19.simaster_bug.BTS;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -35,14 +37,30 @@ public class BtsDetailActivity extends AppCompatActivity {
         tv_penulis_detail.setText("oleh : " + btsData.getPenulis());
         bts_webview.getSettings().setJavaScriptEnabled(true);
         String htmlData = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
-        htmlData = htmlData + btsData.getKonten() + btsData.getKonten() + btsData.getKonten() + btsData.getKonten();
-        bts_webview.loadData(htmlData, "text/html; charset=utf-8", "UTF-8");
+        htmlData = htmlData + btsData.getKonten();
+        bts_webview.loadDataWithBaseURL(null, htmlData, "text/html", "utf-8", null);
         bts_webview.setWebViewClient(new WebViewClient() {
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if (url.startsWith("tel:")) {
+                    Intent intent = new Intent(Intent.ACTION_DIAL,
+                            Uri.parse(url));
+                    startActivity(intent);
+                    return false;
+                }
+                else if(url.startsWith("http:") || url.startsWith("https:")) {
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                    return false;
+                }
+
+                return true;
+            }
+
             public void onPageFinished(WebView view, String url) {
                 // your code
                 lottieLoading.dismiss();
             }
         });
-
     }
 }

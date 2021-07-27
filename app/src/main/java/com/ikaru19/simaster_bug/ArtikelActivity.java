@@ -35,6 +35,7 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
     private RecyclerView recyclerView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private View noInternetView;
+    Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,8 +66,15 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
 
     @Override
     public void onBackPressed() {
+        handler.removeCallbacksAndMessages(null);
         super.onBackPressed();
         Animatoo.animateSlideRight(this);
+    }
+
+    @Override
+    protected void onStop() {
+        handler.removeCallbacksAndMessages(null);
+        super.onStop();
     }
 
     private void getData(){
@@ -109,7 +117,7 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
     @Override
     public void onRefresh() {
         Toast.makeText(this, "Memuat Ulang...", Toast.LENGTH_SHORT).show();
-        new Handler().postDelayed(new Runnable() {
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                getData();

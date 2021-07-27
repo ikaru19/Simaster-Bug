@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Eve gidiş yolunu göster"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Yukarı git"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Diğer seçenekler"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Bitti"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Tümünü göster"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Bir uygulama seçin"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"KAPAT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AÇ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"sil"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Üst Karakter+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"boşluk"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menü+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Ara…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Sorguyu temizle"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Arama sorgusu"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Ara"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Sorguyu gönder"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Sesli arama"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Şununla paylaş:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ile paylaş"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Daralt"</string>
+    <string name="action_about">Hakkinda</string>
+    <string name="action_graphs">Grafikler</string>
+    <string name="action_refresh">Yenile</string>
+    <string name="action_search">Ara</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="action_weather_map">Hava Durumu Haritası</string>
+    <string name="app_name">Forecastie</string>
+    <string name="dialog_cancel">İptal</string>
+    <string name="dialog_ok">Tamam</string>
+    <string name="downloading_data">Verileriniz indiliyor ....</string>
+    <string name="error_dateFormat">TARİH BİÇİMİ HATASI</string>
+    <string name="getting_location">Konumunuz alınıyor ...</string>
+    <string name="humidity">Nem</string>
+    <string name="last_update">Son güncelleme:\n%s</string>
+    <string name="last_update_widget">\nSon güncelleme: %s</string>
+    <string name="later">Sonrası</string>
+    <string name="location_settings">Konum Ayarları</string>
+    <string name="location_settings_button">Ayarlar</string>
+    <string name="location_settings_message">Konum hizmeti devredışı. Ayarlar menüsüne gitmek ister misin?</string>
+    <string name="msg_city_not_found">Belirtilen şehir bulunamadı.</string>
+    <string name="msg_connection_not_available">Bağlantı uygun değil.</string>
+    <string name="msg_err_parsing_json">JSON ayrıştırılma hatası.</string>
+    <string name="msg_too_many_requests">Çok sayıda istek. Lütfen tekrar edin.</string>
+    <string name="pressure">Basınç</string>
+    <string name="pressure_unit_hpa">hPa</string>
+    <string name="pressure_unit_kpa">kPa</string>
+    <string name="pressure_unit_mmhg">mm Hg</string>
+    <string name="rain">Yağmur</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Ara"</string>
+    <string name="search_title">Şehir ara</string>
+    <string name="setting_apiKey">API Anahtarı</string>
+    <string name="setting_apiKey_summary">Özel OpenWeatherMap sorguları için</string>
+    <string name="setting_auto_detect_location">Konumumu Bul</string>
+    <string name="setting_dateFormat">Tarih Biçimi</string>
+    <string name="setting_dateFormatCustom">Kişisel Tarih Biçimi</string>
+    <string name="setting_dateFormatCustom_summary">Kullanılacak kişisel tarih biçimini SimpleDateFormat olarak girin</string>
+    <string name="setting_differentiateDaysByTint">Günleri renklendir</string>
+    <string name="setting_displayDecimalZeroes">Ondalık sayıların sıfırlarını göster</string>
+    <string name="setting_lengthUnits">Uzunluk birimi</string>
+    <string name="setting_pressureUnits">Basınç birimi</string>
+    <string name="setting_refreshInterval">Güncelleme sıklığı</string>
+    <string name="setting_showTempAsInteger">Sıcaklığı tamsayı olarak göster</string>
+    <string name="setting_speedUnits">Hız birimi</string>
+    <string name="setting_tempUnits">Sıcaklık birimi</string>
+    <string name="setting_theme">Tema</string>
+    <string name="setting_theme_classic">Klasik</string>
+    <string name="setting_theme_classic_dark">Klasik Koyu</string>
+    <string name="setting_theme_dark">Taze Koyu</string>
+    <string name="setting_theme_fresh">Taze</string>
+    <string name="setting_unit_Celsuis">Santigrat</string>
+    <string name="setting_unit_Fahrenheit">Fahrenhayt</string>
+    <string name="setting_unit_Kelvin">Kelvin</string>
+    <string name="setting_unit_hpa">hPa</string>
+    <string name="setting_unit_in">İnç (in)</string>
+    <string name="setting_unit_kpa">kPa</string>
+    <string name="setting_unit_kph">Saatte kilometre (k/s)</string>
+    <string name="setting_unit_mm">Milimetre (mm)</string>
+    <string name="setting_unit_mmhg">mm Hg</string>
+    <string name="setting_unit_mph">Saatte mil (mil/s)</string>
+    <string name="setting_unit_mps">Saniyede metre (m/s)</string>
+    <string name="setting_update_location_automatically">Geriplanda konumu güncelle</string>
+    <string name="setting_wind_direction_format">Rüzgar yönü biçimi</string>
+    <string name="settings_none">Hiç</string>
+    <string name="settings_title_data">Veri</string>
+    <string name="settings_title_display">Ekran</string>
+    <string name="settings_title_location">Konum</string>
+    <string name="settings_title_units">Biçim</string>
+    <string name="speed_unit_kph">k/s</string>
+    <string name="speed_unit_mph">mil/s</string>
+    <string name="speed_unit_mps">m/s</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="sunrise">G. Doğuşu</string>
+    <string name="sunset">G. Batışı</string>
+    <string name="temperature">Sıcaklık</string>
+    <string name="today">Bugün</string>
+    <string name="tomorrow">Yarın</string>
+    <string name="wind">Rüzgar</string>
+    <string name="wind_direction_east">D</string>
+    <string name="wind_direction_east_north_east">DKD</string>
+    <string name="wind_direction_east_south_east">DGD</string>
+    <string name="wind_direction_format_abbreviations">Kısaltmalar</string>
+    <string name="wind_direction_format_arrows">Oklar</string>
+    <string name="wind_direction_format_none">İşaret yok</string>
+    <string name="wind_direction_north">K</string>
+    <string name="wind_direction_north_east">KD</string>
+    <string name="wind_direction_north_north_east">KKD</string>
+    <string name="wind_direction_north_north_west">KKB</string>
+    <string name="wind_direction_north_west">KB</string>
+    <string name="wind_direction_south">G</string>
+    <string name="wind_direction_south_east">GD</string>
+    <string name="wind_direction_south_south_east">GGD</string>
+    <string name="wind_direction_south_south_west">GGB</string>
+    <string name="wind_direction_south_west">GB</string>
+    <string name="wind_direction_west">B</string>
+    <string name="wind_direction_west_north_west">BKB</string>
+    <string name="wind_direction_west_south_west">BGB</string>
+</resources>

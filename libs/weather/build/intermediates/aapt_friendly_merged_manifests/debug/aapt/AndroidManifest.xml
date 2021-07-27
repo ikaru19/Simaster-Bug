@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cz.martykan.forecastie"
+    android:versionCode="64"
+    android:versionName="1.17.3" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true" >
+        <activity
+            android:name="cz.martykan.forecastie.activities.SplashActivity"
+            android:theme="@style/SplashTheme" >
+        </activity>
+        <activity
+            android:name="cz.martykan.forecastie.activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="cz.martykan.forecastie.activities.SettingsActivity"
+            android:parentActivityName="cz.martykan.forecastie.activities.MainActivity"
+            android:theme="@style/AppTheme"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name="cz.martykan.forecastie.activities.MapActivity"
+            android:parentActivityName="cz.martykan.forecastie.activities.MainActivity"
+            android:theme="@style/AppTheme.NoStatusBar"
+            tools:ignore="UnusedAttribute" />
+        <activity
+            android:name="cz.martykan.forecastie.activities.GraphActivity"
+            android:label="@string/action_graphs"
+            android:parentActivityName="cz.martykan.forecastie.activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="UnusedAttribute" />
+
+        <!-- Receivers -->
+
+        <receiver
+            android:name="cz.martykan.forecastie.widgets.ExtensiveWidgetProvider"
+            android:label="@string/widget_label_extensive" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/extensive_widget" />
+        </receiver>
+        <receiver
+            android:name="cz.martykan.forecastie.widgets.TimeWidgetProvider"
+            android:label="@string/widget_label_time" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/time_widget" />
+        </receiver>
+        <receiver
+            android:name="cz.martykan.forecastie.widgets.SimpleWidgetProvider"
+            android:label="@string/widget_label_simple" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/simple_widget" />
+        </receiver>
+        <receiver
+            android:name="cz.martykan.forecastie.widgets.ClassicTimeWidgetProvider"
+            android:label="@string/widget_label_classic" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/time_widget_classic" />
+        </receiver>
+        <receiver android:name="cz.martykan.forecastie.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- &lt;!&ndash; Services &ndash;&gt; -->
+
+
+        <!-- <service android:name=".notifications.WeatherNotificationService" -->
+        <!-- android:exported="false" -->
+        <!-- android:description="@string/notification_service_description"/> -->
+
+
+        <!-- &lt;!&ndash; Providers &ndash;&gt; -->
+
+
+        <!-- <provider -->
+        <!-- android:name="cz.martykan.forecastie.utils.StubContentProvider" -->
+        <!-- android:authorities="cz.martykan.forecastie.authority" -->
+        <!-- android:exported="true" /> -->
+    </application>
+
+</manifest>

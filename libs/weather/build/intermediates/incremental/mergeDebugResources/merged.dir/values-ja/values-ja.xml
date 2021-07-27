@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"ホームに戻る"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"前に戻る"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"その他のオプション"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"完了"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"すべて表示"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"アプリの選択"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"OFF"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ON"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"検索…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"検索キーワードを削除"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"検索キーワード"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"検索"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"検索キーワードを送信"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"音声検索"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"共有"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>と共有"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"折りたたむ"</string>
+    <string name="action_about">アプリについて</string>
+    <string name="action_refresh">更新</string>
+    <string name="action_search">検索</string>
+    <string name="action_settings">設定</string>
+    <string name="action_weather_map">天気地図</string>
+    <string name="app_name">Forecastie</string>
+    <string name="dialog_cancel">キャンセル</string>
+    <string name="dialog_ok">OK</string>
+    <string name="downloading_data">データのダウンロード中 ...</string>
+    <string name="error_dateFormat">日付形式エラー</string>
+    <string name="getting_location">位置の取得中 ...</string>
+    <string name="humidity">湿度</string>
+    <string name="last_update">最終更新:\n%s</string>
+    <string name="last_update_widget">\n最終更新: %s</string>
+    <string name="later">以降</string>
+    <string name="location_settings">場所の設定</string>
+    <string name="location_settings_button">設定</string>
+    <string name="location_settings_message">場所が有効ではありません。設定メニューに移動しますか?</string>
+    <string name="msg_city_not_found">指定した都市が見つかりません。</string>
+    <string name="msg_connection_not_available">接続が利用できません。</string>
+    <string name="msg_err_parsing_json">JSON 解析エラー。</string>
+    <string name="msg_too_many_requests">リクエストが多すぎます。もう一度やり直してください。</string>
+    <string name="pressure">気圧</string>
+    <string name="pressure_unit_hpa">hPa</string>
+    <string name="pressure_unit_kpa">kPa</string>
+    <string name="pressure_unit_mmhg">mm Hg</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"検索"</string>
+    <string name="search_title">都市の検索</string>
+    <string name="setting_apiKey">API キー</string>
+    <string name="setting_apiKey_summary">OpenWeatherMap クエリー用のカスタム API キー</string>
+    <string name="setting_auto_detect_location">位置を検出</string>
+    <string name="setting_dateFormat">日付形式</string>
+    <string name="setting_dateFormatCustom">カスタム日付形式</string>
+    <string name="setting_dateFormatCustom_summary">使用するカスタム SimpleDateFormat 文字列を入力してください</string>
+    <string name="setting_differentiateDaysByTint">色で日数を区別</string>
+    <string name="setting_displayDecimalZeroes">少数のゼロを表示</string>
+    <string name="setting_lengthUnits">長さの単位</string>
+    <string name="setting_pressureUnits">気圧の単位</string>
+    <string name="setting_refreshInterval">バックグラウンド更新間隔</string>
+    <string name="setting_showTempAsInteger">気温を整数でのみ表示</string>
+    <string name="setting_speedUnits">風速の単位</string>
+    <string name="setting_tempUnits">気温の単位</string>
+    <string name="setting_theme">テーマ</string>
+    <string name="setting_theme_classic">クラシック</string>
+    <string name="setting_theme_classic_dark">クラシック ダーク</string>
+    <string name="setting_theme_dark">フレッシュ ダーク</string>
+    <string name="setting_theme_fresh">フレッシュ</string>
+    <string name="setting_unit_Celsuis">セ氏</string>
+    <string name="setting_unit_Fahrenheit">カ氏</string>
+    <string name="setting_unit_Kelvin">ケルビン</string>
+    <string name="setting_unit_hpa">hPa</string>
+    <string name="setting_unit_in">インチ (in)</string>
+    <string name="setting_unit_kpa">kPa</string>
+    <string name="setting_unit_kph">キロメートル毎時 (kph)</string>
+    <string name="setting_unit_mm">ミリメートル (mm)</string>
+    <string name="setting_unit_mmhg">mm Hg</string>
+    <string name="setting_unit_mph">マイル毎時 (mph)</string>
+    <string name="setting_unit_mps">メートル毎秒 (m/s)</string>
+    <string name="setting_wind_direction_format">風向の書式</string>
+    <string name="settings_none">なし</string>
+    <string name="settings_title_data">データ</string>
+    <string name="settings_title_display">表示</string>
+    <string name="settings_title_units">単位</string>
+    <string name="speed_unit_kph">kph</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="speed_unit_mps">m/s</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="sunrise">日の出</string>
+    <string name="sunset">日の入</string>
+    <string name="today">今日</string>
+    <string name="tomorrow">明日</string>
+    <string name="wind">風力</string>
+    <string name="wind_direction_east">東</string>
+    <string name="wind_direction_east_north_east">東北東</string>
+    <string name="wind_direction_east_south_east">東南東</string>
+    <string name="wind_direction_format_abbreviations">略号</string>
+    <string name="wind_direction_format_arrows">矢印</string>
+    <string name="wind_direction_format_none">表示なし</string>
+    <string name="wind_direction_north">北</string>
+    <string name="wind_direction_north_east">北東</string>
+    <string name="wind_direction_north_north_east">北北東</string>
+    <string name="wind_direction_north_north_west">北北西</string>
+    <string name="wind_direction_north_west">北西</string>
+    <string name="wind_direction_south">南</string>
+    <string name="wind_direction_south_east">南東</string>
+    <string name="wind_direction_south_south_east">南南東</string>
+    <string name="wind_direction_south_south_west">南南西</string>
+    <string name="wind_direction_south_west">南西</string>
+    <string name="wind_direction_west">西</string>
+    <string name="wind_direction_west_north_west">西北西</string>
+    <string name="wind_direction_west_south_west">西南西</string>
+</resources>

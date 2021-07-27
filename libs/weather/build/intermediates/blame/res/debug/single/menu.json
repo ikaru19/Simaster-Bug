@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/menu/menu_map_bottom.xml",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/menu/menu_map_bottom.xml"
+    }
+]

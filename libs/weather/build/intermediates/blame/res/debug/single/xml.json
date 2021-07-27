@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/standalone_badge_gravity_top_start.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/xml/standalone_badge_gravity_top_start.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/prefs.xml",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/xml/prefs.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/time_widget_classic.xml",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/xml/time_widget_classic.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/extensive_widget.xml",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/xml/extensive_widget.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/standalone_badge.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/xml/standalone_badge.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/standalone_badge_gravity_bottom_end.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/xml/standalone_badge_gravity_bottom_end.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/standalone_badge_offset.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/xml/standalone_badge_offset.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/standalone_badge_gravity_bottom_start.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/xml/standalone_badge_gravity_bottom_start.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/time_widget.xml",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/xml/time_widget.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/xml/simple_widget.xml",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/xml/simple_widget.xml"
+    }
+]

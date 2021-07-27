@@ -1,2 +1,4 @@
-include ':app'
-rootProject.name='Simaster-Bug'
+include ':app', ':weather'
+
+project(':weather').projectDir = new File('libs/weather')
+//rootProject.name='Simaster-Bug'

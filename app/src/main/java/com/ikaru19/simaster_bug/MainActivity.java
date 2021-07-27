@@ -103,9 +103,12 @@ public class MainActivity extends AppCompatActivity {
         menu_bts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,WeatherActivity.class);
-                startActivity(intent);
-                Animatoo.animateSlideLeft(MainActivity.this);
+                try {
+                    Intent myIntent = new Intent(MainActivity.this,Class.forName("cz.martykan.forecastie.activities.MainActivity"));
+                    startActivity(myIntent );
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
             }
         });
     }

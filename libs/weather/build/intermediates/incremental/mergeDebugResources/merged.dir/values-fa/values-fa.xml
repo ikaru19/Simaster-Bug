@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"پیمایش به صفحه اصلی"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"رفتن به بالا"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"گزینه‌های بیشتر"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"تمام"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"دیدن همه"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"انتخاب برنامه"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"خاموش"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"روشن"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"‎Alt+‎"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"‎Ctrl+‎"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"حذف"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"‎Function+‎"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"‎Meta+‎"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"‎Shift+‎"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"فاصله"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"‎Sym+‎"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"منو+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"جستجو…‏"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"پاک کردن پُرسمان"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"درخواست جستجو"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"جستجو"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"ارسال پُرسمان"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"جستجوی گفتاری"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"هم‌رسانی با"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"هم‌رسانی با <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"کوچک کردن"</string>
+    <string name="action_about">درباره</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">جستجو</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="app_name">Forecastie</string>
+    <string name="dialog_cancel">لغو</string>
+    <string name="dialog_ok">تایید</string>
+    <string name="downloading_data">بارگیری اطلاعات ...</string>
+    <string name="error_dateFormat">خطای قالب تاریخ</string>
+    <string name="getting_location">گرفتن اطلاعات مکانی شما ...</string>
+    <string name="humidity">رطوبت</string>
+    <string name="later">بعدها</string>
+    <string name="msg_city_not_found">شهر مورد مظر وجود ندارد.</string>
+    <string name="msg_connection_not_available">ارتباطی در دسترسی نیست.</string>
+    <string name="msg_err_parsing_json">خطا در تفسیر فرمت</string>
+    <string name="msg_too_many_requests">تعداد درخواست‌ها بالاست. لطفا مجدد تلاش بفرمایید.</string>
+    <string name="pressure">فشار</string>
+    <string name="pressure_unit_hpa">hPa</string>
+    <string name="pressure_unit_kpa">kPa</string>
+    <string name="pressure_unit_mmhg">mm Hg</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"جستجو"</string>
+    <string name="search_title">جستجوی شهر</string>
+    <string name="setting_apiKey">API کلید</string>
+    <string name="setting_apiKey_summary">کلید شخصی را برای OpenWeatherMap وارد نمایید</string>
+    <string name="setting_auto_detect_location">شناسایی موقعیت مکانی</string>
+    <string name="setting_dateFormat">قالب تاریخ</string>
+    <string name="setting_dateFormatCustom">قالب تاریخ شخصی</string>
+    <string name="setting_dateFormatCustom_summary">لطفا قالب شخصی مورد استفاده را وارد نمایید</string>
+    <string name="setting_differentiateDaysByTint">تمایر روزها بوسیله رنگ</string>
+    <string name="setting_lengthUnits">واحد مسافت</string>
+    <string name="setting_pressureUnits">واحد فشار</string>
+    <string name="setting_refreshInterval">فاصله زمانی بروزرسانی پشت صحنه</string>
+    <string name="setting_speedUnits">واحد سرعت</string>
+    <string name="setting_tempUnits">واحد دما</string>
+    <string name="setting_unit_Celsuis">سلسیوس</string>
+    <string name="setting_unit_Fahrenheit">فارنهایت</string>
+    <string name="setting_unit_Kelvin">کلوین</string>
+    <string name="setting_unit_hpa">hPa</string>
+    <string name="setting_unit_in">اینچ</string>
+    <string name="setting_unit_kpa">kPa</string>
+    <string name="setting_unit_kph">کیلومتر بر ساعت</string>
+    <string name="setting_unit_mm">میلی‌متر</string>
+    <string name="setting_unit_mmhg">mm Hg</string>
+    <string name="setting_unit_mph">مایل بر ساعت</string>
+    <string name="setting_unit_mps">متر بر ثانیه</string>
+    <string name="setting_wind_direction_format">قالب جهت وزش باد</string>
+    <string name="settings_none">هیچ</string>
+    <string name="speed_unit_kph">kph</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="speed_unit_mps">m/s</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="sunrise">طلوع</string>
+    <string name="sunset">غروب</string>
+    <string name="today">امروز</string>
+    <string name="tomorrow">فردا</string>
+    <string name="wind">باد</string>
+    <string name="wind_direction_east">E</string>
+    <string name="wind_direction_east_north_east">ENE</string>
+    <string name="wind_direction_east_south_east">ESE</string>
+    <string name="wind_direction_format_abbreviations">مخفف سازی</string>
+    <string name="wind_direction_format_arrows">پیکان</string>
+    <string name="wind_direction_format_none">اطلاعاتی موجود نیست</string>
+    <string name="wind_direction_north">N</string>
+    <string name="wind_direction_north_east">NE</string>
+    <string name="wind_direction_north_north_east">NNE</string>
+    <string name="wind_direction_north_north_west">NNW</string>
+    <string name="wind_direction_north_west">NW</string>
+    <string name="wind_direction_south">S</string>
+    <string name="wind_direction_south_east">SE</string>
+    <string name="wind_direction_south_south_east">SSE</string>
+    <string name="wind_direction_south_south_west">SSW</string>
+    <string name="wind_direction_south_west">SW</string>
+    <string name="wind_direction_west">W</string>
+    <string name="wind_direction_west_north_west">WNW</string>
+    <string name="wind_direction_west_south_west">WSW</string>
+</resources>

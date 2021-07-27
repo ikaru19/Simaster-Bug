@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.ikaru19.simaster_bug.adapters.HamaAdapter;
 import com.ikaru19.simaster_bug.apihelper.ApiService;
@@ -35,6 +36,20 @@ public class HamaActivity extends AppCompatActivity implements SwipeRefreshLayou
     private SwipeRefreshLayout swipeRefreshLayout;
     private String jenisHama;
     private View noInternetView;
+    Handler handler = new Handler();
+
+    @Override
+    public void onBackPressed() {
+        handler.removeCallbacksAndMessages(null);
+        super.onBackPressed();
+        Animatoo.animateSlideRight(this);
+    }
+
+    @Override
+    protected void onStop() {
+        handler.removeCallbacksAndMessages(null);
+        super.onStop();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,11 +78,6 @@ public class HamaActivity extends AppCompatActivity implements SwipeRefreshLayou
     }
 
     private void getData(){
-//        final ProgressDialog progress = new ProgressDialog(this);
-//        progress.setTitle("Loading");
-//        progress.setMessage("Mengambil Data Dari Internet");
-//        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
-//        progress.show();
         final LottieLoading lottieLoading = new LottieLoading(this);
         lottieLoading.show();
         try{
@@ -119,7 +129,7 @@ public class HamaActivity extends AppCompatActivity implements SwipeRefreshLayou
     @Override
     public void onRefresh() {
         Toast.makeText(this, "Memuat Ulang...", Toast.LENGTH_SHORT).show();
-        new Handler().postDelayed(new Runnable() {
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 getData();

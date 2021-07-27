@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.ikaru19.simaster_bug.adapters.ContactAdapter;
 import com.ikaru19.simaster_bug.apihelper.ApiService;
@@ -29,11 +30,27 @@ import retrofit2.Response;
 public class ContactListActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private ApiService apiService;
+    private ServiceGenerator serviceGenerator;
     RecyclerView recyclerView;
     ContactAdapter adapter;
     List<Contact> contacts = new ArrayList<>();
     private SwipeRefreshLayout swipeRefreshLayout;
     private View noInternetView;
+    Handler handler = new Handler();
+
+    @Override
+    public void onBackPressed() {
+        handler.removeCallbacksAndMessages(null);
+        super.onBackPressed();
+        Animatoo.animateSlideRight(this);
+    }
+
+    @Override
+    protected void onStop() {
+        handler.removeCallbacksAndMessages(null);
+        super.onStop();
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +110,7 @@ public class ContactListActivity extends AppCompatActivity implements SwipeRefre
     @Override
     public void onRefresh() {
         Toast.makeText(this, "Memuat Ulang...", Toast.LENGTH_SHORT).show();
-        new Handler().postDelayed(new Runnable() {
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 getData();

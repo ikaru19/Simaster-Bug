@@ -35,11 +35,13 @@ public class BtsVarietasActivity extends AppCompatActivity implements SwipeRefre
     private SwipeRefreshLayout swipeRefreshLayout;
     private ApiService apiService;
     private View noInternetView;
+    private String tipeBTS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bts_varietas);
+        tipeBTS = getIntent().getStringExtra("TipeBTS");
         apiService = ServiceGenerator.createService(ApiService.class);
         recyclerView = findViewById(R.id.rv_BTS);
         swipeRefreshLayout = findViewById(R.id.swipeRefreshBTS);
@@ -64,7 +66,19 @@ public class BtsVarietasActivity extends AppCompatActivity implements SwipeRefre
         lottieLoading.show();
         try{
             Call<List<Bts>> btsCall = null;
-            btsCall = apiService.getBts();
+            if (tipeBTS.equalsIgnoreCase("varietas")){
+                btsCall = apiService.getBtsVarietas();
+            }else if(tipeBTS.equalsIgnoreCase("stok")){
+                btsCall = apiService.getBtsStok();
+            }else if(tipeBTS.equalsIgnoreCase("pht")){
+                btsCall = apiService.getBtsHamaPenyakit();
+            }else if(tipeBTS.equalsIgnoreCase("budidaya")){
+                btsCall = apiService.getBtsBudidaya();
+            } else {
+                lottieLoading.dismiss();
+                return;
+            }
+//            btsCall = apiService.getBts();
             btsCall.enqueue(new Callback<List<Bts>>() {
                 @Override
                 public void onResponse(Call<List<Bts>> call, Response<List<Bts>> response) {

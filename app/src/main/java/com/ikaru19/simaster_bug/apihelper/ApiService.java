@@ -30,4 +30,15 @@ public interface ApiService {
     @GET("api/bts")
     Call<List<Bts>> getBts();
 
+    @GET("api/bts?tipe=varietas")
+    Call<List<Bts>> getBtsVarietas();
+
+    @GET("api/bts?tipe=stok")
+    Call<List<Bts>> getBtsStok();
+
+    @GET("api/bts?tipe=hama_penyakit")
+    Call<List<Bts>> getBtsHamaPenyakit();
+
+    @GET("api/bts?tipe=budidaya")
+    Call<List<Bts>> getBtsBudidaya();
 }

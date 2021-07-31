@@ -1,9 +1,6 @@
 package com.ikaru19.simaster_bug.adapters;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
@@ -16,6 +13,8 @@ import com.ikaru19.simaster_bug.models.Contact;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
+
+import static android.widget.ImageView.ScaleType.CENTER_CROP;
 
 public class ContactAdapter extends BaseQuickAdapter<Contact, BaseViewHolder> {
 
@@ -32,7 +31,11 @@ public class ContactAdapter extends BaseQuickAdapter<Contact, BaseViewHolder> {
 
 
         ImageView imageView = helper.getView(R.id.iv_contact);
-        Picasso.get().load("https://simasterbugs2.com/upload/kontak/"+item.getImg()).into(imageView);
+        Picasso.get()
+                .load("https://simasterbugs2.com/upload/kontak/"+item.getImg())
+                .placeholder(R.drawable.img_placeholder)
+                .into(imageView);
+        imageView.setScaleType(CENTER_CROP);
     }
 
     public void refill(List<Contact> data){

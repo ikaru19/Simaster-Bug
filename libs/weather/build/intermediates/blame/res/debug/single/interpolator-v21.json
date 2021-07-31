@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/interpolator-v21/mtrl_fast_out_linear_in.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/interpolator-v21/mtrl_fast_out_linear_in.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/interpolator-v21/mtrl_fast_out_slow_in.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/interpolator-v21/mtrl_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/interpolator-v21/mtrl_linear_out_slow_in.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/interpolator-v21/mtrl_linear_out_slow_in.xml"
+    }
+]

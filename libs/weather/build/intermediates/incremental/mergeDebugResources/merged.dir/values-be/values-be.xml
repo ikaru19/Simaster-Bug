@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Перайсці на галоўную старонку"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Перайсці ўверх"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Дадатковыя параметры"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Гатова"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Паказаць усе"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Выберыце праграму"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ВЫКЛ."</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"УКЛ."</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Fn +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Прабел"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Меню +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Пошук…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Выдаліць запыт"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Пошукавы запыт"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Пошук"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Адправіць запыт"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Галасавы пошук"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Абагуліць праз"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Абагуліць праз праграму \"<ns1:g id="APPLICATION_NAME">%s</ns1:g>\""</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Згарнуць"</string>
+    <string name="action_about">Аб праграме</string>
+    <string name="action_graphs">Графікі</string>
+    <string name="action_refresh">Абнавіць</string>
+    <string name="action_search">Пошук</string>
+    <string name="action_settings">Налады</string>
+    <string name="action_weather_map">Карта надвор\'я</string>
+    <string name="app_name">Forecastie</string>
+    <string name="dialog_cancel">Скасаваць</string>
+    <string name="dialog_ok">ОК</string>
+    <string name="downloading_data">Выконваецца загрузка дадзеных…</string>
+    <string name="error_dateFormat">НЕКАРЭКТНЫ ФАРМАТ ДАТЫ</string>
+    <string name="getting_location">Вызначэнне месцазнаходжання…</string>
+    <string name="humidity">Вільготнасць</string>
+    <string name="last_update">Апошняе абнаўленне:\n%s</string>
+    <string name="last_update_widget">\nАпошняе абнаўленне: %s</string>
+    <string name="later">Пазней</string>
+    <string name="location_settings">Налады месцазнаходжання</string>
+    <string name="location_settings_button">Налады</string>
+    <string name="location_settings_message">Вызначэнне месцазнаходжання адключана. Хочаце перайсці ў налады?</string>
+    <string name="msg_city_not_found">Указаны населены пункт не знойдзены.</string>
+    <string name="msg_connection_not_available">Інтэрнэт-злучэнне недаступна.</string>
+    <string name="msg_err_parsing_json">Памылка разбору JSON.</string>
+    <string name="msg_too_many_requests">Занадта шмат запытаў. Паспрабуйце яшчэ раз.</string>
+    <string name="pressure">Ціск</string>
+    <string name="pressure_unit_hpa">гПа</string>
+    <string name="pressure_unit_kpa">кПа</string>
+    <string name="pressure_unit_mmhg">мм рт.сл.</string>
+    <string name="rain">Дождж</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Пошук"</string>
+    <string name="search_title">Шукаць населены пункт</string>
+    <string name="setting_apiKey">API ключ</string>
+    <string name="setting_apiKey_summary">Ключ для OpenWeatherMap API</string>
+    <string name="setting_auto_detect_location">Вызначыць месцазнаходжанне</string>
+    <string name="setting_dateFormat">Фармат даты</string>
+    <string name="setting_dateFormatCustom">Адвольны фармат даты</string>
+    <string name="setting_dateFormatCustom_summary">Задайце адвольны шаблон (патэрн) SimpleDateFormat</string>
+    <string name="setting_differentiateDaysByTint">Чаргаваць колер дзён у спісе</string>
+    <string name="setting_displayDecimalZeroes">Адлюстроўваць дзесятковыя нулі</string>
+    <string name="setting_lengthUnits">Адзінкі даўжыні</string>
+    <string name="setting_pressureUnits">Адзінкі ціску</string>
+    <string name="setting_refreshInterval">Інтэрвал абнаўлення</string>
+    <string name="setting_showTempAsInteger">Цэлалікавыя значэнні тэмпературы</string>
+    <string name="setting_speedUnits">Адзінкі хуткасці</string>
+    <string name="setting_tempUnits">Адзінкі тэмпературы</string>
+    <string name="setting_theme">Тэма</string>
+    <string name="setting_theme_classic">Класічная</string>
+    <string name="setting_theme_classic_dark">Класічная цёмная</string>
+    <string name="setting_theme_dark">Новая цёмная</string>
+    <string name="setting_theme_fresh">Новая</string>
+    <string name="setting_unit_Celsuis">Цэльсій</string>
+    <string name="setting_unit_Fahrenheit">Фарэнгейт</string>
+    <string name="setting_unit_Kelvin">Кельвін</string>
+    <string name="setting_unit_bft">Балы Бофарта (бфрт)</string>
+    <string name="setting_unit_hpa">гПа</string>
+    <string name="setting_unit_in">Дзюймы (″)</string>
+    <string name="setting_unit_inhg">дзюйм рт.сл.</string>
+    <string name="setting_unit_kn">Вузлы (вуз)</string>
+    <string name="setting_unit_kpa">кПа</string>
+    <string name="setting_unit_kph">Кіламетры ў гадзіну (км/г)</string>
+    <string name="setting_unit_mm">Міліметры (мм)</string>
+    <string name="setting_unit_mmhg">мм рт.сл.</string>
+    <string name="setting_unit_mph">Мілі ў гадзіну (міль/г)</string>
+    <string name="setting_unit_mps">Метры ў секунду (м/с)</string>
+    <string name="setting_update_location_automatically">Абнаўляць месцазнаходжанне ў фоне</string>
+    <string name="setting_wind_direction_format">Фармат напрамку ветру</string>
+    <string name="settings_none">Не адлюстроўваць</string>
+    <string name="settings_title_data">Дадзеныя</string>
+    <string name="settings_title_display">Адлюстраванне</string>
+    <string name="settings_title_location">Месцазнаходжанне</string>
+    <string name="settings_title_units">Адзінкі</string>
+    <string name="speed_unit_kn">вуз</string>
+    <string name="speed_unit_kph">км/г</string>
+    <string name="speed_unit_mph">міль/г</string>
+    <string name="speed_unit_mps">м/с</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="sunrise">Узыход</string>
+    <string name="sunset">Закат</string>
+    <string name="temperature">Тэмпература</string>
+    <string name="today">Сёння</string>
+    <string name="tomorrow">Заўтра</string>
+    <string name="wind">Вецер</string>
+    <string name="wind_direction_east">У</string>
+    <string name="wind_direction_east_north_east">УСУ</string>
+    <string name="wind_direction_east_south_east">УЮУ</string>
+    <string name="wind_direction_format_abbreviations">Абрэвіятуры</string>
+    <string name="wind_direction_format_arrows">Стрэлкі</string>
+    <string name="wind_direction_format_none">Не адлюстроўваць</string>
+    <string name="wind_direction_north">С</string>
+    <string name="wind_direction_north_east">СУ</string>
+    <string name="wind_direction_north_north_east">ССУ</string>
+    <string name="wind_direction_north_north_west">ССЗ</string>
+    <string name="wind_direction_north_west">СЗ</string>
+    <string name="wind_direction_south">Ю</string>
+    <string name="wind_direction_south_east">ЮУ</string>
+    <string name="wind_direction_south_south_east">ЮЮУ</string>
+    <string name="wind_direction_south_south_west">ЮЮЗ</string>
+    <string name="wind_direction_south_west">ЮЗ</string>
+    <string name="wind_direction_west">З</string>
+    <string name="wind_direction_west_north_west">ЗСЗ</string>
+    <string name="wind_direction_west_south_west">ЗЮЗ</string>
+</resources>

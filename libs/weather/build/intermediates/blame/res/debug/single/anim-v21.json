@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/anim-v21/mtrl_bottom_sheet_slide_out.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/anim-v21/mtrl_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/anim-v21/mtrl_bottom_sheet_slide_in.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/anim-v21/mtrl_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/anim-v21/fragment_fast_out_extra_slow_in.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/65d4929e050083ea965101b359717f6c/fragment-1.2.0/res/anim-v21/fragment_fast_out_extra_slow_in.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    }
+]

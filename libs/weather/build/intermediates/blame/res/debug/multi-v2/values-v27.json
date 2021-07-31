@@ -1,0 +1,52 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v27/values-v27.xml",
+            "map": [
+                {
+                    "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/values-v27/styles.xml",
+                    "from": {
+                        "startLines": "2,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,653",
+                        "endLines": "10,19",
+                        "endColumns": "12,12",
+                        "endOffsets": "647,1202"
+                    },
+                    "to": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,652",
+                        "endLines": "10,18",
+                        "endColumns": "12,12",
+                        "endOffsets": "647,1201"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/values-v27/values-v27.xml",
+            "map": [
+                {
+                    "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/values-v27/styles.xml",
+                    "from": {
+                        "startLines": "2,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,653",
+                        "endLines": "10,19",
+                        "endColumns": "12,12",
+                        "endOffsets": "647,1202"
+                    },
+                    "to": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,652",
+                        "endLines": "10,18",
+                        "endColumns": "12,12",
+                        "endOffsets": "647,1201"
+                    }
+                }
+            ]
+        }
+    ]
+}

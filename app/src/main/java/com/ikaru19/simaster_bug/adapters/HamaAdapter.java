@@ -8,7 +8,6 @@ import androidx.annotation.Nullable;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.ikaru19.simaster_bug.R;
-import com.ikaru19.simaster_bug.models.Artikel;
 import com.ikaru19.simaster_bug.models.Hama;
 import com.squareup.picasso.Picasso;
 
@@ -29,7 +28,11 @@ public class HamaAdapter extends BaseQuickAdapter<Hama, BaseViewHolder> {
     protected void convert(@NonNull BaseViewHolder helper, Hama item) {
         helper.setText(R.id.tv_hama_judul,item.getNamaHama());
         ImageView imageView = helper.getView(R.id.iv_hama);
-        Picasso.get().load(BASE_URL_IMG+item.getImg()).resize(1280, 720)
-                .onlyScaleDown().into(imageView);
+        Picasso.get()
+                .load(BASE_URL_IMG+item.getImg())
+                .resize(1280, 720)
+                .onlyScaleDown()
+                .placeholder(R.drawable.img_placeholder)
+                .into(imageView);
     }
 }

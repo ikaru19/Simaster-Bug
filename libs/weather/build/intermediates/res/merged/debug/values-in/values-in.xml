@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Tunjukkan jalan ke rumah"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Kembali ke atas"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Opsi lain"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Selesai"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Lihat semua"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Pilih aplikasi"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"NONAKTIF"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AKTIF"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"spasi"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Telusuri..."</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Hapus kueri"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Telusuri kueri"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Telusuri"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Kirim kueri"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Penelusuran suara"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Bagikan dengan"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Bagikan dengan <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Ciutkan"</string>
+    <string name="action_about">Tentang</string>
+    <string name="action_graphs">Grafik</string>
+    <string name="action_refresh">Segarkan</string>
+    <string name="action_search">Pencarian</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="action_weather_map">Peta Cuaca</string>
+    <string name="app_name">Forecastie</string>
+    <string name="dialog_cancel">Batalkan</string>
+    <string name="dialog_ok">OK</string>
+    <string name="downloading_data">Mengunduh data Anda ...</string>
+    <string name="error_dateFormat">DATE FORMAT ERROR</string>
+    <string name="getting_location">Mendapatkan lokasi Anda ...</string>
+    <string name="humidity">Kelembaban</string>
+    <string name="last_update">Pembaruan terkakhir:\n%s</string>
+    <string name="last_update_widget">\nPembaruan terakhir: %s</string>
+    <string name="later">Nanti</string>
+    <string name="location_settings">Pengaturan Lokasi</string>
+    <string name="location_settings_button">Pengaturan</string>
+    <string name="location_settings_message">Lokasi tidak tersedia. Apakah Anda ingin ke menu pengaturan?</string>
+    <string name="msg_city_not_found">Kota yang dispesifik tidak tersedia.</string>
+    <string name="msg_connection_not_available">Koneksi tidak tersedia.</string>
+    <string name="msg_err_parsing_json">Galat menguraikan JSON.</string>
+    <string name="msg_too_many_requests">Terlalu banyak permintaan. Mohon dicoba lagi.</string>
+    <string name="pressure">Tekanan</string>
+    <string name="pressure_unit_hpa">hPa</string>
+    <string name="pressure_unit_kpa">kPa</string>
+    <string name="pressure_unit_mmhg">mm Hg</string>
+    <string name="rain">Hujan</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Telusuri"</string>
+    <string name="search_title">Pencarian kota</string>
+    <string name="setting_apiKey">kunci API</string>
+    <string name="setting_apiKey_summary">Kunci API kustom untuk kueri OpenWeatherMap</string>
+    <string name="setting_auto_detect_location">Deteksi Lokasi</string>
+    <string name="setting_dateFormat">Format Tanggal</string>
+    <string name="setting_dateFormatCustom">Format Waktu Kustom</string>
+    <string name="setting_dateFormatCustom_summary">Menyediakan SimpleDateFormat kustom untuk digunakan</string>
+    <string name="setting_differentiateDaysByTint">Membedakan Hari dengan Warna</string>
+    <string name="setting_displayDecimalZeroes">Tampilkan nol pada desimal</string>
+    <string name="setting_lengthUnits">Unit panjang</string>
+    <string name="setting_pressureUnits">Unit tekanan</string>
+    <string name="setting_refreshInterval">Interval menyegarkan di latar belakang</string>
+    <string name="setting_showTempAsInteger">Tampilkan temperatur saja sebagai sebuah bilangan bulat</string>
+    <string name="setting_speedUnits">Unit kecepatan</string>
+    <string name="setting_tempUnits">Unit temperatur</string>
+    <string name="setting_theme">Tema</string>
+    <string name="setting_theme_classic">Klasik</string>
+    <string name="setting_theme_classic_dark">Hitam Klasik</string>
+    <string name="setting_theme_dark">Hitam Segar</string>
+    <string name="setting_theme_fresh">Segar</string>
+    <string name="setting_unit_Celsuis">Celsius</string>
+    <string name="setting_unit_Fahrenheit">Fahrenheit</string>
+    <string name="setting_unit_Kelvin">Kelvin</string>
+    <string name="setting_unit_hpa">hPa</string>
+    <string name="setting_unit_in">Inci (in)</string>
+    <string name="setting_unit_kpa">kPa</string>
+    <string name="setting_unit_kph">Kilometer per jam (kph)</string>
+    <string name="setting_unit_mm">Milimeter (mm)</string>
+    <string name="setting_unit_mmhg">mm Hg</string>
+    <string name="setting_unit_mph">Mil per jam (mph)</string>
+    <string name="setting_unit_mps">Meter per detik (m/s)</string>
+    <string name="setting_update_location_automatically">Memperbarui lokasi dalam latar belakang</string>
+    <string name="setting_wind_direction_format">Format arah angin</string>
+    <string name="settings_none">Tak satupun</string>
+    <string name="settings_title_data">Data</string>
+    <string name="settings_title_display">Tampilkan</string>
+    <string name="settings_title_location">Lokasi</string>
+    <string name="settings_title_units">Unit</string>
+    <string name="speed_unit_kph">kph</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="speed_unit_mps">m/s</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="sunrise">Matahari terbit</string>
+    <string name="sunset">Matahari tenggelam</string>
+    <string name="temperature">Temperatur</string>
+    <string name="today">Hari ini</string>
+    <string name="tomorrow">Besok</string>
+    <string name="wind">Berangin</string>
+    <string name="wind_direction_east">E</string>
+    <string name="wind_direction_east_north_east">ENE</string>
+    <string name="wind_direction_east_south_east">ESE</string>
+    <string name="wind_direction_format_abbreviations">Singkatan</string>
+    <string name="wind_direction_format_arrows">Panah</string>
+    <string name="wind_direction_format_none">Tidak ada indikasi</string>
+    <string name="wind_direction_north">N</string>
+    <string name="wind_direction_north_east">NE</string>
+    <string name="wind_direction_north_north_east">NNE</string>
+    <string name="wind_direction_north_north_west">NNW</string>
+    <string name="wind_direction_north_west">NW</string>
+    <string name="wind_direction_south">S</string>
+    <string name="wind_direction_south_east">SE</string>
+    <string name="wind_direction_south_south_east">SSE</string>
+    <string name="wind_direction_south_south_west">SSW</string>
+    <string name="wind_direction_south_west">SW</string>
+    <string name="wind_direction_west">W</string>
+    <string name="wind_direction_west_north_west">WNW</string>
+    <string name="wind_direction_west_south_west">WSW</string>
+</resources>

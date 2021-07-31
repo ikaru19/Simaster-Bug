@@ -29,8 +29,12 @@ public class ArtikelAdapter extends BaseQuickAdapter<Artikel, BaseViewHolder> {
     protected void convert(@NonNull BaseViewHolder helper, Artikel item) {
         helper.setText(R.id.tv_artikel_judul,item.getJudul());
         ImageView imageView = helper.getView(R.id.iv_artikel);
-        Picasso.get().load(BASE_URL_IMG+item.getImg()).resize(1280, 720)
-                .onlyScaleDown().into(imageView);
+        Picasso.get()
+                .load(BASE_URL_IMG+item.getImg())
+                .resize(1280, 720)
+                .onlyScaleDown()
+                .placeholder(R.drawable.img_placeholder)
+                .into(imageView);
 
     }
 }

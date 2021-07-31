@@ -47,9 +47,10 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif"
                         android:gravity="center"
-                        android:text="Tanya Pakar"
+                        android:maxLines="3"
+                        android:text="Sobat Tani Siaga"
                         android:textColor="#FFFFFF"
-                        android:textSize="24sp" />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -65,6 +66,64 @@
                         android:src="@drawable/users">
 
                     </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_cuaca"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_tanya1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/icons8_partly_cloudy_day_64">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="#01a3a4"
+                    android:gravity="center"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Info Cuaca"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -122,76 +181,8 @@
             app:layout_constraintGuide_percent="0.12" />
 
 
-<!--        <androidx.cardview.widget.CardView-->
-<!--            android:id="@+id/menu_bts"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:layout_marginStart="24dp"-->
-<!--            android:layout_marginLeft="24dp"-->
-<!--            android:layout_marginEnd="24dp"-->
-<!--            android:layout_marginRight="24dp"-->
-<!--            app:cardCornerRadius="7dp"-->
-<!--            app:cardElevation="3dp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/guideline">-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:weightSum="4">-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:layout_weight="2.5"-->
-<!--                    android:gravity="center">-->
-
-<!--                    <ImageView-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/logo_bts">-->
-
-<!--                    </ImageView>-->
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:layout_weight="1.5"-->
-<!--                    android:background="#9C27B0"-->
-<!--                    android:gravity="center"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:padding="18dp">-->
-
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:fontFamily="sans-serif"-->
-<!--                        android:gravity="center"-->
-<!--                        android:text="BTS"-->
-<!--                        android:textColor="#FFFFFF"-->
-<!--                        android:textSize="24sp" />-->
-
-<!--                    <TextView-->
-<!--                        android:id="@+id/textView5"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:fontFamily="sans-serif"-->
-<!--                        android:gravity="center"-->
-<!--                        android:text="(Benih Tebu Sehat)"-->
-<!--                        android:textColor="#FFFFFF"-->
-<!--                        android:textSize="14sp" />-->
-
-<!--                </LinearLayout>-->
-
-<!--            </LinearLayout>-->
-<!--        </androidx.cardview.widget.CardView>-->
-
         <androidx.cardview.widget.CardView
-            android:id="@+id/menu_tebu"
+            android:id="@+id/menu_bts"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_marginStart="24dp"
@@ -203,6 +194,75 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/logo_bts">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="#9C27B0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="BTS"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="(Benih Tebu Sehat)"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_tebu"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_bts">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -431,7 +491,7 @@
             app:cardElevation="3dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@id/menu_tanya1">
+            app:layout_constraintTop_toBottomOf="@id/menu_cuaca">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -492,7 +552,7 @@
             app:cardElevation="3dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/menu_tanya1">
+            app:layout_constraintTop_toBottomOf="@id/menu_cuaca">
 
             <LinearLayout
                 android:layout_width="match_parent"

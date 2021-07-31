@@ -12,7 +12,7 @@ import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 public class MainActivity extends AppCompatActivity {
 
     CardView menu_tanya,menu_artikel,menu_wijen,menu_tembakau,menu_tebu,menu_tentang,menu_hubung;
-    CardView menu_bts;
+    CardView menu_bts,menu_cuaca;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         menu_tentang = findViewById(R.id.menu_tentang);
         menu_hubung  = findViewById(R.id.menu_tanya);
         menu_bts = findViewById(R.id.menu_bts);
+        menu_cuaca = findViewById(R.id.menu_cuaca);
 
         menu_tanya.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,7 +101,8 @@ public class MainActivity extends AppCompatActivity {
                 Animatoo.animateSlideLeft(MainActivity.this);
             }
         });
-        menu_bts.setOnClickListener(new View.OnClickListener() {
+
+        menu_cuaca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {

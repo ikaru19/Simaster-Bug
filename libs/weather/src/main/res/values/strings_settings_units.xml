@@ -4,8 +4,8 @@
     <!-- Settings/Units -->
     <string name="settings_title_units">"Satuan "</string>
     <string name="setting_lengthUnits">"Satuan panjang "</string>
-    <string name="setting_speedUnits">Speed units</string>
-    <string name="setting_tempUnits">Satuan kecepatan</string>
+    <string name="setting_speedUnits">Satuan kecepatan</string>
+    <string name="setting_tempUnits">Satuan Temperatur</string>
     <string name="setting_showTempAsInteger">Tampilkan suhu hanya sebagai bilangan bulat</string>
     <string name="setting_pressureUnits">Unit tekanan</string>
     <string name="setting_auto_detect_location">Deteksi Lokasi</string>

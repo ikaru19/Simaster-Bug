@@ -1714,6 +1714,7 @@ drawable ic_weather_windy_white_18dp
 drawable ic_weather_windy_white_24dp
 drawable ic_weather_windy_white_36dp
 drawable ic_weather_windy_white_48dp
+drawable icons8_partly_cloudy_day_64
 drawable magnify
 drawable map
 drawable material_ic_calendar_black_24dp

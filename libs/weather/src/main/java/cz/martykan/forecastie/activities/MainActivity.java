@@ -362,7 +362,13 @@ public class MainActivity extends BaseActivity implements LocationListener {
     }
 
     private void aboutDialog() {
-        onBackPressed();
+//        onBackPressed();
+        try {
+            Intent myIntent = new Intent(MainActivity.this,Class.forName("com.ikaru19.simaster_bug.MainActivity"));
+            startActivity(myIntent );
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static String getRainString(JSONObject rainObj) {

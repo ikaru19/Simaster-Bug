@@ -71,6 +71,64 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_cuaca"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menu_tanya1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/icons8_partly_cloudy_day_64">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="#01a3a4"
+                    android:gravity="center"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Info Cuaca"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="120dp"
@@ -434,7 +492,7 @@
             app:cardElevation="3dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@id/menu_tanya1">
+            app:layout_constraintTop_toBottomOf="@id/menu_cuaca">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -495,7 +553,7 @@
             app:cardElevation="3dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/menu_tanya1">
+            app:layout_constraintTop_toBottomOf="@id/menu_cuaca">
 
             <LinearLayout
                 android:layout_width="match_parent"

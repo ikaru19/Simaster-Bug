@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.ikaru19.simaster_bug.v2.HamaV2Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         menu_wijen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,HamaActivity.class);
+                Intent intent = new Intent(MainActivity.this,HamaV2Activity.class);
                 intent.putExtra("JenisHama","wijen");
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivity.this);
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         menu_tembakau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,HamaActivity.class);
+                Intent intent = new Intent(MainActivity.this,HamaV2Activity.class);
                 intent.putExtra("JenisHama","tembakau");
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivity.this);
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         menu_tebu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,HamaActivity.class);
+                Intent intent = new Intent(MainActivity.this,HamaV2Activity.class);
                 intent.putExtra("JenisHama","tebu");
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivity.this);

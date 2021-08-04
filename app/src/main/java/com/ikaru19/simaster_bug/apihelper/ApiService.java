@@ -4,6 +4,7 @@ import com.ikaru19.simaster_bug.models.Artikel;
 import com.ikaru19.simaster_bug.models.Bts;
 import com.ikaru19.simaster_bug.models.Contact;
 import com.ikaru19.simaster_bug.models.Hama;
+import com.ikaru19.simaster_bug.models.v2.HamaV2;
 
 import java.util.List;
 
@@ -41,4 +42,14 @@ public interface ApiService {
 
     @GET("api/bts?tipe=budidaya")
     Call<List<Bts>> getBtsBudidaya();
+
+    // MARK: V2
+    @GET("api/v2/Hama?kategori=wijen")
+    Call<List<HamaV2>> getHamaWijenV2();
+
+    @GET("api/v2/Hama?kategori=tebu")
+    Call<List<HamaV2>> getHamaTebuV2();
+
+    @GET("api/v2/Hama?kategori=tembakau")
+    Call<List<HamaV2>> getHamaTembakauV2();
 }

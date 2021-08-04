@@ -37,6 +37,7 @@ public class BtsDetailActivity extends AppCompatActivity {
         tv_penulis_detail.setText("oleh : " + btsData.getPenulis());
         bts_webview.getSettings().setJavaScriptEnabled(true);
         String htmlData = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
+        htmlData = htmlData + "<style>img{display: inline;height: auto;max-width: 100%;}</style>";
         htmlData = htmlData + btsData.getKonten();
         bts_webview.loadDataWithBaseURL(null, htmlData, "text/html", "utf-8", null);
         bts_webview.setWebViewClient(new WebViewClient() {

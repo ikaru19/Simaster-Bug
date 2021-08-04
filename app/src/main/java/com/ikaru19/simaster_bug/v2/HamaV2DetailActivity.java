@@ -58,6 +58,7 @@ public class HamaV2DetailActivity extends AppCompatActivity {
                 .onlyScaleDown().into(iv_hama_detail);
         webView.getSettings().setJavaScriptEnabled(true);
         String htmlData = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
+        htmlData = htmlData + "<style>img{display: inline;height: auto;max-width: 100%;}</style>";
         htmlData = htmlData + hama.getKonten();
         webView.loadDataWithBaseURL(null, htmlData, "text/html", "utf-8", null);
         webView.setWebViewClient(new WebViewClient() {
@@ -80,6 +81,7 @@ public class HamaV2DetailActivity extends AppCompatActivity {
 
             public void onPageFinished(WebView view, String url) {
                 // your code
+                webView.loadUrl("javascript:document.body.style.margin=\"4%\"; void 0");
                 lottieLoading.dismiss();
             }
         });

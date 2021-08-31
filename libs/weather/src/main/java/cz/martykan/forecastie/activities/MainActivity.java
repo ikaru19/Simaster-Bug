@@ -364,7 +364,7 @@ public class MainActivity extends BaseActivity implements LocationListener {
     private void aboutDialog() {
 //        onBackPressed();
         try {
-            Intent myIntent = new Intent(MainActivity.this,Class.forName("com.ikaru19.simaster_bug.MainActivity"));
+            Intent myIntent = new Intent(MainActivity.this,Class.forName("com.ikaru19.simaster_bug.MainActivityV2"));
             startActivity(myIntent );
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

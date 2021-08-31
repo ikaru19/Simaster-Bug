@@ -3,6 +3,7 @@ package com.ikaru19.simaster_bug;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -14,11 +15,12 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.ikaru19.simaster_bug.adapters.ArtikelAdapter;
+import com.ikaru19.simaster_bug.adapters.ArtikelV2Adapter;
 import com.ikaru19.simaster_bug.apihelper.ApiService;
 import com.ikaru19.simaster_bug.component.LottieLoading;
 import com.ikaru19.simaster_bug.generator.ServiceGenerator;
-import com.ikaru19.simaster_bug.models.Artikel;
+import com.ikaru19.simaster_bug.models.v2.ArtikelV2;
+import com.ikaru19.simaster_bug.v2.ArtikelV2DetailActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,8 +32,8 @@ import retrofit2.Response;
 public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private ApiService apiService;
-    private List<Artikel> artikels = new ArrayList<>();
-    private ArtikelAdapter adapter;
+    private List<ArtikelV2> artikels = new ArrayList<>();
+    private ArtikelV2Adapter adapter;
     private RecyclerView recyclerView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private View noInternetView;
@@ -48,19 +50,17 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
         getData();
         swipeRefreshLayout.setOnRefreshListener(this);
 
-        adapter = new ArtikelAdapter(artikels);
+        adapter = new ArtikelV2Adapter(artikels);
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                Intent intent = new Intent(ArtikelActivity.this,ArtikelDetailActivity.class);
-                intent.putExtra("ArtikelDetail", artikels.get(position));
+                Intent intent = new Intent(ArtikelActivity.this, ArtikelV2DetailActivity.class);
+                intent.putExtra("ArtikelDetail", (Parcelable) artikels.get(position));
                 startActivity(intent);
             }
         });
         recyclerView.setLayoutManager(new LinearLayoutManager(ArtikelActivity.this));
         recyclerView.setAdapter(adapter);
-
-
 
     }
 
@@ -86,10 +86,10 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
 
         final LottieLoading lottieLoading = new LottieLoading(ArtikelActivity.this);
         lottieLoading.show();
-        Call<List<Artikel>> artikelCall = apiService.getArtikel();
-        artikelCall.enqueue(new Callback<List<Artikel>>() {
+        Call<List<ArtikelV2>> artikelCall = apiService.getArtikel();
+        artikelCall.enqueue(new Callback<List<ArtikelV2>>() {
             @Override
-            public void onResponse(Call<List<Artikel>> call, Response<List<Artikel>> response) {
+            public void onResponse(Call<List<ArtikelV2>> call, Response<List<ArtikelV2>> response) {
                 noInternetView.setVisibility(View.INVISIBLE);
                 recyclerView.setVisibility(View.VISIBLE);
                 artikels = response.body();
@@ -105,7 +105,7 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
             }
 
             @Override
-            public void onFailure(Call<List<Artikel>> call, Throwable t) {
+            public void onFailure(Call<List<ArtikelV2>> call, Throwable t) {
                 noInternetView.setVisibility(View.VISIBLE);
                 recyclerView.setVisibility(View.INVISIBLE);
                 lottieLoading.dismiss();

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/drawable-nodpi-v4/widget_preview_time.png",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/drawable-nodpi/widget_preview_time.png"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/drawable-nodpi-v4/widget_preview.png",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/drawable-nodpi/widget_preview.png"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/drawable-nodpi-v4/widget_card_classic.xml",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/drawable-nodpi/widget_card_classic.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/drawable-nodpi-v4/widget_preview_simple.png",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/drawable-nodpi/widget_preview_simple.png"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/drawable-nodpi-v4/widget_preview_time_classic.png",
+        "source": "/Users/ikaru/Downloads/forecastie-master/weather/src/main/res/drawable-nodpi/widget_preview_time_classic.png"
+    }
+]

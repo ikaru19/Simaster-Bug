@@ -1,0 +1,25 @@
+<!-- Do not change the order of any strings in here, without discussing first on the "Issues" page -->
+<!-- Do not delete any blank lines -->
+<resources>
+    <!-- Errors -->
+    <string name="msg_err_parsing_json">Error parsing JSON.</string>
+    <string name="msg_http_error">Kesalahan saat meminta atau menerima data.</string>
+    <string name="msg_connection_not_available">Koneksi tidak tersedia.</string>
+    <string name="msg_city_not_found">Kota tertentu tidak ditemukan.</string>
+    <string name="msg_too_many_requests">Terlalu banyak permintaan. Silakan coba lagi.</string>
+    <string name="msg_invalid_api_key">Invalid API key.</string>
+
+    <!-- Location -->
+    <string name="settings_title_location">Lokasi</string>
+    <string name="setting_update_location_automatically">Perbarui lokasi di latar belakang</string>
+    <string name="location_settings">Pengaturan Lokasi</string>
+    <string name="location_settings_message">Lokasi tidak diaktifkan. Apakah Anda ingin masuk ke menu pengaturan?</string>
+    <string name="location_settings_button">Pengaturan</string>
+    <string name="location_search_heading">Lokasi</string>
+
+    <!-- Widget -->
+    <string name="widget_label_extensive">Ramalan Luas</string>
+    <string name="widget_label_time">Waktu Prakiraan</string>
+    <string name="widget_label_simple">Ramalan Sederhana</string>
+    <string name="widget_label_classic">Ramalan Klasik</string>
+</resources>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/layout-v26/abc_screen_toolbar.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/bf96d2b5a86ecd602a621e7e96856420/appcompat-1.2.0/res/layout-v26/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/ikaru/Downloads/forecastie-master/weather/build/intermediates/res/merged/debug/layout-v26/mtrl_calendar_month.xml",
+        "source": "/Users/ikaru/.gradle/caches/transforms-2/files-2.1/fee048776b4040c0a73e83e4303a6cff/material-1.2.1/res/layout-v26/mtrl_calendar_month.xml"
+    }
+]

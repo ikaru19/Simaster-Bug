@@ -1,0 +1,1 @@
+[{"outputType":{"type":"AAPT_FRIENDLY_MERGED_MANIFESTS"},"apkData":{"type":"MAIN","splits":[],"versionCode":64,"versionName":"1.17.3","enabled":true,"outputFile":"weather-release.aar","fullName":"release","baseName":"release"},"path":"AndroidManifest.xml","properties":{"packageId":"cz.martykan.forecastie","split":""}}]

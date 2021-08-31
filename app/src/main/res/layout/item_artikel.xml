@@ -16,7 +16,7 @@
         <ImageView
             android:id="@+id/iv_artikel"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="200dp"
             android:scaleType="centerCrop"/>
 
         <LinearLayout
@@ -29,11 +29,28 @@
                 android:id="@+id/tv_artikel_judul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/monserrat_bold"
+                android:maxLines="2"
+                android:text="Test Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_artikel_penulis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/monserrat"
                 android:text="Test Name"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
-                android:textStyle="normal" />
+                android:textStyle="normal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"/>
 
 
         </LinearLayout>

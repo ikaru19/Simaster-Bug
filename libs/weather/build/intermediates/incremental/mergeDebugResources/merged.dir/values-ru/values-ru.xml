@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Перейти вверх"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Ещё"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Показать все"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Выберите приложение"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ВЫКЛ"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ВКЛ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Ввод"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Fn +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Пробел"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Меню +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Введите запрос"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Удалить запрос"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Поисковый запрос"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Поиск"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Отправить запрос"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Голосовой поиск"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Поделиться с помощью"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Поделиться с помощью <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Свернуть"</string>
+    <string name="about_data">Данные предоставляются сайтом <a href="https://openweathermap.org/">OpenWeatherMap</a> под лицензией <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons CC-BY-SA 2.0</a>.</string>
+    <string name="about_description">Лёгкое, свободное погодное приложение, распространяемое под лицензией GPL3.</string>
+    <string name="about_developers">Разработано <a href="mailto:t.martykan@gmail.com">Tomáš Martykán</a> и <a href="https://github.com/martykan/forecastie/graphs/contributors">другими участниками</a>, при содействии <a href="https://github.com/martykan/forecastie/issues?utf8=✓;q=is%3Aissue">ещё многих</a>.</string>
+    <string name="about_icons">Иконки <a href="https://erikflowers.github.io/weather-icons/">Weather Icons</a>, созданные <a href="http://www.twitter.com/artill">Lukas Bischoff</a> и <a href="http://www.twitter.com/Erik_UX">Erik Flowers</a>, под лицензией <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>.</string>
+    <string name="about_issues">Ошибки и советы можно разместить в нашей <a href="https://github.com/martykan/forecastie/issues">системе отслеживания ошибок на GitHub</a>.</string>
+    <string name="about_src">Код доступен на <a href="https://github.com/martykan/forecastie">GitHub</a>.</string>
+    <string name="about_unknown">Версия неизвестна</string>
+    <string name="action_about">О приложении</string>
+    <string name="action_graphs">Графики</string>
+    <string name="action_refresh">Обновить</string>
+    <string name="action_search">Поиск</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_weather_map">Погодная карта</string>
+    <string name="app_name">Forecastie</string>
+    <string name="beaufort_calm">Штиль (0)</string>
+    <string name="beaufort_fresh_breeze">Свежий (5)</string>
+    <string name="beaufort_gale">Очень крепкий (8)</string>
+    <string name="beaufort_gentle_breeze">Слабый (3)</string>
+    <string name="beaufort_high_wind">Крепкий (7)</string>
+    <string name="beaufort_hurricane">Ураган (12)</string>
+    <string name="beaufort_light_air">Тихий (1)</string>
+    <string name="beaufort_light_breeze">Лёгкий (2)</string>
+    <string name="beaufort_moderate_breeze">Умеренный (4)</string>
+    <string name="beaufort_storm">Сильный шторм (10)</string>
+    <string name="beaufort_strong_breeze">Сильный (6)</string>
+    <string name="beaufort_strong_gale">Шторм (9)</string>
+    <string name="beaufort_violent_storm">Жестокий шторм (11)</string>
+    <string name="channel_name">Уведомление о погоде</string>
+    <string name="clouds">Облака</string>
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_ok">ОК</string>
+    <string name="downloading_data">Выполняется загрузка данных…</string>
+    <string name="error_dateFormat">НЕКОРРЕКТНЫЙ ФОРМАТ ДАТЫ</string>
+    <string name="getting_location">Определение местоположения…</string>
+    <string name="graphs_more_days">Больше дней</string>
+    <string name="humidity">Влажность</string>
+    <string name="last_update">Обновлено:\n%s</string>
+    <string name="last_update_widget">\nОбновлено: %s</string>
+    <string name="later">Позже</string>
+    <string name="loading_data">Загрузка…</string>
+    <string name="location_search_heading">Места</string>
+    <string name="location_settings">Настройки местоположения</string>
+    <string name="location_settings_button">Настройки</string>
+    <string name="location_settings_message">Определение местоположения отключено. Перейти в меню настроек?</string>
+    <string name="msg_city_not_found">Указанный населённый пункт не найден.</string>
+    <string name="msg_connection_not_available">Интернет-соединение отсутствует.</string>
+    <string name="msg_err_parsing_json">Ошибка разбора JSON.</string>
+    <string name="msg_http_error">Ошибка при запросе или получении данных.</string>
+    <string name="msg_invalid_api_key">Неверный ключ к API.</string>
+    <string name="msg_too_many_requests">Слишком много запросов. Попробуйте ещё раз.</string>
+    <string name="no_data">Нет данных</string>
+    <string name="notification_service_description">Служба отображения уведомления о погоде Forecastie.</string>
+    <string name="pressure">Давление</string>
+    <string name="pressure_unit_hpa">гПа</string>
+    <string name="pressure_unit_inhg">дюйм рт. ст.</string>
+    <string name="pressure_unit_kpa">кПа</string>
+    <string name="pressure_unit_mmhg">мм рт. ст.</string>
+    <string name="rain">Осадки</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Поиск"</string>
+    <string name="search_title">Найти населённый пункт</string>
+    <string name="setting_apiKey">Ключ API</string>
+    <string name="setting_apiKey_summary">Ключ для обращений к API OpenWeatherMap</string>
+    <string name="setting_auto_detect_location">Определить местоположение</string>
+    <string name="setting_dateFormat">Формат даты</string>
+    <string name="setting_dateFormatCustom">Собственный формат даты</string>
+    <string name="setting_dateFormatCustom_summary">Задайте собственный шаблон в формате SimpleDateFormat\nНапример: E, d MMM H:mm</string>
+    <string name="setting_differentiateDaysByTint">Чередовать цвет дней в списке</string>
+    <string name="setting_displayDecimalZeroes">Показывать десятичные нули</string>
+    <string name="setting_lengthUnits">Единицы длинны</string>
+    <string name="setting_pressureUnits">Единицы давления</string>
+    <string name="setting_refreshInterval">Интервал обновления</string>
+    <string name="setting_showTempAsInteger">Показывать только целое значение температуры</string>
+    <string name="setting_speedUnits">Единицы скорости </string>
+    <string name="setting_tempUnits">Единицы температуры</string>
+    <string name="setting_theme">Тема</string>
+    <string name="setting_theme_black">Новая чёрная</string>
+    <string name="setting_theme_classic">Классическая</string>
+    <string name="setting_theme_classic_black">Классическая чёрная</string>
+    <string name="setting_theme_classic_dark">Классическая тёмная</string>
+    <string name="setting_theme_dark">Новая тёмная</string>
+    <string name="setting_theme_fresh">Новая</string>
+    <string name="setting_transparent_widget">Прозрачный фон виджетов</string>
+    <string name="setting_unit_Celsuis">по Цельсию</string>
+    <string name="setting_unit_Fahrenheit">по Фаренгейту</string>
+    <string name="setting_unit_Kelvin">по Кельвину</string>
+    <string name="setting_unit_bft">Шкала бофорта</string>
+    <string name="setting_unit_hpa">Гектопаскаль (гПа)</string>
+    <string name="setting_unit_in">Дюймы (″)</string>
+    <string name="setting_unit_inhg">дюйм ртутного столба (дюйм рт. ст.)</string>
+    <string name="setting_unit_kn">Узлы (уз)</string>
+    <string name="setting_unit_kpa">Килопаскаль (кПа)</string>
+    <string name="setting_unit_kph">Километры в час (км/ч)</string>
+    <string name="setting_unit_mm">Миллиметры (мм)</string>
+    <string name="setting_unit_mmhg">мм ртутного столба (мм. рт. ст.)</string>
+    <string name="setting_unit_mph">Мили в час (миль/ч)</string>
+    <string name="setting_unit_mps">Метры в секунду (м/с)</string>
+    <string name="setting_update_location_automatically">Проверять местоположение в фоне</string>
+    <string name="setting_wind_direction_format">Формат направления ветра</string>
+    <string name="settings_12hour">12 ч.</string>
+    <string name="settings_15min">15 мин.</string>
+    <string name="settings_1hour">1 ч.</string>
+    <string name="settings_24hour">24 ч.</string>
+    <string name="settings_2hour">2 ч.</string>
+    <string name="settings_30min">30 мин.</string>
+    <string name="settings_6hour">6 ч.</string>
+    <string name="settings_enable_notification_title">Показывать уведомление с погодой</string>
+    <string name="settings_none">Отключено</string>
+    <string name="settings_notification_type_default">Стандартное уведомление Android</string>
+    <string name="settings_notification_type_simple">Простое уведомление</string>
+    <string name="settings_notification_type_title">Вид уведомления</string>
+    <string name="settings_title_data">Данные</string>
+    <string name="settings_title_display">Отображение</string>
+    <string name="settings_title_location">Местоположение</string>
+    <string name="settings_title_notifications">Уведомление</string>
+    <string name="settings_title_units">Единицы</string>
+    <string name="speed_unit_kn">уз</string>
+    <string name="speed_unit_kph">км/ч</string>
+    <string name="speed_unit_mph">миль/ч</string>
+    <string name="speed_unit_mps">м/с</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">">999"</string>
+    <string name="sunrise">Восход</string>
+    <string name="sunset">Закат</string>
+    <string name="tap_for_graphs">Перейти к графикам</string>
+    <string name="temperature">Температура</string>
+    <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="uvi_extreme">Экстремальное</string>
+    <string name="uvi_high">Высокое</string>
+    <string name="uvi_low">Низкое</string>
+    <string name="uvi_moderate">Умеренное</string>
+    <string name="uvi_no_info">Нет данных</string>
+    <string name="uvi_very_high">Очень высокое</string>
+    <string name="uvindex">УФ-индекс</string>
+    <string name="widget_label_classic">Forecastie классический</string>
+    <string name="widget_label_extensive">Forecastie расширенный</string>
+    <string name="widget_label_simple">Forecastie простой</string>
+    <string name="widget_label_time">Forecastie часы</string>
+    <string name="wind">Ветер</string>
+    <string name="wind_direction_east">В</string>
+    <string name="wind_direction_east_north_east">ВСВ</string>
+    <string name="wind_direction_east_south_east">ВЮВ</string>
+    <string name="wind_direction_format_abbreviations">Сокращениями</string>
+    <string name="wind_direction_format_arrows">Стрелками</string>
+    <string name="wind_direction_format_none">Не отображать</string>
+    <string name="wind_direction_north">С</string>
+    <string name="wind_direction_north_east">СВ</string>
+    <string name="wind_direction_north_north_east">ССВ</string>
+    <string name="wind_direction_north_north_west">ССЗ</string>
+    <string name="wind_direction_north_west">СЗ</string>
+    <string name="wind_direction_south">Ю</string>
+    <string name="wind_direction_south_east">ЮВ</string>
+    <string name="wind_direction_south_south_east">ЮЮВ</string>
+    <string name="wind_direction_south_south_west">ЮЮЗ</string>
+    <string name="wind_direction_south_west">ЮЗ</string>
+    <string name="wind_direction_west">З</string>
+    <string name="wind_direction_west_north_west">ЗСЗ</string>
+    <string name="wind_direction_west_south_west">ЗЮЗ</string>
+    <string name="wind_speed">Скорость ветра</string>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Идите на почетну"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Идите нагоре"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Још опција"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Прикажи све"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Изаберите апликацију"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"ИСКЉУЧЕНО"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"УКЉУЧЕНО"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"тастер за размак"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Претражите…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Обришите упит"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Претражите упит"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Претражите"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Пошаљите упит"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Гласовна претрага"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Делите помоћу"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Делите помоћу апликације <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Скупи"</string>
+    <string name="about_data">Податке пружа &lt;a href="https://openweathermap.org/">OpenWeatherMap&lt;/a> под &lt;a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA лиценцом.&lt;/a></string>
+    <string name="about_description">Мала апликација отвореног кода за временску прогнозу, издата под GPL3.</string>
+    <string name="about_developers">Апликацију направили &lt;a href="mailto:t.martykan@gmail.com">Tomas Martykan&lt;/a> и &lt;a href="https://github.com/martykan/forecastie/graphs/contributors">остали&lt;/a>, уз подршку &lt;a href="https://github.com/martykan/forecastie/issues?utf8=✓;q=is%3Aissue">још много других&lt;/a>.</string>
+    <string name="about_icons">Иконице су &lt;a href="https://erikflowers.github.io/weather-icons/">Weather Icons&lt;/a>, од &lt;a href="http://www.twitter.com/artill">Lukas Bischoff&lt;/a> и &lt;a href="http://www.twitter.com/Erik_UX">Erik Flowers&lt;/a>, под &lt;a href="http://scripts.sil.org/OFL">SIL OFL 1.1&lt;/a> лиценцом.</string>
+    <string name="about_src">Код је доступан на &lt;a href="https://github.com/martykan/forecastie">Forecastie&lt;/a>.</string>
+    <string name="action_about">О програму</string>
+    <string name="action_graphs">Графици</string>
+    <string name="action_refresh">Освежи</string>
+    <string name="action_search">Претражи</string>
+    <string name="action_settings">Подешавања</string>
+    <string name="action_weather_map">Временске карте</string>
+    <string name="app_name">Forecastie</string>
+    <string name="beaufort_calm">Мирно</string>
+    <string name="beaufort_fresh_breeze">Јак ветар</string>
+    <string name="beaufort_gale">Олуја</string>
+    <string name="beaufort_gentle_breeze">Слаб ветар</string>
+    <string name="beaufort_high_wind">Јак ветар</string>
+    <string name="beaufort_hurricane">Ураган</string>
+    <string name="beaufort_light_air">Лахор</string>
+    <string name="beaufort_light_breeze">Поветарац</string>
+    <string name="beaufort_moderate_breeze">Умерен ветар</string>
+    <string name="beaufort_storm">Жестока олуја</string>
+    <string name="beaufort_strong_breeze">Жесток ветар</string>
+    <string name="beaufort_strong_gale">Јака олуја</string>
+    <string name="beaufort_violent_storm">Вихор</string>
+    <string name="dialog_cancel">Поништи</string>
+    <string name="dialog_ok">Прихвати</string>
+    <string name="downloading_data">Преузимање података ...</string>
+    <string name="error_dateFormat">Погрешан формат датума</string>
+    <string name="getting_location">Лоцирање ...</string>
+    <string name="humidity">Влажност</string>
+    <string name="last_update">Последње ажурирање:\n%s</string>
+    <string name="last_update_widget">\nПоследње ажурирање: %s</string>
+    <string name="later">Касније</string>
+    <string name="loading_data">Учитавање ...</string>
+    <string name="location_settings">Подешавања локације</string>
+    <string name="location_settings_button">Подешавања</string>
+    <string name="location_settings_message">Није омогућено лоцирање у подешавањима уређаја. Желите ли да отворите подешавања?</string>
+    <string name="msg_city_not_found">Захтевано место није пронађено.</string>
+    <string name="msg_connection_not_available">Веза није доступна.</string>
+    <string name="msg_err_parsing_json">Грешка у преузимању JSON.</string>
+    <string name="msg_too_many_requests">Превише захтева. Молимо покушајте поново.</string>
+    <string name="pressure">Притисак</string>
+    <string name="rain">Киша</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Претражите"</string>
+    <string name="search_title">Пронађи место</string>
+    <string name="setting_apiKey">API кључ</string>
+    <string name="setting_apiKey_summary">Лични API кључ за OpenWeatherMap</string>
+    <string name="setting_auto_detect_location">Пронађи ме</string>
+    <string name="setting_dateFormat">Формат датума</string>
+    <string name="setting_dateFormatCustom">Лични формат датума</string>
+    <string name="setting_dateFormatCustom_summary">Унесите датум у формату SimpleDateFormat коју желите да користите</string>
+    <string name="setting_differentiateDaysByTint">Различита боја за датуме</string>
+    <string name="setting_displayDecimalZeroes">Прикажи децималне нуле</string>
+    <string name="setting_lengthUnits">Јединице за дужину</string>
+    <string name="setting_pressureUnits">Јединице за притисак</string>
+    <string name="setting_refreshInterval">Интервал ажурирања у позадини</string>
+    <string name="setting_showTempAsInteger">Прикажи температуру као цео број</string>
+    <string name="setting_speedUnits">Јединице за брзину ветра</string>
+    <string name="setting_tempUnits">Температурне јединице</string>
+    <string name="setting_theme">Тема</string>
+    <string name="setting_transparent_widget">Провидни виџет</string>
+    <string name="setting_unit_Celsuis">Целзијус</string>
+    <string name="setting_unit_Fahrenheit">Фаренхајт</string>
+    <string name="setting_unit_Kelvin">Келвин</string>
+    <string name="setting_unit_bft">Бофорова скала</string>
+    <string name="setting_unit_in">Инчи</string>
+    <string name="setting_unit_inhg">Инчи живе</string>
+    <string name="setting_unit_kn">Чворови</string>
+    <string name="setting_unit_kph">Километри на сат (km/h)</string>
+    <string name="setting_unit_mm">Милиметри (mm)</string>
+    <string name="setting_unit_mmhg">Милиметри живе (mmHg)</string>
+    <string name="setting_unit_mph">Миље на сат (mph)</string>
+    <string name="setting_unit_mps">Метри по секунди (m/s)</string>
+    <string name="setting_update_location_automatically">Ажурирај локацију у позадини</string>
+    <string name="setting_wind_direction_format">Приказ смера ветрова</string>
+    <string name="settings_12hour">12 сати</string>
+    <string name="settings_15min">15 минута</string>
+    <string name="settings_1hour">1 сат</string>
+    <string name="settings_24hour">24 сата</string>
+    <string name="settings_2hour">2 сата</string>
+    <string name="settings_30min">30 минута</string>
+    <string name="settings_6hour">6 сати</string>
+    <string name="settings_none">Искључено</string>
+    <string name="settings_title_data">Подаци</string>
+    <string name="settings_title_display">Приказ</string>
+    <string name="settings_title_location">Место</string>
+    <string name="settings_title_units">Јединице</string>
+    <string name="speed_unit_kn">чворова</string>
+    <string name="speed_unit_kph">km/h</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="sunrise">Излазак</string>
+    <string name="sunset">Залазак</string>
+    <string name="temperature">Температура</string>
+    <string name="today">Данас</string>
+    <string name="tomorrow">Сутра</string>
+    <string name="uvi_extreme">Екстремно</string>
+    <string name="uvi_high">Висок</string>
+    <string name="uvi_low">Низак</string>
+    <string name="uvi_moderate">Средњи</string>
+    <string name="uvi_no_info">Нема информација</string>
+    <string name="uvi_very_high">Веома висок</string>
+    <string name="uvindex">УВ индекс</string>
+    <string name="wind">Ветар</string>
+    <string name="wind_direction_east">И</string>
+    <string name="wind_direction_east_north_east">ИСИ</string>
+    <string name="wind_direction_east_south_east">ИЈИ</string>
+    <string name="wind_direction_format_abbreviations">Скраћенице</string>
+    <string name="wind_direction_format_arrows">Стрелице</string>
+    <string name="wind_direction_format_none">Без обележја</string>
+    <string name="wind_direction_north">С</string>
+    <string name="wind_direction_north_east">СИ</string>
+    <string name="wind_direction_north_north_east">ССИ</string>
+    <string name="wind_direction_north_north_west">ССЗ</string>
+    <string name="wind_direction_north_west">СЗ</string>
+    <string name="wind_direction_south">Ј</string>
+    <string name="wind_direction_south_east">ЈИ</string>
+    <string name="wind_direction_south_south_east">ЈЈИ</string>
+    <string name="wind_direction_south_south_west">ЈЈЗ</string>
+    <string name="wind_direction_south_west">ЈЗ</string>
+    <string name="wind_direction_west">З</string>
+    <string name="wind_direction_west_north_west">ЗСЗ</string>
+    <string name="wind_direction_west_south_west">ЗЈЗ</string>
+    <string name="wind_speed">Брзина ветра</string>
+</resources>

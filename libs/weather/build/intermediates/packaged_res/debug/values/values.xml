@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dateFormatsValues">
+        <item>E dd.MM.yyyy - HH:mm</item>
+        <item>dd.MM.yyyy - HH:mm</item>
+        <item>E MM/dd/yyyy - hh:mm a</item>
+        <item>EEEE, MMMM d, h:mma</item>
+        <item>MM/dd/yyyy - hh:mm a</item>
+        <item>EEEE, HH:mm</item>
+        <item>custom</item>
+    </string-array>
+    <string-array name="lengthUnits">
+        <item name="mm">@string/setting_unit_mm</item>
+        <item name="inch">@string/setting_unit_in</item>
+    </string-array>
+    <string-array name="lengthUnitsValues">
+        <item name="mm">mm</item>
+        <item name="inch">in</item>
+    </string-array>
+    <string-array name="pressureUnits">
+        <item name="hpa">@string/setting_unit_hpa</item>
+        <item name="kpa">@string/setting_unit_kpa</item>
+        <item name="mmhg">@string/setting_unit_mmhg</item>
+        <item name="inhg">@string/setting_unit_inhg</item>
+    </string-array>
+    <string-array name="pressureUnitsValues">
+        <item name="hpa">hPa/mBar</item>
+        <item name="kpa">kPa</item>
+        <item name="mmhg">mm Hg</item>
+        <item name="inhg">in Hg</item>
+    </string-array>
+    <string-array name="refreshIntervals">
+        <item name="none">@string/settings_none</item>
+        <item name="15">@string/settings_15min</item>
+        <item name="30">@string/settings_30min</item>
+        <item name="1">@string/settings_1hour</item>
+        <item name="2">@string/settings_2hour</item>
+        <item name="6">@string/settings_6hour</item>
+        <item name="12">@string/settings_12hour</item>
+        <item name="24">@string/settings_24hour</item>
+    </string-array>
+    <string-array name="refreshIntervalsValues">
+        <item name="none">0</item>
+        <item name="15">15</item>
+        <item name="30">30</item>
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="6">6</item>
+        <item name="12">12</item>
+        <item name="24">24</item>
+    </string-array>
+    <string-array name="settings_notification_type_value_keys" translatable="false">
+        <item translatable="false">@string/settings_notification_type_key_default</item>
+        <item translatable="false">@string/settings_notification_type_key_simple</item>
+    </string-array>
+    <string-array name="settings_notification_type_value_titles" translatable="false">
+        <item>@string/settings_notification_type_default</item>
+        <item>@string/settings_notification_type_simple</item>
+    </string-array>
+    <string-array name="speedUnits">
+        <item name="mps">@string/setting_unit_mps</item>
+        <item name="kph">@string/setting_unit_kph</item>
+        <item name="mph">@string/setting_unit_mph</item>
+        <item name="bft">@string/setting_unit_bft</item>
+        <item name="kn">@string/setting_unit_kn</item>
+    </string-array>
+    <string-array name="speedUnitsValues">
+        <item name="mps">m/s</item>
+        <item name="kph">kph</item>
+        <item name="mph">mph</item>
+        <item name="bft">bft</item>
+        <item name="kn">kn</item>
+    </string-array>
+    <string-array name="temperatureUnits">
+        <item name="C">@string/setting_unit_Celsuis</item>
+        <item name="F">@string/setting_unit_Fahrenheit</item>
+        <item name="K">@string/setting_unit_Kelvin</item>
+    </string-array>
+    <string-array name="temperatureUnitsValues">
+        <item name="C">°C</item>
+        <item name="F">°F</item>
+        <item name="K">K</item>
+    </string-array>
+    <string-array name="themes">
+        <item name="fresh">@string/setting_theme_fresh</item>
+        <item name="classic">@string/setting_theme_classic</item>
+        <item name="dark">@string/setting_theme_dark</item>
+        <item name="black">@string/setting_theme_black</item>
+        <item name="classicdark">@string/setting_theme_classic_dark</item>
+        <item name="classicblack">@string/setting_theme_classic_black</item>
+    </string-array>
+    <string-array name="themesValues">
+        <item name="fresh">fresh</item>
+        <item name="classic">classic</item>
+        <item name="dark">dark</item>
+        <item name="black">black</item>
+        <item name="classicdark">classicdark</item>
+        <item name="classicblack">classicblack</item>
+    </string-array>
+    <string-array name="windDirectionArrows">
+        <item name="n">↓</item>
+        <item name="ne">↙</item>
+        <item name="e">←</item>
+        <item name="se">↖</item>
+        <item name="s">↑</item>
+        <item name="sw">↗</item>
+        <item name="w">→</item>
+        <item name="nw">↘</item>
+    </string-array>
+    <string-array name="windDirectionFormatValues">
+        <item name="none">none</item>
+        <item name="arrow">arrow</item>
+        <item name="abbr">abbr</item>
+    </string-array>
+    <string-array name="windDirectionFormats">
+        <item name="none">@string/wind_direction_format_none</item>
+        <item name="arrow">@string/wind_direction_format_arrows</item>
+        <item name="abbr">@string/wind_direction_format_abbreviations</item>
+    </string-array>
+    <string-array name="windDirections">
+        <item name="n">@string/wind_direction_north</item>
+        <item name="nne">@string/wind_direction_north_north_east</item>
+        <item name="ne">@string/wind_direction_north_east</item>
+        <item name="ene">@string/wind_direction_east_north_east</item>
+        <item name="e">@string/wind_direction_east</item>
+        <item name="ese">@string/wind_direction_east_south_east</item>
+        <item name="se">@string/wind_direction_south_east</item>
+        <item name="sse">@string/wind_direction_south_south_east</item>
+        <item name="s">@string/wind_direction_south</item>
+        <item name="ssw">@string/wind_direction_south_south_west</item>
+        <item name="sw">@string/wind_direction_south_west</item>
+        <item name="wsw">@string/wind_direction_west_south_west</item>
+        <item name="w">@string/wind_direction_west</item>
+        <item name="wnw">@string/wind_direction_west_north_west</item>
+        <item name="nw">@string/wind_direction_north_west</item>
+        <item name="nnw">@string/wind_direction_north_north_west</item>
+    </string-array>
+    <attr format="color" name="colorBackground"/>
+    <attr format="color" name="colorTintedBackground"/>
+    <color name="blackTheme_colorBackground">#000000</color>
+    <color name="blackTheme_colorTintedBackground">#303030</color>
+    <color name="classic_blackTheme_colorBackground">#000000</color>
+    <color name="classic_blackTheme_colorTintedBackground">#303030</color>
+    <color name="classic_colorAccent">#455a64</color>
+    <color name="classic_colorBackground">@android:color/transparent</color>
+    <color name="classic_colorPrimary">#607d8b</color>
+    <color name="classic_colorPrimaryDark">#455a64</color>
+    <color name="classic_colorTintedBackground">#cdcdcd</color>
+    <color name="classic_darkTheme_colorAccent">#90a4ae</color>
+    <color name="classic_darkTheme_colorBackground">#303030</color>
+    <color name="classic_darkTheme_colorPrimary">#37474f</color>
+    <color name="classic_darkTheme_colorPrimaryDark">#263238</color>
+    <color name="classic_darkTheme_colorTintedBackground">#263238</color>
+    <color name="colorAccent">#1E88E5</color>
+    <color name="colorBackground">@android:color/transparent</color>
+    <color name="colorBackgroundDefault">#fafafa</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1E88E5</color>
+    <color name="colorTintedBackground">#cdcdcd</color>
+    <color name="darkTheme_colorAccent">#2196F3</color>
+    <color name="darkTheme_colorBackground">#303030</color>
+    <color name="darkTheme_colorPrimary">#2196F3</color>
+    <color name="darkTheme_colorPrimaryDark">#1E88E5</color>
+    <color name="darkTheme_colorTintedBackground">#424242</color>
+    <color name="fresh_theme_colorControlActivated">#ff8800</color>
+    <color name="ic_launcher_background">#5F7C89</color>
+    <color name="light_theme_textColor">#89000000</color>
+    <color name="notification_icon_color">#DE000000</color>
+    <color name="splashBackground">#607d8b</color>
+    <color name="tab_indicator">#ffffff</color>
+    <color name="text_dark">#000000</color>
+    <color name="text_light">#ffffff</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">240dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <string name="about_data">Data provided by <a href="https://openweathermap.org/">OpenWeatherMap</a>, under the <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons CC-BY-SA 2.0 licence</a>.</string>
+    <string name="about_description">A lightweight, Free Software weather app, released under the GPL3 licence.</string>
+    <string name="about_developers">Developed by <a href="mailto:t.martykan@gmail.com">Tomáš Martykán</a> and <a href="https://github.com/martykan/forecastie/graphs/contributors">others</a>, with assistance from <a href="https://github.com/martykan/forecastie/issues?utf8=✓;q=is%3Aissue">many more</a>.</string>
+    <string name="about_icons">Icons are <a href="https://erikflowers.github.io/weather-icons/">Weather Icons</a>, by <a href="http://www.twitter.com/artill">Lukas Bischoff</a> and <a href="http://www.twitter.com/Erik_UX">Erik Flowers</a>, under the <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a> licence.</string>
+    <string name="about_issues">Bugs and enhancements can be posted on our <a href="https://github.com/martykan/forecastie/issues">Github issues page</a>.</string>
+    <string name="about_src">Code is available at <a href="https://github.com/martykan/forecastie">Github</a>.</string>
+    <string name="about_unknown">Could not get version name</string>
+    <string name="action_about">About</string>
+    <string name="action_graphs">Grafik</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Pencarian</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="action_weather_map">Peta Cuaca</string>
+    <string name="apiKey" translatable="false">"3e29e62e2ddf6dd3d2ebd28aed069215"</string>
+    <string name="app_name">Forecastie</string>
+    <string name="beaufort_calm">Calm (0)</string>
+    <string name="beaufort_fresh_breeze">Fresh breeze (5)</string>
+    <string name="beaufort_gale">Gale (8)</string>
+    <string name="beaufort_gentle_breeze">Gentle breeze (3)</string>
+    <string name="beaufort_high_wind">High wind (7)</string>
+    <string name="beaufort_hurricane">Hurricane (12)</string>
+    <string name="beaufort_light_air">Light air (1)</string>
+    <string name="beaufort_light_breeze">Light breeze (2)</string>
+    <string name="beaufort_moderate_breeze">Moderate breeze (4)</string>
+    <string name="beaufort_storm">Storm (10)</string>
+    <string name="beaufort_strong_breeze">Strong breeze (6)</string>
+    <string name="beaufort_strong_gale">Strong gale (9)</string>
+    <string name="beaufort_violent_storm">Violent storm (11)</string>
+    <string name="channel_name">Pemberitahuan cuaca</string>
+    <string name="clouds">Clouds</string>
+    <string name="dialog_cancel">Batalkan</string>
+    <string name="dialog_ok">OK</string>
+    <string name="downloading_data">Mengunduh data Anda...</string>
+    <string name="error_dateFormat">DATE FORMAT ERROR</string>
+    <string name="getting_location">Mendapatkan lokasi Anda...</string>
+    <string name="graphs_more_days">hari lagi</string>
+    <string name="humidity">Kelembaban</string>
+    <string name="last_update">Pembaharuan Terakhir : %s</string>
+    <string name="last_update_widget">\nLast update: %s</string>
+    <string name="later">Lusa</string>
+    <string name="loading_data">Loading...</string>
+    <string name="location_search_heading">Lokasi</string>
+    <string name="location_settings">Pengaturan Lokasi</string>
+    <string name="location_settings_button">Pengaturan</string>
+    <string name="location_settings_message">Lokasi tidak diaktifkan. Apakah Anda ingin masuk ke menu pengaturan?</string>
+    <string name="msg_city_not_found">Kota tertentu tidak ditemukan.</string>
+    <string name="msg_connection_not_available">Koneksi tidak tersedia.</string>
+    <string name="msg_err_parsing_json">Error parsing JSON.</string>
+    <string name="msg_http_error">Kesalahan saat meminta atau menerima data.</string>
+    <string name="msg_invalid_api_key">Invalid API key.</string>
+    <string name="msg_too_many_requests">Terlalu banyak permintaan. Silakan coba lagi.</string>
+    <string name="no_data">No data</string>
+    <string name="notification_service_description">Layanan untuk menampilkan pemberitahuan cuaca Simaster.</string>
+    <string name="pressure">Tekanan</string>
+    <string name="pressure_unit_hpa">hPa/mBar</string>
+    <string name="pressure_unit_inhg">in Hg</string>
+    <string name="pressure_unit_kpa">kPa</string>
+    <string name="pressure_unit_mmhg">mm Hg</string>
+    <string name="rain">Hujan</string>
+    <string name="search_title">Cari kota</string>
+    <string name="setting_apiKey">API key</string>
+    <string name="setting_apiKey_summary">Custom API key for OpenWeatherMap queries</string>
+    <string name="setting_auto_detect_location">Deteksi Lokasi</string>
+    <string name="setting_available_simple_string_codes" translatable="false">yYMwWDdFEuaHkKhmsSzZX</string>
+    <string name="setting_dateFormat">Date Format</string>
+    <string name="setting_dateFormatCustom">Custom Date Format</string>
+    <string name="setting_dateFormatCustom_summary">Provide the custom SimpleDateFormat string to be used</string>
+    <string name="setting_differentiateDaysByTint">Bedakan Hari dengan Warna</string>
+    <string name="setting_displayDecimalZeroes">Tampilkan nol desimal decimal</string>
+    <string name="setting_example_simple_string" translatable="false">EEEE, d MMM yyyy h:mm:ss a, zzzz</string>
+    <string name="setting_lengthUnits">"Satuan panjang "</string>
+    <string name="setting_pressureUnits">Unit tekanan</string>
+    <string name="setting_refreshInterval">Interval penyegaran latar belakang</string>
+    <string name="setting_showTempAsInteger">Tampilkan suhu hanya sebagai bilangan bulat</string>
+    <string name="setting_speedUnits">Satuan kecepatan</string>
+    <string name="setting_tempUnits">Satuan Temperatur</string>
+    <string name="setting_theme">Tema</string>
+    <string name="setting_theme_black">Fresh Black</string>
+    <string name="setting_theme_classic">Classic</string>
+    <string name="setting_theme_classic_black">Classic Black</string>
+    <string name="setting_theme_classic_dark">Classic Dark</string>
+    <string name="setting_theme_dark">Fresh Dark</string>
+    <string name="setting_theme_fresh">Fresh</string>
+    <string name="setting_transparent_widget">"Jadikan widget transparan "</string>
+    <string name="setting_unit_Celsuis">Celsius</string>
+    <string name="setting_unit_Fahrenheit">Fahrenheit</string>
+    <string name="setting_unit_Kelvin">Kelvin</string>
+    <string name="setting_unit_bft">Skala angin Beaufort (bft)</string>
+    <string name="setting_unit_hpa">hPa/mBar</string>
+    <string name="setting_unit_in">Inches (in)</string>
+    <string name="setting_unit_inhg">in Hg</string>
+    <string name="setting_unit_kn">Knots (kn)</string>
+    <string name="setting_unit_kpa">kPa</string>
+    <string name="setting_unit_kph">Kilometer per jam(kph)</string>
+    <string name="setting_unit_mm">Millimeters (mm)</string>
+    <string name="setting_unit_mmhg">mm Hg</string>
+    <string name="setting_unit_mph">Mil per jam (mph)</string>
+    <string name="setting_unit_mps">Meter per detik  (m/s)</string>
+    <string name="setting_update_location_automatically">Perbarui lokasi di latar belakang</string>
+    <string name="setting_wind_direction_format">"Format arah angin "</string>
+    <string name="settings_12hour">12 Jam</string>
+    <string name="settings_15min">15 min</string>
+    <string name="settings_1hour">1 Jam</string>
+    <string name="settings_24hour">24 Jam</string>
+    <string name="settings_2hour">2 Jam</string>
+    <string name="settings_30min">30 min</string>
+    <string name="settings_6hour">6 Jam</string>
+    <string name="settings_enable_notification_key" translatable="false">showNotification</string>
+    <string name="settings_enable_notification_title">Show weather in notification</string>
+    <string name="settings_none">Tidak Ada</string>
+    <string name="settings_notification_type_default">Default Android view</string>
+    <string name="settings_notification_type_default_value" translatable="false">@string/settings_notification_type_key_simple</string>
+    <string name="settings_notification_type_key" translatable="false">notificationType</string>
+    <string name="settings_notification_type_key_default" translatable="false">default</string>
+    <string name="settings_notification_type_key_simple" translatable="false">simple</string>
+    <string name="settings_notification_type_simple">Simple notification</string>
+    <string name="settings_notification_type_title">Notification type</string>
+    <string name="settings_title_data">Data</string>
+    <string name="settings_title_display">Tampilan</string>
+    <string name="settings_title_location">Lokasi</string>
+    <string name="settings_title_notifications">Notification</string>
+    <string name="settings_title_units">"Satuan "</string>
+    <string name="speed_unit_kn">kn</string>
+    <string name="speed_unit_kph">kph</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="speed_unit_mps">m/s</string>
+    <string name="sunrise">Matahari terbit</string>
+    <string name="sunset">Matahari terbenam</string>
+    <string name="tap_for_graphs">Ketuk untuk Grafik</string>
+    <string name="temperature">Suhu</string>
+    <string name="today">Hari Ini</string>
+    <string name="tomorrow">Besok</string>
+    <string name="uvi_extreme">Ekstrim</string>
+    <string name="uvi_high">Tinggi</string>
+    <string name="uvi_low">Rendah</string>
+    <string name="uvi_moderate">Sedang</string>
+    <string name="uvi_no_info">No Info</string>
+    <string name="uvi_very_high">Sangat tinggi</string>
+    <string name="uvindex">Indeks uv</string>
+    <string name="weather_cloudy" translatable="false"></string>
+    <string name="weather_cloudy_gusts" translatable="false"></string>
+    <string name="weather_day_cloudy" translatable="false"></string>
+    <string name="weather_day_haze" translatable="false"></string>
+    <string name="weather_day_sunny" translatable="false"></string>
+    <string name="weather_dust" translatable="false"></string>
+    <string name="weather_fog" translatable="false"></string>
+    <string name="weather_hail" translatable="false"></string>
+    <string name="weather_hot" translatable="false"></string>
+    <string name="weather_hurricane" translatable="false"></string>
+    <string name="weather_lightning" translatable="false"></string>
+    <string name="weather_night_alt_cloudy" translatable="false"></string>
+    <string name="weather_night_clear" translatable="false"></string>
+    <string name="weather_rain" translatable="false"></string>
+    <string name="weather_rain_mix" translatable="false"></string>
+    <string name="weather_sandstorm" translatable="false"></string>
+    <string name="weather_showers" translatable="false"></string>
+    <string name="weather_sleet" translatable="false"></string>
+    <string name="weather_smoke" translatable="false"></string>
+    <string name="weather_snow" translatable="false"></string>
+    <string name="weather_snowflake_cold" translatable="false"></string>
+    <string name="weather_sprinkle" translatable="false"></string>
+    <string name="weather_storm_showers" translatable="false"></string>
+    <string name="weather_strong_wind" translatable="false"></string>
+    <string name="weather_thunderstorm" translatable="false"></string>
+    <string name="weather_tornado" translatable="false"></string>
+    <string name="weather_windy" translatable="false"></string>
+    <string name="widget_label_classic">Ramalan Klasik</string>
+    <string name="widget_label_extensive">Ramalan Luas</string>
+    <string name="widget_label_simple">Ramalan Sederhana</string>
+    <string name="widget_label_time">Waktu Prakiraan</string>
+    <string name="wind">Angin</string>
+    <string name="wind_direction_east">E</string>
+    <string name="wind_direction_east_north_east">ENE</string>
+    <string name="wind_direction_east_south_east">ESE</string>
+    <string name="wind_direction_format_abbreviations">"Singkatan "</string>
+    <string name="wind_direction_format_arrows">Panah</string>
+    <string name="wind_direction_format_none">"Tidak ada indikasi "</string>
+    <string name="wind_direction_north">N</string>
+    <string name="wind_direction_north_east">NE</string>
+    <string name="wind_direction_north_north_east">NNE</string>
+    <string name="wind_direction_north_north_west">NNW</string>
+    <string name="wind_direction_north_west">NW</string>
+    <string name="wind_direction_south">S</string>
+    <string name="wind_direction_south_east">SE</string>
+    <string name="wind_direction_south_south_east">SSE</string>
+    <string name="wind_direction_south_south_west">SSW</string>
+    <string name="wind_direction_south_west">SW</string>
+    <string name="wind_direction_west">W</string>
+    <string name="wind_direction_west_north_west">WNW</string>
+    <string name="wind_direction_west_south_west">WSW</string>
+    <string name="wind_speed">Kecepatan angin</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorBackground">@color/colorBackground</item>
+        <item name="colorTintedBackground">@color/colorTintedBackground</item>
+        <item name="colorControlActivated">@color/fresh_theme_colorControlActivated</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.Black" parent="AppTheme.Dark">
+        <item name="android:colorBackground">@color/blackTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/blackTheme_colorTintedBackground</item>
+        <item name="colorControlActivated">@color/fresh_theme_colorControlActivated</item>
+    </style>
+    <style name="AppTheme.Classic" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/classic_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/classic_colorPrimaryDark</item>
+        <item name="colorAccent">@color/classic_colorAccent</item>
+        <item name="colorBackground">@color/classic_colorBackground</item>
+        <item name="colorTintedBackground">@color/classic_colorTintedBackground</item>
+    </style>
+    <style name="AppTheme.Classic.Black" parent="AppTheme.Classic.Dark">
+        <item name="android:colorBackground">@color/classic_blackTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/classic_blackTheme_colorTintedBackground</item>
+    </style>
+    <style name="AppTheme.Classic.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/classic_darkTheme_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/classic_darkTheme_colorPrimaryDark</item>
+        <item name="colorAccent">@color/classic_darkTheme_colorAccent</item>
+        <item name="colorBackground">@color/classic_darkTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/classic_darkTheme_colorTintedBackground</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/darkTheme_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkTheme_colorPrimaryDark</item>
+        <item name="colorAccent">@color/darkTheme_colorAccent</item>
+        <item name="colorBackground">@color/darkTheme_colorBackground</item>
+        <item name="colorTintedBackground">@color/darkTheme_colorTintedBackground</item>
+        <item name="colorControlActivated">@color/fresh_theme_colorControlActivated</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar.Black" parent="AppTheme.Black">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar.Classic" parent="AppTheme.Classic">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar.Classic.Black" parent="AppTheme.Classic.Black">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar.Classic.Dark" parent="AppTheme.Classic.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar.Dark" parent="AppTheme.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.PopupOverlay.Black" parent="ThemeOverlay.AppCompat">
+      <item name="android:colorBackground">@color/blackTheme_colorBackground</item>
+    </style>
+    <style name="AppTheme.PopupOverlay.Dark" parent="ThemeOverlay.AppCompat"/>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+</resources>

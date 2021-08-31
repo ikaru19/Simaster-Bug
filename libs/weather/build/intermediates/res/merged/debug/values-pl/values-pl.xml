@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Przejdź na stronę główną"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Przejdź wyżej"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Więcej opcji"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Gotowe"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Pokaż wszystko"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Wybierz aplikację"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"WYŁ."</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"WŁ."</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Funkcyjny+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"spacja"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Szukaj…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Wyczyść zapytanie"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Zapytanie"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Szukaj"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Wyślij zapytanie"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Wyszukiwanie głosowe"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Udostępnij przez:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Udostępnij przez: <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Zwiń"</string>
+    <string name="about_data">Dane dostarczone przez <a href="https://openweathermap.org/">OpenWeatherMap</a>, pod licencją <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons CC-BY-SA 2.0</a>.</string>
+    <string name="about_description">Lekka aplikacja pogodowa, udostępniana na wolnej i otwartej licencji GPLv3.</string>
+    <string name="about_developers">Stworzona przez <a href="mailto:t.martykan@gmail.com">Tomáša Martykána</a> i <a href="https://github.com/martykan/forecastie/graphs/contributors">innych</a>, z pomocą od <a href="https://github.com/martykan/forecastie/issues?utf8=✓;q=is%3Aissue">wielu innych</a>.</string>
+    <string name="about_icons">Ikony wzięte z <a href="https://erikflowers.github.io/weather-icons/">Weather Icons</a>, przez <a href="http://www.twitter.com/artill">Lukasa Bischoffa</a> i <a href="http://www.twitter.com/Erik_UX">Erika Flowersa</a>, pod licencją <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>.</string>
+    <string name="about_issues">Błędy i ulepszenia mogą być wysyłane na naszej <a href="https://github.com/martykan/forecastie/issues">stronie problemów na Github</a>.</string>
+    <string name="about_src">Kod dostępny jest na platformie <a href="https://github.com/martykan/forecastie">Github</a>.</string>
+    <string name="about_unknown">Nie udało się znaleźć nazwy wersji</string>
+    <string name="action_about">O aplikacji</string>
+    <string name="action_graphs">Wykresy</string>
+    <string name="action_refresh">Odśwież</string>
+    <string name="action_search">Szukaj</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="action_weather_map">Mapa pogody</string>
+    <string name="app_name">Forecastie</string>
+    <string name="beaufort_calm">Cisza (0)</string>
+    <string name="beaufort_fresh_breeze">Dość silny wiatr (5)</string>
+    <string name="beaufort_gale">Sztorm (8)</string>
+    <string name="beaufort_gentle_breeze">Łagodny wiatr (3)</string>
+    <string name="beaufort_high_wind">Bardzo silny wiatr (7)</string>
+    <string name="beaufort_hurricane">Huragan (12)</string>
+    <string name="beaufort_light_air">Powiew (1)</string>
+    <string name="beaufort_light_breeze">Słaby wiatr (2)</string>
+    <string name="beaufort_moderate_breeze">Umiarkowany wiatr (4)</string>
+    <string name="beaufort_storm">Bardzo silny sztorm (10)</string>
+    <string name="beaufort_strong_breeze">Silny wiatr (6)</string>
+    <string name="beaufort_strong_gale">Silny sztorm (9)</string>
+    <string name="beaufort_violent_storm">Gwałtowny sztorm (11)</string>
+    <string name="channel_name">Powiadomienia pogodowe</string>
+    <string name="clouds">Zachmurzenie</string>
+    <string name="dialog_cancel">Anuluj</string>
+    <string name="dialog_ok">OK</string>
+    <string name="downloading_data">Pobieranie danych ...</string>
+    <string name="error_dateFormat">BŁĄD FORMATU DATY</string>
+    <string name="getting_location">Wyszukiwanie lokalizacji ...</string>
+    <string name="graphs_more_days">Więcej dni</string>
+    <string name="humidity">Wilgotność</string>
+    <string name="last_update">Ostatnia aktualizacja:\n%s</string>
+    <string name="last_update_widget">\nOstatnia aktualizacja: %s</string>
+    <string name="later">Później</string>
+    <string name="loading_data">Ładowanie...</string>
+    <string name="location_search_heading">Lokalizacje</string>
+    <string name="location_settings">Ustawienia lokalizacji</string>
+    <string name="location_settings_button">Ustawienia</string>
+    <string name="location_settings_message">Lokalizacja nie jest włączona. Czy chcesz przejść do menu ustawień?</string>
+    <string name="msg_city_not_found">Nie udało się znaleźć wybranego miasta.</string>
+    <string name="msg_connection_not_available">Brak połączenia.</string>
+    <string name="msg_err_parsing_json">Błąd parsowania JSON.</string>
+    <string name="msg_http_error">Błąd w trakcie żadania lub odbierania danych.</string>
+    <string name="msg_invalid_api_key">Niepoprawny klucz API.</string>
+    <string name="msg_too_many_requests">Zbyt wiele żądań. Proszę spróbować ponownie.</string>
+    <string name="no_data">Brak danych</string>
+    <string name="notification_service_description">Serwis do wyświetlania powiadomień pogodowych aplikacji Forecastie.</string>
+    <string name="pressure">Ciśnienie</string>
+    <string name="pressure_unit_hpa">hPa/mBar</string>
+    <string name="pressure_unit_inhg">in Hg</string>
+    <string name="pressure_unit_kpa">kPa</string>
+    <string name="pressure_unit_mmhg">mm Hg</string>
+    <string name="rain">Deszcz</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Szukaj"</string>
+    <string name="search_title">Wyszukaj miejscowość</string>
+    <string name="setting_apiKey">Klucz API</string>
+    <string name="setting_apiKey_summary">Niestandardowy klucz API dla zapytań OpenWeatherMap</string>
+    <string name="setting_auto_detect_location">Wykrywanie lokalizacji</string>
+    <string name="setting_dateFormat">Format daty</string>
+    <string name="setting_dateFormatCustom">Niestandardowy format daty</string>
+    <string name="setting_dateFormatCustom_summary">Podaj własny ciąg dla formatu daty</string>
+    <string name="setting_differentiateDaysByTint">Rozróżnij dni kolorami</string>
+    <string name="setting_displayDecimalZeroes">Wyświetlaj zera po przecinku</string>
+    <string name="setting_lengthUnits">Jednostki długości</string>
+    <string name="setting_pressureUnits">Jednostki ciśnienia</string>
+    <string name="setting_refreshInterval">Odstępy odświeżania w tle</string>
+    <string name="setting_showTempAsInteger">Pokaż temperaturę tylko jako liczbę całkowitą</string>
+    <string name="setting_speedUnits">Jednostki prędkości</string>
+    <string name="setting_tempUnits">Jednostki temperatury</string>
+    <string name="setting_theme">Motyw</string>
+    <string name="setting_theme_black">Świeży Czarny</string>
+    <string name="setting_theme_classic">Klasyczny</string>
+    <string name="setting_theme_classic_black">Klasyczny Czarny</string>
+    <string name="setting_theme_classic_dark">Klasyczny Ciemny</string>
+    <string name="setting_theme_dark">Świeży Ciemny</string>
+    <string name="setting_theme_fresh">Świeży</string>
+    <string name="setting_transparent_widget">Przeźroczyste tło widżetu</string>
+    <string name="setting_unit_Celsuis">Celsjusz</string>
+    <string name="setting_unit_Fahrenheit">Fahrenheit</string>
+    <string name="setting_unit_Kelvin">Kelwin</string>
+    <string name="setting_unit_bft">Skala Beauforta (bft)</string>
+    <string name="setting_unit_hpa">hPa/mBar</string>
+    <string name="setting_unit_in">Stopy (in)</string>
+    <string name="setting_unit_inhg">in Hg</string>
+    <string name="setting_unit_kn">Węzły (kn)</string>
+    <string name="setting_unit_kpa">kPa</string>
+    <string name="setting_unit_kph">Kilometry na godzinę (kph)</string>
+    <string name="setting_unit_mm">Milimetry (mm)</string>
+    <string name="setting_unit_mmhg">mm Hg</string>
+    <string name="setting_unit_mph">Mile na godzinę (mph)</string>
+    <string name="setting_unit_mps">Metry na sekundę (m/s)</string>
+    <string name="setting_update_location_automatically">Aktualizowanie lokalizacji w tle</string>
+    <string name="setting_wind_direction_format">Format kierunku wiatru</string>
+    <string name="settings_12hour">12 godzin</string>
+    <string name="settings_15min">15 minut</string>
+    <string name="settings_1hour">1 godzina</string>
+    <string name="settings_24hour">24 godziny</string>
+    <string name="settings_2hour">2 godziny</string>
+    <string name="settings_30min">30 minut</string>
+    <string name="settings_6hour">6 godzin</string>
+    <string name="settings_enable_notification_title">Pokazuj pogodę na pasku powiadomień.</string>
+    <string name="settings_none">Brak</string>
+    <string name="settings_notification_type_default">Podstawowe powiadomienie Android</string>
+    <string name="settings_notification_type_simple">Proste powiadomienie</string>
+    <string name="settings_notification_type_title">Typ powiadomienia</string>
+    <string name="settings_title_data">Dane</string>
+    <string name="settings_title_display">Wyświetlanie</string>
+    <string name="settings_title_location">Lokalizacja</string>
+    <string name="settings_title_notifications">Powiadomienia</string>
+    <string name="settings_title_units">Jednostki</string>
+    <string name="speed_unit_kn">kn</string>
+    <string name="speed_unit_kph">kph</string>
+    <string name="speed_unit_mph">mph</string>
+    <string name="speed_unit_mps">m/s</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="sunrise">Wschód słońca</string>
+    <string name="sunset">Zachód słońca</string>
+    <string name="tap_for_graphs">Kliknij po Wykresy</string>
+    <string name="temperature">Temperatura</string>
+    <string name="today">Dziś</string>
+    <string name="tomorrow">Jutro</string>
+    <string name="uvi_extreme">Ekstremalny</string>
+    <string name="uvi_high">Wysoki</string>
+    <string name="uvi_low">Niski</string>
+    <string name="uvi_moderate">Średni</string>
+    <string name="uvi_no_info">Brak danych</string>
+    <string name="uvi_very_high">Bardzo Wysoki</string>
+    <string name="uvindex">Indeks UV</string>
+    <string name="widget_label_classic">Forecastie Klasyczny</string>
+    <string name="widget_label_extensive">Forecastie Obszerny</string>
+    <string name="widget_label_simple">Forecastie Prosty</string>
+    <string name="widget_label_time">Forecastie Czas</string>
+    <string name="wind">Wiatr</string>
+    <string name="wind_direction_east">E</string>
+    <string name="wind_direction_east_north_east">ENE</string>
+    <string name="wind_direction_east_south_east">ESE</string>
+    <string name="wind_direction_format_abbreviations">Skróty</string>
+    <string name="wind_direction_format_arrows">Strzałki</string>
+    <string name="wind_direction_format_none">Nieokreślony</string>
+    <string name="wind_direction_north">N</string>
+    <string name="wind_direction_north_east">NE</string>
+    <string name="wind_direction_north_north_east">NNE</string>
+    <string name="wind_direction_north_north_west">NNW</string>
+    <string name="wind_direction_north_west">NW</string>
+    <string name="wind_direction_south">S</string>
+    <string name="wind_direction_south_east">SE</string>
+    <string name="wind_direction_south_south_east">SSE</string>
+    <string name="wind_direction_south_south_west">SSW</string>
+    <string name="wind_direction_south_west">SW</string>
+    <string name="wind_direction_west">W</string>
+    <string name="wind_direction_west_north_west">WNW</string>
+    <string name="wind_direction_west_south_west">WSW</string>
+    <string name="wind_speed">Szybkość wiatru</string>
+</resources>

@@ -1,9 +1,9 @@
 package com.ikaru19.simaster_bug;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -15,12 +15,11 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.ikaru19.simaster_bug.adapters.ArtikelV2Adapter;
+import com.ikaru19.simaster_bug.adapters.VideoAdapter;
 import com.ikaru19.simaster_bug.apihelper.ApiService;
 import com.ikaru19.simaster_bug.component.LottieLoading;
 import com.ikaru19.simaster_bug.generator.ServiceGenerator;
-import com.ikaru19.simaster_bug.models.v2.ArtikelV2;
-import com.ikaru19.simaster_bug.v2.ArtikelV2DetailActivity;
+import com.ikaru19.simaster_bug.models.VideoResponse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,11 +28,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+public class VideoActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private ApiService apiService;
-    private List<ArtikelV2> artikels = new ArrayList<>();
-    private ArtikelV2Adapter adapter;
+    private List<VideoResponse> artikels = new ArrayList<>();
+    private VideoAdapter adapter;
     private RecyclerView recyclerView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private View noInternetView;
@@ -42,26 +41,26 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_artikel);
+        setContentView(R.layout.activity_video);
         apiService = ServiceGenerator.createService(ApiService.class);
-        recyclerView = findViewById(R.id.rv_artikel);
+        recyclerView = findViewById(R.id.rv_video);
         swipeRefreshLayout = findViewById(R.id.swipeRefresh);
         noInternetView = findViewById(R.id.artikelNoInternet);
         getData();
         swipeRefreshLayout.setOnRefreshListener(this);
-
-        adapter = new ArtikelV2Adapter(artikels);
+        adapter = new VideoAdapter(artikels);
         adapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                Intent intent = new Intent(ArtikelActivity.this, ArtikelV2DetailActivity.class);
-                intent.putExtra("ArtikelDetail", (Parcelable) artikels.get(position));
-                startActivity(intent);
+                 String url = artikels.get(position).getUri();
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+                Log.d("SIMASTER_DEBUG","CLICKED");
             }
         });
-        recyclerView.setLayoutManager(new LinearLayoutManager(ArtikelActivity.this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(VideoActivity.this));
         recyclerView.setAdapter(adapter);
-
     }
 
     @Override
@@ -77,40 +76,36 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
         super.onStop();
     }
 
-    private void getData(){
-//        final ProgressDialog progress = new ProgressDialog(this);
-//        progress.setTitle("Loading");
-//        progress.setMessage("Mengambil Data Dari Internet");
-//        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
-//        progress.show();
-
-        final LottieLoading lottieLoading = new LottieLoading(ArtikelActivity.this);
+    private void getData() {
+        final LottieLoading lottieLoading = new LottieLoading(VideoActivity.this);
         lottieLoading.show();
-        Call<List<ArtikelV2>> artikelCall = apiService.getArtikel();
-        artikelCall.enqueue(new Callback<List<ArtikelV2>>() {
+        Call<List<VideoResponse>> videoCall = apiService.getVideo();
+        videoCall.enqueue(new Callback<List<VideoResponse>>() {
             @Override
-            public void onResponse(Call<List<ArtikelV2>> call, Response<List<ArtikelV2>> response) {
+            public void onResponse(Call<List<VideoResponse>> call, Response<List<VideoResponse>> response) {
                 noInternetView.setVisibility(View.INVISIBLE);
                 recyclerView.setVisibility(View.VISIBLE);
                 artikels = response.body();
 
                 if (artikels == null || artikels.isEmpty() ){
-                    Toast.makeText(ArtikelActivity.this,"Data Kosong",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(VideoActivity.this,"Data Kosong",Toast.LENGTH_SHORT).show();
                 }else{
                     adapter.refill(artikels);
                     adapter.notifyDataSetChanged();
                 }
                 lottieLoading.dismiss();
-
             }
 
             @Override
-            public void onFailure(Call<List<ArtikelV2>> call, Throwable t) {
+            public void onFailure(Call<List<VideoResponse>> call, Throwable t) {
                 noInternetView.setVisibility(View.VISIBLE);
                 recyclerView.setVisibility(View.INVISIBLE);
                 lottieLoading.dismiss();
                 Log.d("SIMASTER_DEBUG",t.getMessage());
             }
+
+            {
+        }
         });
     }
 
@@ -120,8 +115,8 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-               getData();
-               swipeRefreshLayout.setRefreshing(false);
+                getData();
+                swipeRefreshLayout.setRefreshing(false);
             }
         }, 2000);
     }

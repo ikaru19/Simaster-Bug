@@ -19,7 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:replace="android:icon">
-        <activity android:name=".v2.HamaV2DetailActivity"/>
+        <activity android:name=".VideoActivity"></activity>
+        <activity android:name=".v2.ArtikelV2DetailActivity" />
+        <activity android:name=".v2.HamaV2DetailActivity" />
         <activity android:name=".v2.HamaV2Activity" />
         <activity android:name=".BTS.BtsDetailActivity" />
         <activity android:name=".BTS.BtsVarietasActivity" />

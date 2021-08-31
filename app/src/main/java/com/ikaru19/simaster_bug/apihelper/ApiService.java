@@ -1,9 +1,10 @@
 package com.ikaru19.simaster_bug.apihelper;
 
-import com.ikaru19.simaster_bug.models.Artikel;
 import com.ikaru19.simaster_bug.models.Bts;
 import com.ikaru19.simaster_bug.models.Contact;
 import com.ikaru19.simaster_bug.models.Hama;
+import com.ikaru19.simaster_bug.models.VideoResponse;
+import com.ikaru19.simaster_bug.models.v2.ArtikelV2;
 import com.ikaru19.simaster_bug.models.v2.HamaV2;
 
 import java.util.List;
@@ -13,8 +14,8 @@ import retrofit2.http.GET;
 
 public interface ApiService {
 
-    @GET("api/Artikel")
-    Call<List<Artikel>> getArtikel();
+    @GET("api/v2/artikel")
+    Call<List<ArtikelV2>> getArtikel();
 
     @GET("api/Hama?kategori=wijen")
     Call<List<Hama>> getHamaWijen();
@@ -52,4 +53,7 @@ public interface ApiService {
 
     @GET("api/v2/Hama?kategori=tembakau")
     Call<List<HamaV2>> getHamaTembakauV2();
+
+    @GET("api/v2/vidio")
+    Call<List<VideoResponse>> getVideo();
 }

@@ -13,7 +13,7 @@ import com.ikaru19.simaster_bug.v2.HamaV2Activity;
 public class MainActivity extends AppCompatActivity {
 
     CardView menu_tanya,menu_artikel,menu_wijen,menu_tembakau,menu_tebu,menu_tentang,menu_hubung;
-    CardView menu_bts,menu_cuaca;
+    CardView menu_bts,menu_cuaca,menu_video;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         menu_hubung  = findViewById(R.id.menu_tanya);
         menu_bts = findViewById(R.id.menu_bts);
         menu_cuaca = findViewById(R.id.menu_cuaca);
+        menu_video = findViewById(R.id.menu_video);
 
         menu_tanya.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,6 +99,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,BtsActivity.class);
+                startActivity(intent);
+                Animatoo.animateSlideLeft(MainActivity.this);
+            }
+        });
+
+        menu_video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,VideoActivity.class);
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivity.this);
             }

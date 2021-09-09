@@ -1,14 +1,16 @@
 package com.ikaru19.simaster_bug.v2;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -55,6 +57,9 @@ public class HamaV2Activity extends AppCompatActivity implements SwipeRefreshLay
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar;
+        actionBar = getActionBar();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_hama_v2);
         jenisHama = getIntent().getStringExtra("JenisHama");
         apiService = ServiceGenerator.createService(ApiService.class);
@@ -74,7 +79,7 @@ public class HamaV2Activity extends AppCompatActivity implements SwipeRefreshLay
                 startActivity(intent);
             }
         });
-        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        recyclerView.setLayoutManager(new LinearLayoutManager(HamaV2Activity.this));
         recyclerView.setAdapter(adapter);
     }
 
@@ -137,5 +142,16 @@ public class HamaV2Activity extends AppCompatActivity implements SwipeRefreshLay
                 swipeRefreshLayout.setRefreshing(false);
             }
         }, 2000);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

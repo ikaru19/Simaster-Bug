@@ -23,6 +23,6 @@ public class SplashActivity extends AppCompatActivity {
                     Animatoo.animateSlideUp(SplashActivity.this);
                     finish();
             }
-        },200);
+        },500);
     }
 }

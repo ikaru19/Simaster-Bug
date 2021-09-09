@@ -1,5 +1,7 @@
 package com.ikaru19.simaster_bug;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -213,5 +215,22 @@ public class MainActivityV2 extends AppCompatActivity {
                 Log.d("SIMASTER_DEBUG",t.getMessage());
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setTitle("Keluar Simaster")
+                .setMessage("Apakah anda yakin akan meninggalkan aplikasi Simaster?")
+                .setPositiveButton("Ya", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+
+                })
+                .setNegativeButton("Tidak", null)
+                .show();
     }
 }

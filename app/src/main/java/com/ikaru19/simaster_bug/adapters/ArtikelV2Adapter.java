@@ -28,7 +28,7 @@ public class ArtikelV2Adapter extends BaseQuickAdapter<ArtikelV2, BaseViewHolder
     @Override
     protected void convert(@NonNull BaseViewHolder helper, ArtikelV2 item) {
         helper.setText(R.id.tv_artikel_judul,item.getJudul());
-        helper.setText(R.id.tv_artikel_penulis,"Oleh: " + item.getPenulis());
+        helper.setText(R.id.tv_artikel_penulis,"Tangal: " + item.getDateCreated() + ",\nOleh: " + item.getPenulis());
         ImageView imageView = helper.getView(R.id.iv_artikel);
         Picasso.get()
                 .load(BASE_URL_IMG+item.getThumbnail())

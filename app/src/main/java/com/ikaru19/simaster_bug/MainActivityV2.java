@@ -104,6 +104,7 @@ public class MainActivityV2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityV2.this, HamaV2Activity.class);
                 intent.putExtra("JenisHama","wijen");
+                intent.putExtra("judul","Hama Wijen");
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivityV2.this);
 
@@ -115,6 +116,7 @@ public class MainActivityV2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityV2.this,HamaV2Activity.class);
                 intent.putExtra("JenisHama","tembakau");
+                intent.putExtra("judul","Hama Tembakau");
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivityV2.this);
 
@@ -126,6 +128,7 @@ public class MainActivityV2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityV2.this,HamaV2Activity.class);
                 intent.putExtra("JenisHama","tebu");
+                intent.putExtra("judul","Hama Tebu");
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivityV2.this);
             }

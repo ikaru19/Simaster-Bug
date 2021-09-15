@@ -37,7 +37,7 @@ public class BtsVarietasActivity extends AppCompatActivity implements SwipeRefre
     private SwipeRefreshLayout swipeRefreshLayout;
     private ApiService apiService;
     private View noInternetView;
-    private String tipeBTS;
+    private String tipeBTS,judul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,8 @@ public class BtsVarietasActivity extends AppCompatActivity implements SwipeRefre
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_bts_varietas);
         tipeBTS = getIntent().getStringExtra("TipeBTS");
+        judul = getIntent().getStringExtra("judul");
+        getSupportActionBar().setTitle(judul);
         apiService = ServiceGenerator.createService(ApiService.class);
         recyclerView = findViewById(R.id.rv_BTS);
         swipeRefreshLayout = findViewById(R.id.swipeRefreshBTS);

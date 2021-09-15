@@ -18,7 +18,7 @@ import static com.ikaru19.simaster_bug.Constant.BASE_URL_IMG;
 public class HamaV2Adapter extends BaseQuickAdapter<HamaV2, BaseViewHolder> {
 
     public HamaV2Adapter(@Nullable List<HamaV2> data) {
-        super(R.layout.item_hama,data);
+        super(R.layout.item_artikel,data);
     }
     public void refill(List<HamaV2> data){
         this.mData = data;
@@ -26,8 +26,9 @@ public class HamaV2Adapter extends BaseQuickAdapter<HamaV2, BaseViewHolder> {
 
     @Override
     protected void convert(@NonNull BaseViewHolder helper, HamaV2 item) {
-        helper.setText(R.id.tv_hama_judul,item.getJudul());
-        ImageView imageView = helper.getView(R.id.iv_hama);
+        helper.setText(R.id.tv_artikel_judul,item.getJudul());
+        helper.setText(R.id.tv_artikel_penulis,"Tangal: " + item.getDateCreated() + ",\nOleh: " + item.getOleh());
+        ImageView imageView = helper.getView(R.id.iv_artikel);
         Picasso.get()
                 .load(BASE_URL_IMG+item.getThumbnail())
                 .resize(1280, 720)

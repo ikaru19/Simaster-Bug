@@ -23,6 +23,9 @@ public class HamaV2 implements Parcelable
     @SerializedName("kategori")
     @Expose
     private String kategori;
+    @SerializedName("oleh")
+    @Expose
+    private String oleh;
     @SerializedName("date_created")
     @Expose
     private String dateCreated;
@@ -50,6 +53,7 @@ public class HamaV2 implements Parcelable
         this.konten = ((String) in.readValue((String.class.getClassLoader())));
         this.kategori = ((String) in.readValue((String.class.getClassLoader())));
         this.dateCreated = ((String) in.readValue((String.class.getClassLoader())));
+        this.oleh = ((String) in.readValue((String.class.getClassLoader())));
     }
 
     public HamaV2() {
@@ -61,6 +65,14 @@ public class HamaV2 implements Parcelable
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getOleh() {
+        return oleh;
+    }
+
+    public void setOleh(String id) {
+        this.oleh = id;
     }
 
     public String getThumbnail() {
@@ -110,6 +122,7 @@ public class HamaV2 implements Parcelable
         dest.writeValue(konten);
         dest.writeValue(kategori);
         dest.writeValue(dateCreated);
+        dest.writeValue(oleh);
     }
 
     public int describeContents() {

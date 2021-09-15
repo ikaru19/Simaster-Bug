@@ -37,7 +37,7 @@ public class HamaV2Activity extends AppCompatActivity implements SwipeRefreshLay
     private HamaV2Adapter adapter;
     private RecyclerView recyclerView;
     private SwipeRefreshLayout swipeRefreshLayout;
-    private String jenisHama;
+    private String jenisHama,judul;
     private View noInternetView;
     Handler handler = new Handler();
 
@@ -62,6 +62,8 @@ public class HamaV2Activity extends AppCompatActivity implements SwipeRefreshLay
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_hama_v2);
         jenisHama = getIntent().getStringExtra("JenisHama");
+        judul = getIntent().getStringExtra("judul");
+        getSupportActionBar().setTitle(judul);
         apiService = ServiceGenerator.createService(ApiService.class);
         recyclerView = findViewById(R.id.rv_hama);
         swipeRefreshLayout = findViewById(R.id.swipeRefreshHama);

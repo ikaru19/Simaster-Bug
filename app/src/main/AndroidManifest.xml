@@ -72,7 +72,7 @@
             />
         <activity
             android:name=".ContactListActivity"
-            android:label="Tanya Pakar"
+            android:label="Sobat Tani Siaga"
             />
         <activity
             android:name=".SplashActivity"

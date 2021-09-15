@@ -30,6 +30,7 @@ public class BtsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(BtsActivity.this, BtsVarietasActivity.class);
                 intent.putExtra("TipeBTS","varietas");
+                intent.putExtra("judul","BTS Varietas");
                 startActivity(intent);
             }
         });
@@ -38,6 +39,7 @@ public class BtsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(BtsActivity.this, BtsVarietasActivity.class);
                 intent.putExtra("TipeBTS","stok");
+                intent.putExtra("judul","BTS Stok");
                 startActivity(intent);
             }
         });
@@ -46,6 +48,7 @@ public class BtsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(BtsActivity.this, BtsVarietasActivity.class);
                 intent.putExtra("TipeBTS","pht");
+                intent.putExtra("judul","BTS PHT");
                 startActivity(intent);
             }
         });
@@ -54,6 +57,7 @@ public class BtsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(BtsActivity.this, BtsVarietasActivity.class);
                 intent.putExtra("TipeBTS","budiDaya");
+                intent.putExtra("judul","BTS Budidaya");
                 startActivity(intent);
             }
         });

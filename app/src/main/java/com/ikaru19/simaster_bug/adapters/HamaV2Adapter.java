@@ -27,7 +27,11 @@ public class HamaV2Adapter extends BaseQuickAdapter<HamaV2, BaseViewHolder> {
     @Override
     protected void convert(@NonNull BaseViewHolder helper, HamaV2 item) {
         helper.setText(R.id.tv_artikel_judul,item.getJudul());
-        helper.setText(R.id.tv_artikel_penulis,"Tangal: " + item.getDateCreated() + ",\nOleh: " + item.getOleh());
+        String tanggal = item.getDateCreated();
+        tanggal = tanggal.replaceAll("\\s.*", "");
+        String[] parts = tanggal.split("-");
+        tanggal = parts[2] +"-" + parts[1] + "-" + parts[0];
+        helper.setText(R.id.tv_artikel_penulis,"Tangal: " + tanggal + ",\nOleh: " + item.getOleh());
         ImageView imageView = helper.getView(R.id.iv_artikel);
         Picasso.get()
                 .load(BASE_URL_IMG+item.getThumbnail())

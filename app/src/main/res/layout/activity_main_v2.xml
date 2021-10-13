@@ -24,6 +24,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -56,6 +57,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal"
+                        android:layout_marginHorizontal="8dp"
                         android:weightSum="3">
 
                         <LinearLayout
@@ -104,11 +106,11 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            <de.hdodenhof.circleimageview.CircleImageView
                                 android:id="@+id/menu_wijen2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/wijen1" />
+                                android:src="@drawable/wijen2" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -125,6 +127,7 @@
                         android:layout_marginTop="@dimen/dp_10"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal"
+                        android:layout_marginHorizontal="8dp"
                         android:weightSum="3">
 
                         <LinearLayout
@@ -166,6 +169,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
+                                android:gravity="center"
                                 android:text="Sobat Tani Siaga"
                                 android:textColor="@color/blackTheme_colorBackground" />
                         </LinearLayout>
@@ -197,6 +201,7 @@
                         android:layout_marginTop="@dimen/dp_10"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal"
+                        android:layout_marginHorizontal="8dp"
                         android:weightSum="3">
 
                         <LinearLayout
@@ -215,6 +220,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
+                                android:gravity="center"
                                 android:text="Hubungi Kami"
                                 android:textColor="@color/blackTheme_colorBackground" />
                         </LinearLayout>
@@ -265,7 +271,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp_10"
                         android:orientation="horizontal"
-                        android:weightSum="1">
+                        android:layout_marginHorizontal="8dp"
+                        android:weightSum="3">
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -283,7 +290,45 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:text="Tentang"
+                                android:text="Info Aplikasi"
+                                android:textColor="@color/blackTheme_colorBackground" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/menu_bantuan"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:src="@drawable/menu_tentang" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Bantuan"
+                                android:textColor="@color/blackTheme_colorBackground" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/menu_pengaturan"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:src="@drawable/menu_tentang" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Pengaturan"
                                 android:textColor="@color/blackTheme_colorBackground" />
                         </LinearLayout>
                     </LinearLayout>
@@ -352,12 +397,18 @@
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logo" />
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/logo2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

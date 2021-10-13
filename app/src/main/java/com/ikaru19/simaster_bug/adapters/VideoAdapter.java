@@ -29,7 +29,11 @@ public class VideoAdapter extends BaseQuickAdapter<VideoResponse, BaseViewHolder
     @Override
     protected void convert(@NonNull BaseViewHolder helper, VideoResponse item) {
         helper.setText(R.id.tv_artikel_judul,item.getJudul());
-        helper.setText(R.id.tv_artikel_penulis,"Di Unggah Pada: " + item.getDateCreated());
+        String tanggal = item.getDateCreated();
+        tanggal = tanggal.replaceAll("\\s.*", "");
+        String[] parts = tanggal.split("-");
+        tanggal = parts[2] +"-" + parts[1] + "-" + parts[0];
+        helper.setText(R.id.tv_artikel_penulis,"Di Unggah Pada: " + tanggal);
         ImageView imageView = helper.getView(R.id.iv_artikel);
         Log.e("SIMASTER BUG",item.getThumbnail());
         String thumbnail = item.getThumbnail();

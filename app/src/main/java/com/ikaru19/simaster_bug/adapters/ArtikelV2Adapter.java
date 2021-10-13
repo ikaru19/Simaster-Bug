@@ -28,7 +28,11 @@ public class ArtikelV2Adapter extends BaseQuickAdapter<ArtikelV2, BaseViewHolder
     @Override
     protected void convert(@NonNull BaseViewHolder helper, ArtikelV2 item) {
         helper.setText(R.id.tv_artikel_judul,item.getJudul());
-        helper.setText(R.id.tv_artikel_penulis,"Tangal: " + item.getDateCreated() + ",\nOleh: " + item.getPenulis());
+        String tanggal = item.getDateCreated();
+        tanggal = tanggal.replaceAll("\\s.*", "");
+        String[] parts = tanggal.split("-");
+        tanggal = parts[2] +"-" + parts[1] + "-" + parts[0];
+        helper.setText(R.id.tv_artikel_penulis,"Tangal: " + tanggal + ",\nOleh: " + item.getPenulis());
         ImageView imageView = helper.getView(R.id.iv_artikel);
         Picasso.get()
                 .load(BASE_URL_IMG+item.getThumbnail())

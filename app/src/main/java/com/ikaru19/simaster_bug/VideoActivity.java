@@ -1,10 +1,12 @@
 package com.ikaru19.simaster_bug;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -36,11 +38,14 @@ public class VideoActivity extends AppCompatActivity implements SwipeRefreshLayo
     private RecyclerView recyclerView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private View noInternetView;
+    ActionBar actionBar;
     Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        actionBar = getActionBar();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_video);
         apiService = ServiceGenerator.createService(ApiService.class);
         recyclerView = findViewById(R.id.rv_video);
@@ -74,6 +79,17 @@ public class VideoActivity extends AppCompatActivity implements SwipeRefreshLayo
     protected void onStop() {
         handler.removeCallbacksAndMessages(null);
         super.onStop();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private void getData() {

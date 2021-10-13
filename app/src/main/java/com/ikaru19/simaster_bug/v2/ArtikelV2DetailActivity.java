@@ -3,10 +3,10 @@ package com.ikaru19.simaster_bug.v2;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -24,7 +24,6 @@ public class ArtikelV2DetailActivity extends AppCompatActivity {
 
     private ArtikelV2 artikelV2;
     private ImageView iv_hama_detail;
-    private TextView tv_judul,tv_artikel_detail_penulis;
     private WebView webView;
 
     @Override
@@ -33,21 +32,31 @@ public class ArtikelV2DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_artikel_v2_detail);
         artikelV2 = getIntent().getParcelableExtra("ArtikelDetail");
         iv_hama_detail = findViewById(R.id.iv_hama_v2_detail);
-        tv_artikel_detail_penulis = findViewById(R.id.tv_artikel_detail_penulis);
         webView = findViewById(R.id.webview_hama);
+        setupToolbar();
+        updateUI();
+    }
+
+    private void setupToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_24);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                onBackPressed();
+            }
+        });
 
         CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbarLayout);
-        collapsingToolbarLayout.setTitle(artikelV2.getJudul());
-        tv_artikel_detail_penulis.setText("Oleh: " + artikelV2.getPenulis());
+        collapsingToolbarLayout.setTitle("  ");
 
         collapsingToolbarLayout.setCollapsedTitleTextColor(
                 ContextCompat.getColor(this, R.color.white));
         collapsingToolbarLayout.setExpandedTitleColor(
                 ContextCompat.getColor(this, R.color.white));
-        updateUI();
     }
 
     private void updateUI() {
@@ -59,10 +68,8 @@ public class ArtikelV2DetailActivity extends AppCompatActivity {
                 .placeholder(R.drawable.img_placeholder)
                 .onlyScaleDown().into(iv_hama_detail);
         webView.getSettings().setJavaScriptEnabled(true);
-        String htmlData = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
-        htmlData = htmlData + "<style>img{display: inline;height: auto;max-width: 100%;}</style>";
-        htmlData = htmlData + artikelV2.getKonten();
-        webView.loadDataWithBaseURL(null, htmlData, "text/html", "utf-8", null);
+        String html = generateHtml();
+        webView.loadDataWithBaseURL(null, html, "text/html", "utf-8", null);
         webView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 if (url.startsWith("tel:")) {
@@ -87,5 +94,14 @@ public class ArtikelV2DetailActivity extends AppCompatActivity {
                 lottieLoading.dismiss();
             }
         });
+    }
+
+    private String generateHtml() {
+        String htmlData = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
+        htmlData = htmlData + "<style>img{display: inline;height: auto;max-width: 100%;}</style>";
+        htmlData = htmlData + "<h2>" + artikelV2.getJudul() + "</h2>";
+        htmlData = htmlData + "<p> oleh: " + artikelV2.getPenulis() + "</p> <br> <br>";
+        htmlData = htmlData + artikelV2.getKonten();
+        return htmlData;
     }
 }

@@ -1,9 +1,11 @@
 package com.ikaru19.simaster_bug.BTS;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -35,13 +37,18 @@ public class BtsVarietasActivity extends AppCompatActivity implements SwipeRefre
     private SwipeRefreshLayout swipeRefreshLayout;
     private ApiService apiService;
     private View noInternetView;
-    private String tipeBTS;
+    private String tipeBTS,judul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar;
+        actionBar = getActionBar();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_bts_varietas);
         tipeBTS = getIntent().getStringExtra("TipeBTS");
+        judul = getIntent().getStringExtra("judul");
+        getSupportActionBar().setTitle(judul);
         apiService = ServiceGenerator.createService(ApiService.class);
         recyclerView = findViewById(R.id.rv_BTS);
         swipeRefreshLayout = findViewById(R.id.swipeRefreshBTS);
@@ -121,5 +128,16 @@ public class BtsVarietasActivity extends AppCompatActivity implements SwipeRefre
                 swipeRefreshLayout.setRefreshing(false);
             }
         }, 2000);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -1,10 +1,12 @@
 package com.ikaru19.simaster_bug;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Parcelable;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -42,6 +44,9 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar;
+        actionBar = getActionBar();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_artikel);
         apiService = ServiceGenerator.createService(ApiService.class);
         recyclerView = findViewById(R.id.rv_artikel);
@@ -124,5 +129,16 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
                swipeRefreshLayout.setRefreshing(false);
             }
         }, 2000);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -1,5 +1,7 @@
 package com.ikaru19.simaster_bug;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -102,6 +104,7 @@ public class MainActivityV2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityV2.this, HamaV2Activity.class);
                 intent.putExtra("JenisHama","wijen");
+                intent.putExtra("judul","Wijen");
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivityV2.this);
 
@@ -113,6 +116,7 @@ public class MainActivityV2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityV2.this,HamaV2Activity.class);
                 intent.putExtra("JenisHama","tembakau");
+                intent.putExtra("judul","Tembakau");
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivityV2.this);
 
@@ -124,6 +128,7 @@ public class MainActivityV2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivityV2.this,HamaV2Activity.class);
                 intent.putExtra("JenisHama","tebu");
+                intent.putExtra("judul","Tebu");
                 startActivity(intent);
                 Animatoo.animateSlideLeft(MainActivityV2.this);
             }
@@ -213,5 +218,22 @@ public class MainActivityV2 extends AppCompatActivity {
                 Log.d("SIMASTER_DEBUG",t.getMessage());
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setTitle("Keluar Simaster")
+                .setMessage("Apakah anda yakin akan meninggalkan aplikasi Simaster?")
+                .setPositiveButton("Ya", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+
+                })
+                .setNegativeButton("Tidak", null)
+                .show();
     }
 }

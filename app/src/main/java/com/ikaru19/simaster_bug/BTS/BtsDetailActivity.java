@@ -23,11 +23,19 @@ public class BtsDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bts_detail);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("  ");
+
         btsData = getIntent().getParcelableExtra("BtsDetail");
         tv_penulis_detail = findViewById(R.id.tv_penulis_bts_detail);
         tv_judul_detail = findViewById(R.id.tv_judul_bts_detail);
         bts_webview = findViewById(R.id.webview_bts);
         updateUI();
+    }
+
+    @Override public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 
     private void updateUI() {
@@ -36,10 +44,8 @@ public class BtsDetailActivity extends AppCompatActivity {
         tv_judul_detail.setText(btsData.getJudul());
         tv_penulis_detail.setText("oleh : " + btsData.getPenulis());
         bts_webview.getSettings().setJavaScriptEnabled(true);
-        String htmlData = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
-        htmlData = htmlData + "<style>img{display: inline;height: auto;max-width: 100%;}</style>";
-        htmlData = htmlData + btsData.getKonten();
-        bts_webview.loadDataWithBaseURL(null, htmlData, "text/html", "utf-8", null);
+        String html = generateHtml();
+        bts_webview.loadDataWithBaseURL(null, html, "text/html", "utf-8", null);
         bts_webview.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 if (url.startsWith("tel:")) {
@@ -63,5 +69,12 @@ public class BtsDetailActivity extends AppCompatActivity {
                 lottieLoading.dismiss();
             }
         });
+    }
+
+    private String generateHtml() {
+        String htmlData = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
+        htmlData = htmlData + "<style>img{display: inline;height: auto;max-width: 100%;}</style>";
+        htmlData = htmlData + btsData.getKonten();
+        return htmlData;
     }
 }

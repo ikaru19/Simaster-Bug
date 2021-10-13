@@ -6,7 +6,7 @@
 
             <!-- You can use from 1% transparency to 100% transparency, according to your need,-->
             <solid
-                android:color="#CCFFFFFF"/>  <!-- Here transparency level is 80%-->
+                android:color="#7CFFFFFF"/>  <!-- Here transparency level is 80%-->
         </shape>
     </item>
 </layer-list>

@@ -1,9 +1,11 @@
 package com.ikaru19.simaster_bug;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -55,6 +57,9 @@ public class ContactListActivity extends AppCompatActivity implements SwipeRefre
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar;
+        actionBar = getActionBar();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_contact_list);
         recyclerView = findViewById(R.id.rv_contacts);
         swipeRefreshLayout = findViewById(R.id.swipeRefreshContact);
@@ -106,6 +111,16 @@ public class ContactListActivity extends AppCompatActivity implements SwipeRefre
         });
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     public void onRefresh() {

@@ -23,6 +23,7 @@ import com.ikaru19.simaster_bug.component.LottieLoading;
 import com.ikaru19.simaster_bug.generator.ServiceGenerator;
 import com.ikaru19.simaster_bug.models.v2.ArtikelV2;
 import com.ikaru19.simaster_bug.v2.ArtikelV2DetailActivity;
+import com.ikaru19.simaster_bug.Constant;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +61,7 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 Intent intent = new Intent(ArtikelActivity.this, ArtikelV2DetailActivity.class);
-                intent.putExtra("ArtikelDetail", (Parcelable) artikels.get(position));
+                intent.putExtra(Constant.INTENT_EXTRA_ARTICLE_DETAIL, (Parcelable) artikels.get(position));
                 startActivity(intent);
             }
         });

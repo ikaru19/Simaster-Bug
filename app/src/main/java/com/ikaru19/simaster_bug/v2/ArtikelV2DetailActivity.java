@@ -17,6 +17,7 @@ import com.ikaru19.simaster_bug.R;
 import com.ikaru19.simaster_bug.component.LottieLoading;
 import com.ikaru19.simaster_bug.models.v2.ArtikelV2;
 import com.squareup.picasso.Picasso;
+import com.ikaru19.simaster_bug.Constant;
 
 import static com.ikaru19.simaster_bug.Constant.BASE_URL_IMG;
 
@@ -30,7 +31,7 @@ public class ArtikelV2DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artikel_v2_detail);
-        artikelV2 = getIntent().getParcelableExtra("ArtikelDetail");
+        artikelV2 = getIntent().getParcelableExtra(Constant.INTENT_EXTRA_ARTICLE_DETAIL);
         iv_hama_detail = findViewById(R.id.iv_hama_v2_detail);
         webView = findViewById(R.id.webview_hama);
         setupToolbar();
@@ -69,7 +70,7 @@ public class ArtikelV2DetailActivity extends AppCompatActivity {
                 .onlyScaleDown().into(iv_hama_detail);
         webView.getSettings().setJavaScriptEnabled(true);
         String html = generateHtml();
-        webView.loadDataWithBaseURL(null, html, "text/html", "utf-8", null);
+        webView.loadDataWithBaseURL(null, html, Constant.HTML_MIME_TYPE, Constant.ENCODING_UTF_8, null);
         webView.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 if (url.startsWith("tel:")) {

@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/background_menu9"
     tools:context=".MainActivityV2">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,16 +19,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                app:layout_constraintBottom_toTopOf="@+id/cardView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/background_header" />
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imageView6"-->
+            <!--                android:layout_width="359dp"-->
+            <!--                android:layout_height="417dp"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            app:srcCompat="@drawable/background_menu" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
@@ -55,9 +53,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal"
-                        android:layout_marginHorizontal="8dp"
                         android:weightSum="3">
 
                         <LinearLayout
@@ -70,7 +68,7 @@
                                 android:id="@+id/menu_tebu2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/tebu2" />
+                                android:src="@drawable/logo_tebu" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -90,7 +88,7 @@
                                 android:id="@+id/menu_tembakau2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/tembakau2" />
+                                android:src="@drawable/logo_tembakau" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -110,7 +108,7 @@
                                 android:id="@+id/menu_wijen2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/wijen2" />
+                                android:src="@drawable/logo_wijen" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -124,10 +122,10 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
                         android:layout_marginTop="@dimen/dp_10"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal"
-                        android:layout_marginHorizontal="8dp"
                         android:weightSum="3">
 
                         <LinearLayout
@@ -160,17 +158,16 @@
                             android:orientation="vertical">
 
                             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                                android:id="@+id/menu_tanya2"
+                                android:id="@+id/menu_artikel2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/tanya_pakar_menu" />
+                                android:src="@drawable/logo_artikel" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:gravity="center"
-                                android:text="Sobat Tani Siaga"
+                                android:text="Artikel"
                                 android:textColor="@color/blackTheme_colorBackground" />
                         </LinearLayout>
 
@@ -181,16 +178,17 @@
                             android:orientation="vertical">
 
                             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                                android:id="@+id/menu_artikel2"
+                                android:id="@+id/menu_tanya2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/artikel_new" />
+                                android:src="@drawable/logo_sobat" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:text="Artikel"
+                                android:gravity="center"
+                                android:text="Sobat Tani Siaga"
                                 android:textColor="@color/blackTheme_colorBackground" />
                         </LinearLayout>
                     </LinearLayout>
@@ -198,10 +196,10 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
                         android:layout_marginTop="@dimen/dp_10"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal"
-                        android:layout_marginHorizontal="8dp"
                         android:weightSum="3">
 
                         <LinearLayout
@@ -214,14 +212,14 @@
                                 android:id="@+id/menu_hubungi2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/hubungi_kami_menu" />
+                                android:src="@drawable/logo_media_sosial" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="Hubungi Kami"
+                                android:text="Media Sosial"
                                 android:textColor="@color/blackTheme_colorBackground" />
                         </LinearLayout>
 
@@ -235,7 +233,7 @@
                                 android:id="@+id/menu_video2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/menu_video" />
+                                android:src="@drawable/logo_video" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -255,7 +253,7 @@
                                 android:id="@+id/menu_cuaca2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/menu_cuaca" />
+                                android:src="@drawable/logo_cuaca" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -269,9 +267,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
                         android:layout_marginTop="@dimen/dp_10"
                         android:orientation="horizontal"
-                        android:layout_marginHorizontal="8dp"
                         android:weightSum="3">
 
                         <LinearLayout
@@ -284,7 +282,7 @@
                                 android:id="@+id/menu_tentang2"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/menu_tentang" />
+                                android:src="@drawable/logo_informasi" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -293,25 +291,7 @@
                                 android:text="Info Aplikasi"
                                 android:textColor="@color/blackTheme_colorBackground" />
                         </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
 
-                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                                android:id="@+id/menu_bantuan"
-                                android:layout_width="match_parent"
-                                android:layout_height="58dp"
-                                android:src="@drawable/menu_tentang" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:text="Bantuan"
-                                android:textColor="@color/blackTheme_colorBackground" />
-                        </LinearLayout>
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -322,7 +302,7 @@
                                 android:id="@+id/menu_pengaturan"
                                 android:layout_width="match_parent"
                                 android:layout_height="58dp"
-                                android:src="@drawable/menu_tentang" />
+                                android:src="@drawable/logo_pengaturan" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -331,6 +311,27 @@
                                 android:text="Pengaturan"
                                 android:textColor="@color/blackTheme_colorBackground" />
                         </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/menu_bantuan"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:src="@drawable/logo_bantuan" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Bantuan"
+                                android:textColor="@color/blackTheme_colorBackground" />
+                        </LinearLayout>
+
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -349,7 +350,7 @@
                 android:gravity="start"
                 android:text="Artikel Terbaru Kami"
                 android:textAlignment="gravity"
-                android:textColor="@color/classic_blackTheme_colorBackground"
+                android:textColor="@color/text_light"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -382,33 +383,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-            <include
-                android:id="@+id/no_item_lottie"
-                layout="@layout/no_item_lottie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="80dp"
+                android:layout_width="379dp"
+                android:layout_height="91dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="64dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 app:layout_constraintBottom_toTopOf="@+id/cardView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/logo2" />
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

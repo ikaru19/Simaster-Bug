@@ -62,8 +62,6 @@ public class MainActivityV2 extends AppCompatActivity {
         apiService = ServiceGenerator.createService(ApiService.class);
         recyclerView = findViewById(R.id.rv_artikel_menu);
         progressBar = findViewById(R.id.progressBar);
-        emptyView = findViewById(R.id.no_item_lottie);
-        emptyView.setVisibility(View.INVISIBLE);
 //        swipeRefreshLayout = findViewById(R.id.swipeRefresh);
         addOnClick();
         getData();
@@ -202,7 +200,7 @@ public class MainActivityV2 extends AppCompatActivity {
 
                 if (artikels == null || artikels.isEmpty() ){
                     Toast.makeText(MainActivityV2.this,"Data Kosong",Toast.LENGTH_SHORT).show();
-                    emptyView.setVisibility(View.VISIBLE);
+//                    emptyView.setVisibility(View.VISIBLE);
                 }else{
                     adapter.refill(artikels);
                     adapter.notifyDataSetChanged();
@@ -214,7 +212,7 @@ public class MainActivityV2 extends AppCompatActivity {
             public void onFailure(Call<List<ArtikelV2>> call, Throwable t) {
                 recyclerView.setVisibility(View.INVISIBLE);
                 progressBar.setVisibility(View.INVISIBLE);
-                emptyView.setVisibility(View.VISIBLE);
+//                emptyView.setVisibility(View.VISIBLE);
                 Log.d("SIMASTER_DEBUG",t.getMessage());
             }
         });

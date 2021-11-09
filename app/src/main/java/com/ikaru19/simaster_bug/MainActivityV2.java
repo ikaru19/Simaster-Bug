@@ -24,6 +24,7 @@ import com.ikaru19.simaster_bug.generator.ServiceGenerator;
 import com.ikaru19.simaster_bug.models.v2.ArtikelV2;
 import com.ikaru19.simaster_bug.v2.ArtikelV2DetailActivity;
 import com.ikaru19.simaster_bug.v2.HamaV2Activity;
+import com.ikaru19.simaster_bug.v2.Constant;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,7 +75,7 @@ public class MainActivityV2 extends AppCompatActivity {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                 Intent intent = new Intent(MainActivityV2.this, ArtikelV2DetailActivity.class);
-                intent.putExtra("ArtikelDetail", (Parcelable) artikels.get(position));
+                intent.putExtra(Constant.INTENT_EXTRA_ARTICLE_DETAIL, (Parcelable) artikels.get(position));
                 startActivity(intent);
             }
         });

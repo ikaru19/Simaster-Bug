@@ -12,11 +12,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.ikaru19.simaster_bug.R;
 import com.ikaru19.simaster_bug.component.LottieLoading;
 import com.ikaru19.simaster_bug.models.Bts;
+import com.ikaru19.simaster_bug.Constant;
 
 public class BtsDetailActivity extends AppCompatActivity {
 
     private Bts btsData;
-    private TextView tv_judul_detail , tv_penulis_detail;
+    private TextView tv_judul_detail, tv_penulis_detail;
     private WebView bts_webview;
 
     @Override
@@ -33,7 +34,8 @@ public class BtsDetailActivity extends AppCompatActivity {
         updateUI();
     }
 
-    @Override public boolean onSupportNavigateUp() {
+    @Override
+    public boolean onSupportNavigateUp() {
         onBackPressed();
         return true;
     }
@@ -45,16 +47,14 @@ public class BtsDetailActivity extends AppCompatActivity {
         tv_penulis_detail.setText("oleh : " + btsData.getPenulis());
         bts_webview.getSettings().setJavaScriptEnabled(true);
         String html = generateHtml();
-        bts_webview.loadDataWithBaseURL(null, html, "text/html", "utf-8", null);
+        bts_webview.loadDataWithBaseURL(null, html, Constant.HTML_MIME_TYPE, Constant.ENCODING_UTF_8, null);
         bts_webview.setWebViewClient(new WebViewClient() {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 if (url.startsWith("tel:")) {
-                    Intent intent = new Intent(Intent.ACTION_DIAL,
-                            Uri.parse(url));
+                    Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(url));
                     startActivity(intent);
                     return false;
-                }
-                else if(url.startsWith("http:") || url.startsWith("https:")) {
+                } else if (url.startsWith("http:") || url.startsWith("https:")) {
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(url));
                     startActivity(i);

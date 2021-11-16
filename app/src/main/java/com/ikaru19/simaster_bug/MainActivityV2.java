@@ -35,8 +35,9 @@ import retrofit2.Response;
 
 public class MainActivityV2 extends AppCompatActivity {
 
-    CircleImageView menu_tanya2,menu_artikel2,menu_wijen2,menu_tembakau2,menu_tebu2,menu_tentang2,menu_hubungi2,menu_bts2,menu_cuaca2,menu_video2;
+    CircleImageView menu_tanya2,menu_artikel2,menu_wijen2,menu_tembakau2,menu_tebu2,menu_tentang2,menu_hubungi2,menu_bts2,menu_cuaca2,menu_video2,menu_pengaturan,menu_bantuan;
     private ApiService apiService;
+    private List<ArtikelV2> rawArtikels = new ArrayList<>();
     private List<ArtikelV2> artikels = new ArrayList<>();
     private ArtikelV2Adapter adapter;
     private RecyclerView recyclerView;
@@ -59,6 +60,8 @@ public class MainActivityV2 extends AppCompatActivity {
         menu_bts2 = findViewById(R.id.menu_bts2);
         menu_cuaca2 = findViewById(R.id.menu_cuaca2);
         menu_video2 = findViewById(R.id.menu_video2);
+        menu_pengaturan = findViewById(R.id.menu_pengaturan);
+        menu_bantuan = findViewById(R.id.menu_bantuan);
         apiService = ServiceGenerator.createService(ApiService.class);
         recyclerView = findViewById(R.id.rv_artikel_menu);
         progressBar = findViewById(R.id.progressBar);
@@ -179,6 +182,23 @@ public class MainActivityV2 extends AppCompatActivity {
                 }
             }
         });
+
+        menu_pengaturan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityV2.this,SettingsActivity.class);
+                startActivity(intent);
+                Animatoo.animateSlideLeft(MainActivityV2.this);
+            }
+        });
+        menu_bantuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivityV2.this,TutorialActivity.class);
+                startActivity(intent);
+                Animatoo.animateSlideLeft(MainActivityV2.this);
+            }
+        });
     }
 
     @Override
@@ -196,16 +216,20 @@ public class MainActivityV2 extends AppCompatActivity {
             public void onResponse(Call<List<ArtikelV2>> call, Response<List<ArtikelV2>> response) {
                 recyclerView.setVisibility(View.VISIBLE);
                 progressBar.setVisibility(View.INVISIBLE);
-                artikels = response.body();
+                rawArtikels = response.body();
 
-                if (artikels == null || artikels.isEmpty() ){
+                if (rawArtikels == null || rawArtikels.isEmpty() ){
                     Toast.makeText(MainActivityV2.this,"Data Kosong",Toast.LENGTH_SHORT).show();
-//                    emptyView.setVisibility(View.VISIBLE);
                 }else{
+                    for (ArtikelV2 artikel : rawArtikels) {
+                        Log.e("SIMASTER_DEBUG",artikel.getId());
+                        if (!artikel.getId().equalsIgnoreCase("-1")) {
+                            artikels.add(artikel);
+                        }
+                    }
                     adapter.refill(artikels);
                     adapter.notifyDataSetChanged();
                 }
-
             }
 
             @Override

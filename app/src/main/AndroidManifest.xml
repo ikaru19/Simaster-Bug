@@ -20,65 +20,57 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
         <activity
+            android:name=".TutorialActivity"
+            android:exported="false"
+            android:label="Tutorial"
+            />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="Pengaturan" />
+        <activity
             android:name=".MainActivityV2"
-            android:theme="@style/AppTheme.NoActionBar"
-            ></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".VideoActivity"
-            android:label="Video">
-        </activity>
+            android:label="Video" />
         <activity
             android:name=".v2.ArtikelV2DetailActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
-        <activity android:name=".v2.HamaV2DetailActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".v2.HamaV2DetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".v2.HamaV2Activity"
-            android:label="Hama"
-            />
+            android:label="Hama" />
         <activity
             android:name=".BTS.BtsDetailActivity"
-            android:label="BTS"
-            />
+            android:label="BTS" />
         <activity
             android:name=".BTS.BtsVarietasActivity"
-            android:label="BTS"
-            />
-        <activity android:name=".BtsActivity"
-            android:label="BTS"
-            />
+            android:label="BTS" />
+        <activity
+            android:name=".BtsActivity"
+            android:label="BTS" />
         <activity android:name=".WeatherActivity" />
         <activity
             android:name=".HubungiActivity"
-            android:label="Hubungi Kami"
-            />
+            android:label="Hubungi Kami" />
         <activity
             android:name=".TentangActivity"
-            android:label="Tentang"
-            />
-        <activity
-            android:name=".HamaDetailActivity"
-            />
-        <activity
-            android:name=".HamaActivity"
-            />
-        <activity
-            android:name=".ArtikelDetailActivity"
-            />
+            android:label="Tentang" />
+        <activity android:name=".HamaDetailActivity" />
+        <activity android:name=".HamaActivity" />
+        <activity android:name=".ArtikelDetailActivity" />
         <activity
             android:name=".ArtikelActivity"
-            android:label="Artikel Kami"
-            />
+            android:label="Artikel Kami" />
         <activity
             android:name=".ContactListActivity"
-            android:label="Sobat Tani Siaga"
-            />
+            android:label="Sobat Tani Siaga" />
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -34,6 +34,7 @@ import retrofit2.Response;
 public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     private ApiService apiService;
+    private List<ArtikelV2> rawArtikels = new ArrayList<>();
     private List<ArtikelV2> artikels = new ArrayList<>();
     private ArtikelV2Adapter adapter;
     private RecyclerView recyclerView;
@@ -97,11 +98,17 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
             public void onResponse(Call<List<ArtikelV2>> call, Response<List<ArtikelV2>> response) {
                 noInternetView.setVisibility(View.INVISIBLE);
                 recyclerView.setVisibility(View.VISIBLE);
-                artikels = response.body();
+                rawArtikels = response.body();
 
-                if (artikels == null || artikels.isEmpty() ){
+                if (rawArtikels == null || rawArtikels.isEmpty() ){
                     Toast.makeText(ArtikelActivity.this,"Data Kosong",Toast.LENGTH_SHORT).show();
                 }else{
+                    for (ArtikelV2 artikel : rawArtikels) {
+                        Log.e("SIMASTER_DEBUG",artikel.getId());
+                        if (!artikel.getId().equalsIgnoreCase("-1")) {
+                            artikels.add(artikel);
+                        }
+                    }
                     adapter.refill(artikels);
                     adapter.notifyDataSetChanged();
                 }

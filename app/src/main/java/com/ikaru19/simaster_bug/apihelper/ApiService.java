@@ -56,4 +56,7 @@ public interface ApiService {
 
     @GET("api/v2/vidio")
     Call<List<VideoResponse>> getVideo();
+
+    @GET("api/v2/artikel?id=-1")
+    Call<List<ArtikelV2>> getTutorial();
 }

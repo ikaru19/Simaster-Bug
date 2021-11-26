@@ -10,6 +10,9 @@ public class Bts implements Parcelable {
     @SerializedName("id")
     @Expose
     private String id;
+    @SerializedName("thumbnail")
+    @Expose
+    private String thumbnail;
     @SerializedName("konten")
     @Expose
     private String konten;
@@ -41,6 +44,7 @@ public class Bts implements Parcelable {
 
     protected Bts(android.os.Parcel in) {
         this.id = ((String) in.readValue((String.class.getClassLoader())));
+        this.thumbnail = ((String) in.readValue((String.class.getClassLoader())));
         this.konten = ((String) in.readValue((String.class.getClassLoader())));
         this.dateCreated = ((String) in.readValue((String.class.getClassLoader())));
         this.judul = ((String) in.readValue((String.class.getClassLoader())));
@@ -56,6 +60,14 @@ public class Bts implements Parcelable {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
     }
 
     public String getKonten() {
@@ -92,6 +104,7 @@ public class Bts implements Parcelable {
 
     public void writeToParcel(android.os.Parcel dest, int flags) {
         dest.writeValue(id);
+        dest.writeValue(thumbnail);
         dest.writeValue(konten);
         dest.writeValue(dateCreated);
         dest.writeValue(judul);

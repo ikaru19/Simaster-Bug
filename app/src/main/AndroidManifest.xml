@@ -54,6 +54,7 @@
             android:label="Hama" />
         <activity
             android:name=".BTS.BtsDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:label="BTS" />
         <activity
             android:name=".BTS.BtsVarietasActivity"

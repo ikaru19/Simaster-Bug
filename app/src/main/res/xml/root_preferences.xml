@@ -24,5 +24,19 @@
         android:summary="Hak Cipta 2021 Balittas"
         android:icon="@drawable/ic_baseline_info_24">
     </PreferenceScreen>
-
+    <PreferenceScreen
+        android:title="Berbagi"
+        android:key="@string/share"
+        android:summary="Berikan rating dan ulasan Anda"
+        android:icon="@drawable/ic_baseline_share_24">
+        <intent android:action="myapp.action.SHARE_APP" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:title="Beri Rating"
+        android:key="@string/share"
+        android:summary="Berikan rating dan ulasan Anda"
+        android:icon="@drawable/ic_baseline_star_rate_24">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="https://play.google.com/store/apps/details?id=com.ikaru19.simaster_bug" />
+    </PreferenceScreen>
 </PreferenceScreen>

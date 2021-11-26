@@ -20,6 +20,15 @@
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
         <activity
+            android:name=".ShareApp"
+            android:label="Pengaturan"
+            >
+            <intent-filter>
+                <action android:name="myapp.action.SHARE_APP" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".TutorialActivity"
             android:exported="false"
             android:label="Tutorial"
@@ -52,7 +61,6 @@
         <activity
             android:name=".BtsActivity"
             android:label="BTS" />
-        <activity android:name=".WeatherActivity" />
         <activity
             android:name=".HubungiActivity"
             android:label="Hubungi Kami" />

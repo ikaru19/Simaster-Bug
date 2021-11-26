@@ -3,6 +3,7 @@
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50e24fc6c63a7cb96a168fe6ebf4e0c6/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c5139f845758e863432ff8fd941b19a3/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a94d99a02eaf90a68f5a73fefc4c1be/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50e24fc6c63a7cb96a168fe6ebf4e0c6/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/AndroidManifest.xml" />
@@ -11,6 +12,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c5139f845758e863432ff8fd941b19a3/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c5139f845758e863432ff8fd941b19a3/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c5139f845758e863432ff8fd941b19a3/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a94d99a02eaf90a68f5a73fefc4c1be/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a94d99a02eaf90a68f5a73fefc4c1be/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9a94d99a02eaf90a68f5a73fefc4c1be/jetified-BaseRecyclerViewAdapterHelper-2.9.49-androidx/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CymChad/BaseRecyclerViewAdapterHelper/2.9.49-androidx/bdba7f0358ee0c51d4b2dafc9d3af18908691f00/BaseRecyclerViewAdapterHelper-2.9.49-androidx-javadoc.jar!/" />

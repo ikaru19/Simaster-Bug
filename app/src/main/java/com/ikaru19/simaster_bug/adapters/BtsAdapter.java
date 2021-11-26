@@ -27,7 +27,7 @@ public class BtsAdapter extends BaseQuickAdapter<Bts, BaseViewHolder> {
         tanggal = tanggal.replaceAll("\\s.*", "");
         String[] parts = tanggal.split("-");
         tanggal = parts[2] +"-" + parts[1] + "-" + parts[0];
-        String detail = "Oleh: " + item.getPenulis() + ", Tanggal: " + tanggal;
+        String detail = "Tanggal: " +  tanggal + ", Oleh: " + item.getPenulis();
         helper.setText(R.id.tv_bts_detail,detail);
     }
 }

@@ -105,7 +105,7 @@ public class ArtikelActivity extends AppCompatActivity implements SwipeRefreshLa
                 }else{
                     for (ArtikelV2 artikel : rawArtikels) {
                         Log.e("SIMASTER_DEBUG",artikel.getId());
-                        if (!artikel.getId().equalsIgnoreCase("-1")) {
+                        if ((!artikel.getId().equalsIgnoreCase("-1") && (!artikel.getId().equalsIgnoreCase("-2")))) {
                             artikels.add(artikel);
                         }
                     }

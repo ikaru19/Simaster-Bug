@@ -6,11 +6,17 @@
         <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/activity_artikel_v2_detail.xml" value="0.1" />
         <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/activity_bts_detail.xml" value="0.20520833333333333" />
         <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/activity_hama_v2_detail.xml" value="0.20520833333333333" />
-        <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/activity_main_v2.xml" value="0.20520833333333333" />
+        <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/activity_main_v2.xml" value="0.22" />
+        <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/activity_splash.xml" value="0.20260416666666667" />
+        <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/activity_tentang.xml" value="0.19895833333333332" />
         <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/activity_tutorial.xml" value="0.20520833333333333" />
+        <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/activity_video.xml" value="0.2671875" />
         <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/bts_activity_detail_v2.xml" value="0.20520833333333333" />
         <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/hama_v2_detail.xml" value="0.20520833333333333" />
+        <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/item_artikel.xml" value="0.2671875" />
         <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/item_bts.xml" value="0.20520833333333333" />
+        <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/item_hama.xml" value="0.2671875" />
+        <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/item_video.xml" value="0.2671875" />
         <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/layout/share_button.xml" value="0.20520833333333333" />
         <entry key="..\:/Projects/sd/Simaster-Bug/app/src/main/res/xml/root_preferences.xml" value="0.33" />
       </map>

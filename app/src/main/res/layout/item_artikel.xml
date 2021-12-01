@@ -36,21 +36,21 @@
                 android:maxLines="2"
                 android:text="Test Name"
                 android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
+                android:textSize="16sp"
                 android:textStyle="normal" />
 
             <TextView
                 android:id="@+id/tv_artikel_penulis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/monserrat"
                 android:text="Test Name"
                 android:textColor="@color/colorPrimary"
-                android:textSize="18sp"
-                android:textStyle="normal"
-                android:layout_marginHorizontal="8dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="8dp"/>
+                android:textSize="12sp"
+                android:textStyle="normal" />
 
 
         </LinearLayout>

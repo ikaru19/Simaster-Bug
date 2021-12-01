@@ -44,15 +44,9 @@ public class TutorialActivity extends AppCompatActivity {
     }
 
     private void getData(){
-//        final ProgressDialog progress = new ProgressDialog(this);
-//        progress.setTitle("Loading");
-//        progress.setMessage("Mengambil Data Dari Internet");
-//        progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
-//        progress.show();
-
         final LottieLoading lottieLoading = new LottieLoading(TutorialActivity.this);
         lottieLoading.show();
-        Call<List<ArtikelV2>> artikelCall = apiService.getArtikel();
+        Call<List<ArtikelV2>> artikelCall = apiService.getTutorial();
         artikelCall.enqueue(new Callback<List<ArtikelV2>>() {
             @Override
             public void onResponse(Call<List<ArtikelV2>> call, Response<List<ArtikelV2>> response) {
@@ -108,7 +102,6 @@ public class TutorialActivity extends AppCompatActivity {
     private String generateHtml(ArtikelV2 data) {
         String htmlData = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
         htmlData = htmlData + "<style>img{display: inline;height: auto;max-width: 100%;}</style>";
-        htmlData = htmlData + "<h2> Bantuan </h2>";
         htmlData = htmlData + data.getKonten();
         return htmlData;
     }

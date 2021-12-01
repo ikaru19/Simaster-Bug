@@ -3,6 +3,7 @@ package com.ikaru19.simaster_bug;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Parcelable;
@@ -11,16 +12,20 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.afollestad.materialdialogs.DialogAction;
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.ikaru19.simaster_bug.adapters.ArtikelV2Adapter;
 import com.ikaru19.simaster_bug.apihelper.ApiService;
 import com.ikaru19.simaster_bug.generator.ServiceGenerator;
+import com.ikaru19.simaster_bug.models.Version;
 import com.ikaru19.simaster_bug.models.v2.ArtikelV2;
 import com.ikaru19.simaster_bug.v2.ArtikelV2DetailActivity;
 import com.ikaru19.simaster_bug.v2.HamaV2Activity;
@@ -68,6 +73,7 @@ public class MainActivityV2 extends AppCompatActivity {
 //        swipeRefreshLayout = findViewById(R.id.swipeRefresh);
         addOnClick();
         getData();
+        getVersion();
 //        swipeRefreshLayout.setOnRefreshListener(this);
 
         adapter = new ArtikelV2Adapter(artikels);
@@ -206,7 +212,48 @@ public class MainActivityV2 extends AppCompatActivity {
         handler.removeCallbacksAndMessages(null);
         super.onStop();
     }
+    private void getVersion(){
+        Call<List<Version>> versionCall = apiService.getVersion();
+        versionCall.enqueue(new Callback<List<Version>>() {
+            @Override
+            public void onResponse(Call<List<Version>> call, Response<List<Version>> response) {
+               List<Version> versions = new ArrayList<>();
+               versions = response.body();
+               if (versions.get(0).getVersion() > Constant.VERSION) {
+                   Log.e("SIMASTER","Need To Update");
+                   MaterialDialog.Builder builder = new MaterialDialog.Builder(MainActivityV2.this)
+                           .onPositive(new MaterialDialog.SingleButtonCallback() {
+                               @Override
+                               public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                                   String url = "https://play.google.com/store/apps/details?id=com.ikaru19.simaster_bug";
+                                   Intent i = new Intent(Intent.ACTION_VIEW);
+                                   i.setData(Uri.parse(url));
+                                   startActivity(i);
+                               }
+                           })
+                           .onNegative(new MaterialDialog.SingleButtonCallback() {
+                               @Override
+                               public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
 
+                               }
+                           })
+                           .title("Update Simaster")
+                           .content("Silahkan Update ke Versi Simaster Terbaru")
+                           .positiveText("Update")
+                           .negativeText("Cancel");
+
+                   MaterialDialog dialog = builder.build();
+                   dialog.show();
+               }
+
+            }
+
+            @Override
+            public void onFailure(Call<List<Version>> call, Throwable t) {
+                getVersion();
+            }
+        });
+    }
     private void getData(){
         recyclerView.setVisibility(View.INVISIBLE);
         progressBar.setVisibility(View.VISIBLE);
@@ -221,10 +268,14 @@ public class MainActivityV2 extends AppCompatActivity {
                 if (rawArtikels == null || rawArtikels.isEmpty() ){
                     Toast.makeText(MainActivityV2.this,"Data Kosong",Toast.LENGTH_SHORT).show();
                 }else{
+                    int counter = 0;
                     for (ArtikelV2 artikel : rawArtikels) {
                         Log.e("SIMASTER_DEBUG",artikel.getId());
-                        if (!artikel.getId().equalsIgnoreCase("-1")) {
-                            artikels.add(artikel);
+                        if ((!artikel.getId().equalsIgnoreCase("-1") && (!artikel.getId().equalsIgnoreCase("-2")))) {
+                            if (counter < 3) {
+                                artikels.add(artikel);
+                                counter++;
+                            }
                         }
                     }
                     adapter.refill(artikels);
@@ -236,7 +287,6 @@ public class MainActivityV2 extends AppCompatActivity {
             public void onFailure(Call<List<ArtikelV2>> call, Throwable t) {
                 recyclerView.setVisibility(View.INVISIBLE);
                 progressBar.setVisibility(View.INVISIBLE);
-//                emptyView.setVisibility(View.VISIBLE);
                 Log.d("SIMASTER_DEBUG",t.getMessage());
             }
         });

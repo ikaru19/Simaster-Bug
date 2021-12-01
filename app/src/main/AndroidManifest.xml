@@ -31,7 +31,7 @@
         <activity
             android:name=".TutorialActivity"
             android:exported="false"
-            android:label="Tutorial"
+            android:label="Bantuan"
             />
         <activity
             android:name=".SettingsActivity"
@@ -64,10 +64,10 @@
             android:label="BTS" />
         <activity
             android:name=".HubungiActivity"
-            android:label="Hubungi Kami" />
+            android:label="Media Sosial" />
         <activity
             android:name=".TentangActivity"
-            android:label="Tentang" />
+            android:label="Info Aplikasi" />
         <activity android:name=".HamaDetailActivity" />
         <activity android:name=".HamaActivity" />
         <activity android:name=".ArtikelDetailActivity" />

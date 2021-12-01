@@ -3,6 +3,7 @@ package com.ikaru19.simaster_bug.apihelper;
 import com.ikaru19.simaster_bug.models.Bts;
 import com.ikaru19.simaster_bug.models.Contact;
 import com.ikaru19.simaster_bug.models.Hama;
+import com.ikaru19.simaster_bug.models.Version;
 import com.ikaru19.simaster_bug.models.VideoResponse;
 import com.ikaru19.simaster_bug.models.v2.ArtikelV2;
 import com.ikaru19.simaster_bug.models.v2.HamaV2;
@@ -59,4 +60,10 @@ public interface ApiService {
 
     @GET("api/v2/artikel?id=-1")
     Call<List<ArtikelV2>> getTutorial();
+
+    @GET("api/v2/artikel?id=-2")
+    Call<List<ArtikelV2>> getInfo();
+
+    @GET("api/v2/version")
+    Call<List<Version>> getVersion();
 }

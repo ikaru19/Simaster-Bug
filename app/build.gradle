@@ -44,5 +44,6 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.airbnb.android:lottie:3.5.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
     implementation project(":weather")
 }

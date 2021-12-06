@@ -23,7 +23,7 @@ public class HamaV2 implements Parcelable
     @SerializedName("kategori")
     @Expose
     private String kategori;
-    @SerializedName("oleh")
+    @SerializedName("penulis")
     @Expose
     private String oleh;
     @SerializedName("date_created")

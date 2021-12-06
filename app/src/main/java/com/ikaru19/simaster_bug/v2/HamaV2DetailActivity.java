@@ -93,8 +93,7 @@ public class HamaV2DetailActivity extends AppCompatActivity {
 
     private String generateHtml() {
         String htmlData = "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">";
-        htmlData = htmlData + "<h2>" + hama.getJudul() + "</h2> <br>";
-        htmlData = htmlData + "<p> oleh: " + hama.getOleh() + "</p> <br> <br>";
+        htmlData = htmlData + "<h2>" + hama.getJudul() + "</h2> <br> <br>";
         htmlData = htmlData + "<style>img{display: inline;height: auto;max-width: 100%;}</style>";
         htmlData = htmlData + hama.getKonten();
         return htmlData;

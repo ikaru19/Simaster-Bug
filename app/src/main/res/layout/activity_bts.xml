@@ -39,13 +39,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
                     android:fontFamily="@font/monserrat"
                     android:text="Varietas"
                     android:textColor="#FFFFFF"
-                    android:textSize="24sp"
+                    android:textSize="16sp"
                     android:textStyle="normal" />
 
             </LinearLayout>
@@ -78,13 +78,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
                     android:fontFamily="@font/monserrat"
                     android:text="Stok"
                     android:textColor="#FFFFFF"
-                    android:textSize="24sp"
+                    android:textSize="16sp"
                     android:textStyle="normal" />
 
             </LinearLayout>
@@ -124,13 +124,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
                     android:fontFamily="@font/monserrat"
                     android:text="Hama &amp; Penyakit"
                     android:textColor="#FFFFFF"
-                    android:textSize="24sp"
+                    android:textSize="16sp"
                     android:textStyle="normal" />
 
             </LinearLayout>
@@ -163,13 +163,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
                     android:fontFamily="@font/monserrat"
                     android:text="Budidaya"
                     android:textColor="#FFFFFF"
-                    android:textSize="24sp"
+                    android:textSize="16sp"
                     android:textStyle="normal" />
 
             </LinearLayout>
